@@ -1,837 +1,925 @@
-<!DOCTYPE html>
-<html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <link href="../css/homePage.css" rel="stylesheet"/>
-  <title>
-   Home Page
-  </title>
- </head>
- <body>
-  <div class="banner-section">
-   <div class="container">
-    <div class="banner-title-wrap">
-     <div class="subtitle-wrap-dark">
-      <div class="subtitle-border">
-      </div>
-      <p class="subtitle-dark">
-       Logistics &amp; Supply Chain Solutions
-      </p>
-     </div>
-     <h1 class="page-title">
-      Safest Logistics Solutions Provider With Integrity
-     </h1>
-     <p class="text-white">
-      We're a leading provider of less-than-truckload freight transportation with the world-class network, technology and service our customers need at all the time.
-     </p>
-     <div class="mg-top-30">
-      <a class="yellow-overlay-button inline-block" href="#">
-       <div>
-        Explore More
-       </div>
-       <div class="yellow-button-hover">
-       </div>
-      </a>
-     </div>
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link rel="preload" href="../components/layout.html" as="fetch" crossorigin="anonymous">
+    <link rel="preload" href="../assets/icons/logo.svg" as="image">
+    <link rel="stylesheet" href="../css/preloader.css">
+    <link rel="stylesheet" href="../css/HomePage.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <title>
+     TransitFlow - Webflow HTML website template
+    </title>
+</head>
+<body>
+    <div class="preloader" id="preloader" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #fff; display: flex; justify-content: center; align-items: center; z-index: 9999;">
+        <div style="border: 5px solid #f3f3f3; border-top: 5px solid #ffbe34; border-radius: 50%; width: 50px; height: 50px; animation: spin 1s linear infinite;"></div>
     </div>
-   </div>
-  </div>
-  <div class="service-section">
-   <div class="container">
-    <div class="service-whole-wrap">
-     <div class="service-title-wrap">
-      <div class="subtitle-wrap">
-       <p class="subtitle">
-        What We Do
-       </p>
-       <div class="subtitle-border">
-       </div>
-      </div>
-      <h2 class="section-title">
-       Safe &amp; Reliable Cargo Solutions
-      </h2>
-     </div>
-     <div class="layout-grid service-grid">
-      <div class="service-card">
-       <div class="home-service-icon-wrap">
-        <img alt="Boat Icon" src="../assets/icons/ship_icon.svg"/>
-       </div>
-       <div class="service-line">
-       </div>
-       <div>
-        <a class="service-title" href="#">
-         Sea Transport Services
-        </a>
-        <div class="mg-top-10">
-         <p>
-          Wherever your cargo is going, we can arrange the shipment for you and remain competitive with the business market.
-         </p>
-        </div>
-       </div>
-      </div>
-      <div class="service-card">
-       <div class="home-service-icon-wrap">
-        <img alt="Warehouse Icon" src="../assets/icons/warehouse_icon.svg"/>
-       </div>
-       <div class="service-line">
-       </div>
-       <div>
-        <a class="service-title" href="#">
-         Warehousing Services
-        </a>
-        <div class="mg-top-10">
-         <p>
-          We have buildings that can provide you with distribution, storage, inventory management, order fulfilment services.
-         </p>
-        </div>
-       </div>
-      </div>
-      <div class="service-card">
-       <div class="home-service-icon-wrap">
-        <img alt="Flight Icon" src="../assets/icons/flight_icon.svg" width="82"/>
-       </div>
-       <div class="service-line">
-       </div>
-       <div>
-        <a class="service-title" href="#">
-         Air Freight Services
-        </a>
-        <div class="mg-top-10">
-         <p>
-          We're partners with airlines and freight forwarders to offer seamless air freight solutions to the clients all over the world.
-         </p>
-        </div>
-       </div>
-      </div>
-      <div class="service-card">
-       <div class="home-service-icon-wrap">
-        <img alt="Van Icon" src="../assets/icons/van_icon.svg"/>
-       </div>
-       <div class="service-line">
-       </div>
-       <div>
-        <a class="service-title" href="#">
-         Local Shipping Services
-        </a>
-        <div class="mg-top-10">
-         <p>
-          We work close with strategic partners to ensure our domestic trucking offers clients everything they need in their place.
-         </p>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-   </div>
-  </div>
-  <div class="about-section">
-   <div class="service-image-wrap">
-   </div>
-   <div>
-    <div class="container">
-     <div class="layout-grid about-grid">
-      <div>
-       <div class="subtitle-wrap">
-        <p class="subtitle">
-         Why Us
-        </p>
+    <header id="header"></header>
+    <section class="banner-section">
+     <div class="container">
+      <div class="banner-title-wrap">
+       <div class="subtitle-wrap-dark">
         <div class="subtitle-border">
         </div>
-       </div>
-       <h2 class="section-title">
-        We provide full range global logistics solution
-       </h2>
-       <div class="about-content">
-        <p>
-         We strive to understand what they’re going through, what they need, what their price points are, and what’s important to them and their customers.
-        </p>
-        <p>
-         We historically build meaningful relationships with our customers. We connect with our customers. We care.
+        <p class="subtitle-dark">
+         Logistics & Supply Chain Solutions
         </p>
        </div>
-       <div class="about-points-wrap">
-        <div class="about-list">
-         <div class="icon-wrap">
-          <img alt="Yellow Box Icon" src="../assets/icons/yellow_box_icon.svg"/>
-         </div>
-         <h3 class="about-point">
-          Delivery on Time
-         </h3>
-        </div>
-        <div class="about-list">
-         <div class="icon-wrap">
-          <img alt="Yellow Money Icon" src="../assets/icons/yellow_money_icon.svg"/>
-         </div>
-         <h3 class="about-point">
-          Optimized Travel Cost
-         </h3>
-        </div>
-       </div>
-      </div>
-      <div class="about-image-wrap">
-       <img alt="Cargo Image" src="../assets/images/airplane_mainpage_photo.svg"/>
-       <div class="about-image">
-        <img alt="Woman Image" src="../assets/images/woman_mainpage_photo.svg" width="463"/>
-       </div>
-      </div>
-     </div>
-     <div class="counter-wrap">
-      <div class="counter-card">
-       <p class="counter-number">
-        81294
+       <h1 class="page-title">
+        Safest Logistics Solutions Provider With Integrity
+       </h1>
+       <p class="text-white">
+        We're a leading provider of less-than-truckload freight transportation with the world-class network, technology and service our customers need at all the time.
        </p>
-       <div class="counter-text-wrap">
-        <div class="counter-block yellow-gradient">
-        </div>
-        <p class="counter-text">
-         Delivered Packages
-        </p>
-       </div>
-      </div>
-      <div class="counter-line">
-      </div>
-      <div class="counter-card">
-       <p class="counter-number">
-        13594
-       </p>
-       <div class="counter-text-wrap">
-        <div class="counter-block yellow-gradient">
-        </div>
-        <p class="counter-text">
-         Satisfied Clients
-        </p>
-       </div>
-      </div>
-     </div>
-    </div>
-   </div>
-  </div>
-  <div class="work-section">
-   <div class="work-bg yellow-gradient">
-   </div>
-   <div class="container-large">
-    <div class="align-center">
-     <h2 class="section-title">
-      Transporting across the world
-     </h2>
-    </div>
-    <div class="mg-top-30">
-     <div class="layout-grid work-grid">
-      <div class="work-card">
-       <div class="work-image-shade">
-        <div class="work-text-wrap">
-         <h3 class="work-card-title">
-          Liquid Transportation
-         </h3>
-         <p class="work-text">
-          Premium Tankers
-         </p>
-        </div>
-       </div>
-       <img alt="Transport Image" src="../assets/images/premium_tankers_photo.svg" width="603"/>
-      </div>
-      <div class="work-card">
-       <div class="work-image-shade">
-        <div class="work-text-wrap">
-         <h3 class="work-card-title">
-          Packaging Solutions
-         </h3>
-         <p class="work-text">
-          Warehouse Management
-         </p>
-        </div>
-       </div>
-       <img alt="Transport Image" src="../assets/images/warehouse_managment_photo.svg" width="594"/>
-      </div>
-      <div class="work-card">
-       <div class="work-image-shade">
-        <div class="work-text-wrap">
-         <h3 class="work-card-title">
-          Contract Logistics
-         </h3>
-         <p class="work-text">
-          Road Transportation
-         </p>
-        </div>
-       </div>
-       <img alt="Transport Image" src="../assets/images/road_transporation_photo.svg" width="534"/>
-      </div>
-      <div class="work-card">
-       <div class="work-image-shade">
-        <div class="work-text-wrap">
-         <h3 class="work-card-title">
-          Warehouse &amp; Distribution
-         </h3>
-         <p class="work-text">
-          Large Warehouse
-         </p>
-        </div>
-       </div>
-       <img alt="Transport Image" src="../assets/images/large_warehouse_photo.svg" width="519"/>
-      </div>
-      <div class="work-card">
-        <div class="work-image-shade">
-         <div class="work-text-wrap">
-          <h3 class="work-card-title">
-            Specialized Transport
-          </h3>
-          <p class="work-text">
-            Ocean Transports
-          </p>
+       <div class="mg-top-30">
+        <a class="yellow-overlay-button inline-block" href="/about-us">
+         <div>
+          Explore More
          </div>
-        </div>
-        <img alt="Transport Image" src="../assets/images/ocean_transports_photo.svg " width="519"/>
-       </div>
-     </div>
-    </div>
-    <div class="mg-top-60">
-     <div class="align-center">
-      <a class="dark-overlay-button inline-block" href="#">
-       <div>
-        More Work
-       </div>
-       <div class="dark-button-hover">
-       </div>
-      </a>
-     </div>
-    </div>
-   </div>
-  </div>
-  <div class="testimonial-section">
-   <div class="container overflow-hidden">
-    <div class="subtitle-wrap">
-     <p class="subtitle">
-      Testimonial
-     </p>
-     <div class="subtitle-border">
-     </div>
-    </div>
-    <h2 class="section-title">
-     What Our Customer Say
-    </h2>
-    <div class="mg-top-40">
-     <div class="testimonial-slider slider">
-      <div class="testimonial-mask slider-mask">
-       <div class="testimonial-slide slide">
-        <div class="testimonial-card" style="background-color: rgb(244, 244, 244);">
-         <div class="testimonial-top-wrap">
-          <div class="testimonial-author-wrap">
-           <div class="author-image-wrap">
-            <img alt="Author Image" class="author-image" src="../assets/images/Kathleen_Smith_photo.svg" width="91">
-            </img>
-           </div>
-           <div>
-            <h3 class="author-name">
-             David Malan
-            </h3>
-            <p class="author-designation">
-             Fuel Company
-            </p>
-           </div>
-          </div>
-          <div class="testimonial-icon-wrap yellow-gradient">
-           <img alt="Blockquote Icon" src="../assets/icons/“.svg">
-           </img>
-          </div>
+         <div class="yellow-button-hover" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
          </div>
-         <p class="testimonial-text">
-          We are so happy with everything that the logistics group has done for us. They have excellent delivery to North-Eastern region of united states. I highly recommend them! Superb communication, pick up and delivery right on time.
-         </p>
-         <div class="testimonial-rating-wrap">
-          <img alt="Star Icon" src="../assets/icons/yellow_star_icon.svg">
-           <img alt="Star Icon" src="../assets/icons/yellow_star_icon.svg">
-            <img alt="Star Icon" src="../assets/icons/yellow_star_icon.svg">
-             <img alt="Star Icon" src="../assets/icons/yellow_star_icon.svg">
-              <img alt="Star Icon" src="../assets/icons/yellow_star_icon.svg">
-              </img>
-             </img>
-            </img>
-           </img>
-          </img>
-         </div>
-        </div>
+        </a>
        </div>
       </div>
      </div>
-    </div>
-   </div>
-  </div>
-  <div class="features-section">
-   <div class="features-bg">
-    <div class="features-dark-bg">
-    </div>
-   </div>
-   <div class="container-large">
-    <div>
-     <div class="layout-grid features-grid">
-      <div class="features-image">
-       <img alt="Plane" sizes="(max-width: 479px) 100vw, (max-width: 991px) 95vw, (max-width: 1919px) 97vw, 1421px" src="../assets/images/plane_dream_lifter_photo.svg" width="1421">
-        <div class="features-content-wrap">
-         <img alt="Flight Icon" src="../assets/icons/flight_mainpage_icon.svg">
-          <h3 class="about-point">
-           Moving your products across world
-          </h3>
-         </img>
-        </div>
-       </img>
-      </div>
-      <div>
-       <div class="features-title-wrap">
+    </section>
+    <section class="service-section">
+     <div class="container">
+      <div class="service-whole-wrap">
+       <div class="service-title-wrap">
         <div class="subtitle-wrap">
          <p class="subtitle">
-          Why Choose
+          What We Do
          </p>
          <div class="subtitle-border">
          </div>
         </div>
         <h2 class="section-title">
-         We create an opportunity to reach business potential
+         Safe & Reliable Cargo Solutions
         </h2>
-        <div class="mg-top-20">
-         <p>
-          Logistics is a distinguished supply chain management firm which provides comprehensive solutions for warehousing, transportation and a host of logistics services.
-         </p>
-        </div>
        </div>
-       <div class="features-icon-list">
-        <div class="features-points-wrap">
-         <div class="icon-wrap">
-          <img alt="Icon" src="../assets/icons/yellow_box_icon.svg">
-          </img>
+       <div class="layout-grid service-grid">
+        <div class="service-card" style="opacity: 1;">
+         <div class="home-service-icon-wrap">
+          <img alt="Boat Icon" src="../assets/icons/ship_icon.svg"/>
          </div>
-         <h3 class="features-point">
-          Safe Package
-         </h3>
-        </div>
-        <div class="features-points-wrap">
-         <div class="icon-wrap">
-          <img alt="Icon" src="../assets/icons/yellow_ship_everywhere_icon.svg">
-          </img>
+         <div class="service-line">
          </div>
-         <h3 class="features-point">
-          Ship Everywhere
-         </h3>
-        </div>
-        <div class="features-points-wrap">
-         <div class="icon-wrap">
-          <img alt="Icon" src="../assets/icons/yellow_global_tracking_icon.svg">
-          </img>
+         <div>
+          <a class="service-title" href="/service-single">
+           Sea Transport Services
+          </a>
+          <div class="mg-top-10">
+           <p>
+            Wherever your cargo is going, we can arrange the shipment for you and remain competitive with the business market.
+           </p>
+          </div>
          </div>
-         <h3 class="features-point">
-          Global Tracking
-         </h3>
         </div>
-        <div class="features-points-wrap">
-         <div class="icon-wrap">
-          <img alt="Icon" src="../assets/icons/yellow_support_icon.svg"/>
+        <div class="service-card" style="opacity: 1;">
+         <div class="home-service-icon-wrap">
+          <img alt="Boat Icon" src="../assets/icons/warehouse_icon.svg"/>
          </div>
-         <h3 class="features-point">
-          24/7 Support
-         </h3>
-        </div>
-        <div class="features-points-wrap">
-         <div class="icon-wrap">
-          <img alt="Icon" src="../assets/icons/yellow_time_icon.svg"/>
+         <div class="service-line">
          </div>
-         <h3 class="features-point">
-          In Time Delivery
-         </h3>
-        </div>
-        <div class="features-points-wrap">
-         <div class="icon-wrap">
-          <img alt="Icon" src="../assets/icons/yellow_support_icon.svg"/>
+         <div>
+          <a class="service-title" href="/service-single">
+           Warehousing Services
+          </a>
+          <div class="mg-top-10">
+           <p>
+            We have buildings that can provide you with distribution, storage, inventory management, order fulfilment services.
+           </p>
+          </div>
          </div>
-         <h3 class="features-point">
-          Transparent Pricing
-         </h3>
         </div>
-       </div>
-      </div>
-     </div>
-    </div>
-   </div>
-  </div>
-   <div class="home-team-section">
-    <div class="container">
-     <div class="align-center">
-      <div class="subtitle-wrap">
-       <p class="subtitle">
-        The Transporters
-       </p>
-       <div class="subtitle-border">
-       </div>
-      </div>
-      <h2 class="section-title">
-       Meet Expert Team
-      </h2>
-     </div>
-     <div class="mg-top-40">
-      <div class="layout-grid home-team-grid">
-       <div class="team-card">
-        <img alt="Team Image" src="../assets/images/expert_team_member_1.jpg" width="662"/>
-        <div class="team-content-wrap">
-         <h3 class="author-name text-white">
-          Helen Wilmore
-         </h3>
-         <p class="team-member-designation">
-          Warehouse Head
-         </p>
+        <div class="service-card" style="opacity: 1;">
+         <div class="home-service-icon-wrap">
+          <img alt="Boat Icon" src="../assets/icons/flight_icon.svg" width="82"/>
+         </div>
+         <div class="service-line">
+         </div>
+         <div>
+          <a class="service-title" href="/service-single">
+           Air Fright Services
+          </a>
+          <div class="mg-top-10">
+           <p>
+            We're partners with airlines and freight forwarders to offer seamless air freight solutions to the clients all over the world.
+           </p>
+          </div>
+         </div>
         </div>
-        <div class="social-media-wrap">
-         <a class="team-social-link inline-block" href="http://www.twitter.com">
-          <img alt="Twitter Icon" class="social-icon" src="../assets/icons/black_twitter_icon.svg"/>
-         </a>
-         <a class="team-social-link inline-block" href="http://www.facebook.com">
-          <img alt="Facebook Icon" class="social-icon" src="../assets/icons/black_facebook_icon.svg"/>
-         </a>
-         <a class="team-social-link inline-block" href="http://www.instagram.com">
-          <img alt="Instagram Icon" class="social-icon" src="../assets/icons/black_instagram_icon.svg"/>
-         </a>
-        </div>
-       </div>
-       <div class="team-card">
-        <img alt="Team Image" src="../assets/images/expert_team_member_2.svg" width="595"/>
-        <div class="team-content-wrap">
-         <h3 class="author-name text-white">
-          Anthony Wills
-         </h3>
-         <p class="team-member-designation">
-          Transport Manager
-         </p>
-        </div>
-        <div class="social-media-wrap">
-         <a class="team-social-link inline-block" href="http://www.linkedin.com">
-          <img alt="LinkedIn Icon" class="social-icon" src="../assets/icons/black_linkedin_icon.svg"/>
-         </a>
-         <a class="team-social-link inline-block" href="http://www.twitter.com">
-          <img alt="Twitter Icon" class="social-icon" src="../assets/icons/black_twitter_icon.svg"/>
-         </a>
-         <a class="team-social-link inline-block" href="http://www.facebook.com">
-          <img alt="Facebook Icon" class="social-icon" src="../assets/icons/black_facebook_icon.svg"/>
-         </a>
-         <a class="team-social-link inline-block" href="http://www.instagram.com">
-          <img alt="Instagram Icon" class="social-icon" src="../assets/icons/black_instagram_icon.svg"/>
-         </a>
-        </div>
-       </div>
-       <div class="team-card">
-        <img alt="Team Image" src="../assets/images/expert_team_member_3.svg" width="724"/>
-        <div class="team-content-wrap">
-         <h3 class="author-name text-white">
-          Kate Winslot
-         </h3>
-         <p class="team-member-designation">
-          Cargo head
-         </p>
-        </div>
-        <div class="social-media-wrap">
-         <a class="team-social-link inline-block" href="http://www.facebook.com">
-          <img alt="Facebook Icon" class="social-icon" src="../assets/icons/black_facebook_icon.svg"/>
-         </a>
-         <a class="team-social-link inline-block" href="http://www.instagram.com">
-          <img alt="Instagram Icon" class="social-icon" src="../assets/icons/black_instagram_icon.svg"/>
-         </a>
+        <div class="service-card" style="opacity: 1;">
+         <div class="home-service-icon-wrap">
+          <img alt="Boat Icon" src="../assets/icons/van_icon.svg"/>
+         </div>
+         <div class="service-line">
+         </div>
+         <div>
+          <a class="service-title" href="/service-single">
+           Local Shipping Services
+          </a>
+          <div class="mg-top-10">
+           <p>
+            We work close with strategic partners to ensure our domestic trucking offers clients everything they need in their place.
+           </p>
+          </div>
+         </div>
         </div>
        </div>
       </div>
      </div>
-    </div>
-   </div>
-  </div>
-  <div class="contact-section">
-    <div class="container container">
-     <div class="layout-grid contact-grid">
+    </section>
+    <section class="about-section">
+     <div class="service-image-wrap">
+     </div>
+     <div>
+      <div class="container">
+       <div>
+        <div class="layout-grid about-grid">
+         <div>
+          <div class="subtitle-wrap">
+           <p class="subtitle">
+            Why Us
+           </p>
+           <div class="subtitle-border">
+           </div>
+          </div>
+          <h2 class="section-title">
+           We provide full range global logistics solution
+          </h2>
+          <div class="about-content">
+           <p>
+            We strive to understand what they’re going through, what they need, what their price points are, and what’s important to them and their customers.
+           </p>
+           <p>
+            We historically build meaningful relationships with our customers. We connect with our customers. We care.
+           </p>
+          </div>
+          <div class="about-points-wrap">
+           <div class="about-list" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+            <div class="icon-wrap">
+             <img alt="Icon" src="../assets/icons/yellow_box_icon.svg"/>
+            </div>
+            <h3 class="about-point">
+             Delivery on Time
+            </h3>
+           </div>
+           <div class="about-list" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+            <div class="icon-wrap">
+             <img alt="Icon" src="../assets/icons/yellow_money_icon.svg"/>
+            </div>
+            <h3 class="about-point">
+             Optimized Travel Cost
+            </h3>
+           </div>
+          </div>
+         </div>
+         <div class="about-image-wrap">
+          <img alt="Cargo Image" src="../assets/images/airplane_mainpage_photo.svg" style="opacity: 1;"/>
+          <div class="about-image">
+           <img alt="Image" src="../assets/images/woman_mainpage_photo.svg" style="opacity: 1;" width="463"/>
+          </div>
+         </div>
+        </div>
+        <div class="counter-wrap">
+         <div class="counter-card" style="opacity: 1;">
+          <p class="counter-number">
+           81294
+          </p>
+          <div class="counter-text-wrap">
+           <div class="counter-block yellow-gradient">
+           </div>
+           <p class="counter-text">
+            Delivered Packages
+           </p>
+          </div>
+         </div>
+         <div class="counter-line">
+         </div>
+         <div class="counter-card" style="opacity: 1;">
+          <p class="counter-number">
+           13594
+          </p>
+          <div class="counter-text-wrap">
+           <div class="counter-block yellow-gradient">
+           </div>
+           <p class="counter-text">
+            Satisfied Clients
+           </p>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="work-section">
+     <div class="work-bg yellow-gradient">
+     </div>
+     <div class="container-large container">
+      <div class="align-center">
+       <h2 class="section-title">
+        Transporting across the world
+       </h2>
+      </div>
+      <div class="mg-top-30">
+       <div class="layout-grid work-grid">
+        <div class="work-card" style="opacity: 1;">
+         <div class="work-image-shade">
+          <div class="work-text-wrap">
+           <h3 class="work-card-title">
+            Liquid Transportation
+           </h3>
+           <p class="work-text">
+            Premium Tankers
+           </p>
+          </div>
+         </div>
+         <img alt="Transport Image" src="../assets/images/premium_tankers_photo.svg" width="603"/>
+        </div>
+        <div class="work-card" style="opacity: 1;">
+         <div class="work-image-shade">
+          <div class="work-text-wrap">
+           <h3 class="work-card-title">
+            Packaging Solutions
+           </h3>
+           <p class="work-text">
+            Warehouse Management
+           </p>
+          </div>
+         </div>
+         <img alt="Transport Image" src="../assets/images/warehouse_managment_photo.svg" width="594"/>
+        </div>
+        <div class="work-card" style="opacity: 1;">
+         <div class="work-image-shade">
+          <div class="work-text-wrap">
+           <h3 class="work-card-title">
+            Contract Logistics
+           </h3>
+           <p class="work-text">
+            Road Transportation
+           </p>
+          </div>
+         </div>
+         <img alt="Transport Image" src="../assets/images/road_transporation_photo.svg" width="534"/>
+        </div>
+        <div class="work-card" style="opacity: 1;">
+         <div class="work-image-shade">
+          <div class="work-text-wrap">
+           <h3 class="work-card-title">
+            Warehouse & Distribution
+           </h3>
+           <p class="work-text">
+            Large Warehouse
+           </p>
+          </div>
+         </div>
+         <img alt="Transport Image" src="../assets/images/cargo_containers_background.svg" width="519"/>
+        </div>
+        <div class="work-card" style="opacity: 1;">
+         <div class="work-image-shade">
+          <div class="work-text-wrap">
+           <h3 class="work-card-title">
+            Specialized Transport
+           </h3>
+           <p class="work-text">
+            Ocean Transports
+           </p>
+          </div>
+         </div>
+         <img alt="Transport Image" src="../assets/images/ocean_transports_photo.svg" width="496"/>
+        </div>
+       </div>
+      </div>
+      <div class="mg-top-60">
+       <div class="align-center">
+        <a class="dark-overlay-button inline-block" href="/our-project">
+         <div>
+          More Work
+         </div>
+         <div class="dark-button-hover" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+         </div>
+        </a>
+       </div>
+      </div>
+     </div>
+    </section>
+    <div class="testimonial-section">
+     <div class="container overflow-hidden container">
       <div>
-       <div class="subtitle-wrap-transparent">
-        <p class="subtitle-dark">
-         Contact
+       <div class="subtitle-wrap">
+        <p class="subtitle">
+         Testimonial
         </p>
         <div class="subtitle-border">
         </div>
        </div>
-       <h2 class="section-title text-white">
-        Get in touch with us
+       <h2 class="section-title">
+        What Our Customer Say
        </h2>
-       <p class="text-white">
-        We appreciate your interest please complete the form below and we will contact you immediately to discuss your warehousing and distribution, air, ocean freight or any other logistics needs.
-       </p>
-       <div class="home-contact-link-wrap" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-        <div class="header-link-card">
-         <div class="header-icon-wrap">
-          <img alt="Mail Icon" src="../assets/icons/blue_email_icon.svg"/>
+      </div>
+      <div class="mg-top-40">
+       <div class="testimonial-slider slider" data-autoplay="false" data-autoplay-limit="0" data-disable-swipe="false" data-hide-arrows="false" data-infinite="true" data-nav-spacing="3" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+        <div class="testimonial-mask slider-mask">
+         <div class="testimonial-slide slide" style="transition: all; transform: translateX(0px); opacity: 1;">
+          <div class="testimonial-card" style="background-color: rgb(244, 244, 244);">
+           <div class="testimonial-top-wrap">
+            <div class="testimonial-author-wrap">
+             <div class="author-image-wrap">
+              <img alt="Author Image" class="author-image" src="../assets/images/author_image.svg" width="91"/>
+             </div>
+             <div>
+              <h3 class="author-name" style="color: rgb(28, 31, 53);">
+               David Malan
+              </h3>
+              <p class="author-designation" style="color: rgb(9, 18, 66);">
+               Fuel Company
+              </p>
+             </div>
+            </div>
+            <div class="testimonial-icon-wrap yellow-gradient">
+             <img alt="Blockquote Icon" src="../assets/icons/''.svg"/>
+            </div>
+           </div>
+           <p class="testimonial-text" style="color: rgb(102, 108, 137);">
+            We are so happy with everything that the logistics group has done for us. They have excellent delivery to North-Eastern region of united states. I highly recommend them! Superb communication, pick up and delivery right on time.
+           </p>
+           <div class="testimonial-rating-wrap">
+            <img alt="Star Icon" src="../assets/icons/yellow_star_icon.svg"/>
+            <img alt="Star Icon" src="../assets/icons/yellow_star_icon.svg"/>
+            <img alt="Star Icon" src="../assets/icons/yellow_star_icon.svg"/>
+            <img alt="Star Icon" src="../assets/icons/yellow_star_icon.svg"/>
+            <img alt="Star Icon" src="../assets/icons/yellow_star_icon.svg"/>
+           </div>
+          </div>
          </div>
-         <div>
-          <p class="header-link-text">
-           Email
-          </p>
-          <a class="header-link-text hover-yellow" href="mailto:slavick.voronoff2016@gmail.com">
-           contact@transitflow.com
-          </a>
+         <div class="testimonial-slide slide" style="transition: all; transform: translateX(0px); opacity: 1;">
+          <div class="testimonial-card" style="background-color: rgb(9, 18, 66);">
+           <div class="testimonial-top-wrap">
+            <div class="testimonial-author-wrap">
+             <div class="author-image-wrap">
+              <img alt="Author Image" class="author-image" src="../assets/images/author_image.svg" width="91"/>
+             </div>
+             <div>
+              <h3 class="author-name" style="color: rgb(255, 255, 255);">
+               Clifford Stratton
+              </h3>
+              <p class="author-designation" style="color: rgb(255, 255, 255);">
+               Restoration Company
+              </p>
+             </div>
+            </div>
+            <div class="testimonial-icon-wrap yellow-gradient">
+             <img alt="Blockquote Icon" src="../assets/icons/''.svg"/>
+            </div>
+           </div>
+           <p class="testimonial-text" style="color: rgb(232, 232, 232);">
+            Providers of personal safety, comfort, and protection products for the outdoor enthusiast It has been our experience that Classic Transportation is in an elite group of full line transportation providers.
+           </p>
+           <div class="testimonial-rating-wrap">
+            <img alt="Star Icon" src="../assets/icons/yellow_star_icon.svg"/>
+            <img alt="Star Icon" src="../assets/icons/yellow_star_icon.svg"/>
+            <img alt="Star Icon" src="../assets/icons/yellow_star_icon.svg"/>
+            <img alt="Star Icon" src="../assets/icons/yellow_star_icon.svg"/>
+            <img alt="Star Icon" src="../assets/icons/yellow_star_icon.svg"/>
+           </div>
+          </div>
+         </div>
+         <div class="testimonial-slide slide" style="transition: all; transform: translateX(0px); opacity: 1;">
+          <div class="testimonial-card" style="background-color: rgb(9, 18, 66);">
+           <div class="testimonial-top-wrap">
+            <div class="testimonial-author-wrap">
+             <div class="author-image-wrap">
+              <img alt="Author Image" class="author-image" src="../assets/images/author_image.svg"/>
+             </div>
+             <div>
+              <h3 class="author-name" style="color: rgb(255, 255, 255);">
+               Kathy Taylor
+              </h3>
+              <p class="author-designation" style="color: rgb(255, 255, 255);">
+               Rapids Industrial Products
+              </p>
+             </div>
+            </div>
+            <div class="testimonial-icon-wrap yellow-gradient">
+             <img alt="Blockquote Icon" src="../assets/icons/''.svg"/>
+            </div>
+           </div>
+           <p class="testimonial-text" style="color: rgb(232, 232, 232);">
+            We have been using Logistics Transportation for several years for our Logistic moves to some of our biggest customers. They have been very reliable and have provided great service to ourselves and to our customers.
+           </p>
+           <div class="testimonial-rating-wrap">
+            <img alt="Star Icon" src="../assets/icons/yellow_star_icon.svg"/>
+            <img alt="Star Icon" src="../assets/icons/yellow_star_icon.svg"/>
+            <img alt="Star Icon" src="../assets/icons/yellow_star_icon.svg"/>
+            <img alt="Star Icon" src="../assets/icons/yellow_star_icon.svg"/>
+            <img alt="Star Icon" src="../assets/icons/yellow_star_icon.svg"/>
+           </div>
+          </div>
+         </div>
+         <div class="slider-aria-label">
          </div>
         </div>
-        <div class="header-link-card">
-         <div class="header-icon-wrap">
-          <img alt="Phone Icon" src="../assets/icons/blue_call_icon.svg"/>
+        <div class="testimonial-left-arrow-wrap slider-arrow-left" style="background-color: rgb(255, 190, 52);" tabindex="0">
+         <div class="hide icon-slider-left">
          </div>
-         <div>
-          <p class="header-link-text">
-           Call Us
-          </p>
-          <a class="header-link-text hover-yellow" href="tel:(00)123456789">
-           (00) 123 456 789
-          </a>
-         </div>
+         <img alt="Arrow" class="testimonial-left-arrow" src="../assets/icons/left_arrow_icon.svg" style="filter: invert(0%);"/>
         </div>
-        <div class="header-link-card">
-         <div class="header-icon-wrap">
-          <img alt="Clock Icon" src="../assets/icons/blue_time_icon.svg"/>
+        <div class="testimonial-right-arrow-wrap slider-arrow-right" style="background-color: rgb(255, 190, 52);" tabindex="0">
+         <div class="hide icon-slider-right">
          </div>
-         <div>
-          <p class="header-link-text">
-           Mon - Sat 9.00 - 18.00 Sunday Closed
-          </p>
+         <img alt="Arrow Icon" class="testimonial-right-arrow" src="../assets/icons/right_arrow_icon.svg" style="filter: invert(0%);"/>
+        </div>
+        <div class="hide slider-nav round">
+         <div class="slider-dot active" style="margin-left: 3px; margin-right: 3px;" tabindex="0">
+         </div>
+         <div class="slider-dot" style="margin-left: 3px; margin-right: 3px;" tabindex="-1">
+         </div>
+         <div class="slider-dot" style="margin-left: 3px; margin-right: 3px;" tabindex="-1">
          </div>
         </div>
        </div>
       </div>
+     </div>
+    </div>
+    <section class="features-section">
+     <div class="features-bg">
+      <div class="features-dark-bg">
+      </div>
+     </div>
+     <div class="container-large container">
       <div>
-       <div class="form">
-        <form aria-label="Email Form" class="contact-form" style="opacity: 1;">
-         <div class="contact-text-field-divider">
-          <input class="contact-input-type input" data-name="Name" id="name" maxlength="256" name="name" placeholder="Your Name*" type="text"/>
-          <input class="contact-input-type input" data-name="Email" id="email" maxlength="256" name="email" placeholder="Your Email*" required="" type="email"/>
-         </div>
-         <div class="contact-text-field-divider">
-          <input class="contact-input-type input" data-name="Field" id="field" maxlength="256" name="field" placeholder="Phone Number*" required="" type="text"/>
-          <input class="contact-input-type input" data-name="Field 2" id="field-2" maxlength="256" name="field-2" placeholder="City*" required="" type="text"/>
-         </div>
-         <textarea placeholder="Your Message" maxlength="5000" id="field-3" name="field-3" data-name="field" class="contact-text-area input"></textarea>
-         <input class="primary-button button" data-wait="Please wait..." type="submit" value="Submit Message"/>
-        </form>
-        <div aria-label="Email Form success" class="success-message form-done" role="region" tabindex="-1">
-         <div>
-          Thank you! Your submission has been received!
+       <div class="layout-grid features-grid">
+        <div class="features-image">
+         <img alt="Plane" src="../assets/images/plane_dream_lifter_photo.svg" width="1421"/>
+         <div class="features-content-wrap" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+          <img alt="Flight Icon" src="../assets/icons/flight_mainpage_icon.svg"/>
+          <h3 class="about-point">
+           Moving your products across world
+          </h3>
          </div>
         </div>
-        <div aria-label="Email Form failure" class="error-message form-fail" role="region" tabindex="-1">
-         <div>
-          Oops! Something went wrong while submitting the form.
-         </div>
-        </div>
-       </div>
-      </div>
-     </div>
-     <div class="layout-grid partners-grid">
-      <div class="partners-card" style="opacity: 1;">
-       <img alt="Partners Logo" class="partners-logo" src="../assets/images/studio_green_logo.svg"/>
-       <img alt="Partner Background Image" class="partner-background-image" sizes="(max-width: 479px) 100vw, (max-width: 991px) 95vw, 299px" src="../assets/images/studio_green_background.svg" style="opacity: 1;"/>
-       <div class="partners-overlay" style="opacity: 1;">
-       </div>
-      </div>
-      <div class="partners-card" style="opacity: 1;">
-       <img alt="Partners Logo" class="partners-logo" src="../assets/images/norto_logo.svg"/>
-       <img alt="Partner Background Image" class="partner-background-image" sizes="(max-width: 479px) 100vw, (max-width: 991px) 95vw, 299px" src="../assets/images/norto_background.svg"  style="opacity: 1;" width="300"/>
-       <div class="partners-overlay" style="opacity: 1;">
-       </div>
-      </div>
-      <div class="partners-card" style="opacity: 1;">
-       <img alt="Partners Logo" class="partners-logo" src="../assets/images/points_one_logo.svg"/>
-       <img alt="Partner Background Image" class="partner-background-image" sizes="(max-width: 479px) 100vw, (max-width: 991px) 95vw, 299px" src="../assets/images/points_one_background.svg"  style="opacity: 1;" width="300"/>
-       <div class="partners-overlay" style="opacity: 1;">
-       </div>
-      </div>
-      <div class="partners-card" style="opacity: 1;">
-       <img alt="Partners Logo" class="partners-logo" src="../assets/images/sand_box_logo.svg"/>
-       <img alt="Partner Background Image" class="partner-background-image" sizes="(max-width: 479px) 100vw, (max-width: 991px) 95vw, 299px" src="../assets/images/sand_box_background.svg"  style="opacity: 1;" width="300"/>
-       <div class="partners-overlay" style="opacity: 1;">
-       </div>
-      </div>
-     </div>
-    </div>
-   </div>
-   <div class="blog-section">
-    <div class="container-small container">
-     <div class="align-center">
-      <div class="subtitle-wrap">
-       <p class="subtitle">
-        Our Blog
-       </p>
-       <div class="subtitle-border">
-       </div>
-      </div>
-      <h2 class="section-title">
-       Our Latest News
-      </h2>
-     </div>
-     <div class="mg-top-40">
-      <div class="blog-whole-wrap">
-       <div class="dyn-list">
-        <div class="dyn-items" role="list">
-         <div class="dyn-item" role="listitem">
-          <div class="blog-wrap" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-           <a class="blog-image-wrap inline-block" href="#">
-            <img alt="Shipyard" sizes="(max-width: 479px) 100vw, (max-width: 991px) 95vw, 455px" src="../assets/images/news_photo1.svg" width="976"/>
-            <div class="blog-image-overlay" style="display: none; opacity: 0;">
-             <p class="blog-read-more-link">
-              Read More
-             </p>
-            </div>
-           </a>
-           <div class="blog-date-wrap">
-            <img alt="Calendar Icon" src="../assets/icons/calendar_icon.svg"/>
-            <div>
-             <p class="blog-date">
-              24
-             </p>
-             <p class="mg-0">
-              January
-             </p>
-            </div>
-           </div>
-           <div class="blog-line">
-           </div>
-           <div class="blog-content-wrap">
-            <a class="blog-title" href="#">
-             Inland freight a worthy solution for your business
-            </a>
-            <div class="blog-summary-wrap">
-             <div class="blog-listing richtext">
-              <p>
-               We are dedicated in creating added value for our customers by implementing modern technology in our work.
-              </p>
-              <ul role="list">
-               <li>
-                Urgent transport solutions
-               </li>
-               <li>
-                Sea Transport Services
-               </li>
-               <li>
-                Reliable &amp; experienced staffs
-               </li>
-               <li>
-                Local Shipping Services
-               </li>
-              </ul>
-             </div>
-            </div>
-           </div>
-          </div>
-          <div class="blog-border-line">
-          </div>
-         </div>
-         <div class="dyn-item" role="listitem">
-          <div class="blog-wrap" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-           <a class="blog-image-wrap inline-block" href="#">
-            <img alt="Shipyard" sizes="(max-width: 479px) 100vw, (max-width: 991px) 95vw, 455px" src="../assets/images/news_photo2.svg" width="976"/>
-            <div class="blog-image-overlay" style="display: none; opacity: 0;">
-             <p class="blog-read-more-link">
-              Read More
-             </p>
-            </div>
-           </a>
-           <div class="blog-date-wrap">
-            <img alt="Calendar Icon" src="../assets/icons/calendar_icon.svg"/>
-            <div>
-             <p class="blog-date">
-              24
-             </p>
-             <p class="mg-0">
-              January
-             </p>
-            </div>
-           </div>
-           <div class="blog-line">
-           </div>
-           <div class="blog-content-wrap">
-            <a class="blog-title" href="#">
-             How technology can help redraw the supply chain map
-            </a>
-            <div class="blog-summary-wrap">
-             <div class="blog-listing richtext">
-              <p>
-               Following the quality of our service thus having gained trust of our many clients.
-              </p>
-              <ul role="list">
-               <li>
-                Urgent transport solutions
-               </li>
-               <li>
-                Warehousing Services
-               </li>
-               <li>
-                Top quality services with reasonable price
-               </li>
-               <li>
-                Reliable &amp; experienced staffs
-               </li>
-              </ul>
-             </div>
-            </div>
-           </div>
-          </div>
-          <div class="blog-border-line">
-          </div>
-         </div>
-         <div class="dyn-item" role="listitem">
-          <div class="blog-wrap" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-           <a class="blog-image-wrap inline-block" href="#">
-            <img alt="Shipyard" sizes="(max-width: 479px) 100vw, (max-width: 991px) 95vw, 455px" src="../assets/images/news_photo3.svgF" width="976"/>
-            <div class="blog-image-overlay" style="display: none; opacity: 0;">
-             <p class="blog-read-more-link">
-              Read More
-             </p>
-            </div>
-           </a>
-           <div class="blog-date-wrap">
-            <img alt="Calendar Icon" src="../assets/icons/calendar_icon.svg"/>
-            <div>
-             <p class="blog-date">
-              24
-             </p>
-             <p class="mg-0">
-              January
-             </p>
-            </div>
-           </div>
-           <div class="blog-line">
-           </div>
-           <div class="blog-content-wrap">
-            <a class="blog-title" href="#">
-             Five things you should have ready for your broker
-            </a>
-            <div class="blog-summary-wrap">
-             <div class="blog-listing richtext">
-              <p>
-               Our global logistics expertise, advanced supply chain technology &amp; customized
-              </p>
-              <p>
-               Logistics solutions will help you analyze, develop and implement successful supply chain management strategies.
-              </p>
-             </div>
-            </div>
-           </div>
-          </div>
-          <div class="blog-border-line">
-          </div>
-         </div>
-        </div>
-       </div>
-      </div>
-     </div>
-     <div class="mg-top-40">
-      <div class="align-center">
-       <a class="dark-overlay-button inline-block" href="#">
         <div>
-         More Blog
+         <div class="features-title-wrap">
+          <div class="subtitle-wrap">
+           <p class="subtitle">
+            Why Choose
+           </p>
+           <div class="subtitle-border">
+           </div>
+          </div>
+          <h2 class="section-title">
+           We create an opportunity to reach business potential
+          </h2>
+          <div class="mg-top-20">
+           <p>
+            Logistics is a distinguished supply chain management firm which provides comprehensive solutions for warehousing, transportation and a host of logistics services.
+           </p>
+          </div>
+         </div>
+         <div class="features-icon-list">
+          <div class="features-points-wrap" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+           <div class="icon-wrap">
+            <img alt="Icon" src="../assets/icons/yellow_box_icon.svg"/>
+           </div>
+           <h3 class="features-point">
+            Safe Package
+           </h3>
+          </div>
+          <div class="features-points-wrap" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+           <div class="icon-wrap">
+            <img alt="Icon" src="../assets/icons/yellow_ship_everywhere_icon.svg"/>
+           </div>
+           <h3 class="features-point">
+            Ship Everywere
+           </h3>
+          </div>
+          <div class="features-points-wrap" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+           <div class="icon-wrap">
+            <img alt="Icon" src="../assets/icons/yellow_global_tracking_icon.svg"/>
+           </div>
+           <h3 class="features-point">
+            Global Tracking
+           </h3>
+          </div>
+          <div class="features-points-wrap" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+           <div class="icon-wrap">
+            <img alt="Icon" src="../assets/icons/yellow_support_icon.svg"/>
+           </div>
+           <h3 class="features-point">
+            24/7 Support
+           </h3>
+          </div>
+          <div class="features-points-wrap" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+           <div class="icon-wrap">
+            <img alt="Icon" src="../assets/icons/yellow_time_icon.svg"/>
+           </div>
+           <h3 class="features-point">
+            In Time Delivery
+           </h3>
+          </div>
+          <div class="features-points-wrap" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+           <div class="icon-wrap">
+            <img alt="Icon" src="../assets/icons/yellow_pricing_icon.svg"/>
+           </div>
+           <h3 class="features-point">
+            Transparent Pricing
+           </h3>
+          </div>
+         </div>
         </div>
-        <div class="dark-button-hover" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-        </div>
-       </a>
+       </div>
       </div>
      </div>
-    </div>
-   </div>
- </body>
-</html>
+    </section>
+    <section class="home-team-section">
+     <div class="container">
+      <div class="align-center">
+       <div class="subtitle-wrap">
+        <p class="subtitle">
+         The Transporters
+        </p>
+        <div class="subtitle-border">
+        </div>
+       </div>
+       <h2 class="section-title">
+        Meet Expert Team
+       </h2>
+      </div>
+      <div class="mg-top-40">
+       <div class="layout-grid home-team-grid">
+        <div class="team-card" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+         <img alt="Team Image" src="../assets/images/expert_team_member_1.jpg" width="662"/>
+         <div class="team-content-wrap">
+          <h3 class="author-name text-white">
+           Helen Wilmore
+          </h3>
+          <p class="team-member-designation">
+           Warehouse Head
+          </p>
+         </div>
+         <div class="social-media-wrap" style="opacity: 1;">
+          <a class="team-social-link inline-block" href="http://www.twitter.com">
+           <img alt="Twitter Icon" class="social-icon" src="../assets/icons/black_twitter_icon.svg"/>
+          </a>
+          <a class="team-social-link inline-block" href="http://www.facebook.com">
+           <img alt="Facebook Icon" class="social-icon" src="../assets/icons/black_facebook_icon.svg"/>
+          </a>
+          <a class="team-social-link inline-block" href="http://www.instagram.com">
+           <img alt="Instagram Icon" class="social-icon" src="../assets/icons/black_instagram_icon.svg"/>
+          </a>
+         </div>
+        </div>
+        <div class="team-card" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+         <img alt="Team Image" src="../assets/images/expert_team_member_2.svg" width="595"/>
+         <div class="team-content-wrap">
+          <h3 class="author-name text-white">
+           Anthony Wills
+          </h3>
+          <p class="team-member-designation">
+           Transport Manager
+          </p>
+         </div>
+         <div class="social-media-wrap" style="opacity: 1;">
+          <a class="team-social-link inline-block" href="http://www.linkedin.com">
+           <img alt="LinkedIn Icon" class="social-icon" src="../assets/icons/black_linkedin_icon.svg"/>
+          </a>
+          <a class="team-social-link inline-block" href="http://www.twitter.com">
+           <img alt="Twitter Icon" class="social-icon" src="../assets/icons/black_twitter_icon.svg"/>
+          </a>
+          <a class="team-social-link inline-block" href="http://www.facebook.com">
+           <img alt="Facebook Icon" class="social-icon" src="../assets/icons/black_facebook_icon.svg"/>
+          </a>
+          <a class="team-social-link inline-block" href="http://www.instagram.com">
+           <img alt="Instagram Icon" class="social-icon" src="../assets/icons/black_instagram_icon.svg"/>
+          </a>
+         </div>
+        </div>
+        <div class="team-card" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+         <img alt="Team Image" src="../assets/images/expert_team_member_3.svg" width="724"/>
+         <div class="team-content-wrap">
+          <h3 class="author-name text-white">
+           Kate Winslot
+          </h3>
+          <p class="team-member-designation">
+           Cargo head
+          </p>
+         </div>
+         <div class="social-media-wrap" style="opacity: 1;">
+          <a class="team-social-link inline-block" href="http://www.facebook.com">
+           <img alt="Facebook Icon" class="social-icon" src="../assets/icons/black_facebook_icon.svg"/>
+          </a>
+          <a class="team-social-link inline-block" href="http://www.instagram.com">
+           <img alt="Instagram Icon" class="social-icon" src="../assets/icons/black_instagram_icon.svg"/>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="contact-section">
+     <div class="container">
+      <div class="layout-grid contact-grid">
+       <div>
+        <div class="subtitle-wrap-transparent">
+         <p class="subtitle-dark">
+          Contact
+         </p>
+         <div class="subtitle-border">
+         </div>
+        </div>
+        <h2 class="section-title text-white">
+         Get in touch with us
+        </h2>
+        <p class="text-white">
+         We appreciate your interest please complete the form below and we will contact you immediately to discuss your warehousing and distribution, air, ocean freight or any other logistics needs.
+        </p>
+        <div class="home-contact-link-wrap" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+         <div class="header-link-card">
+          <div class="header-icon-wrap">
+           <img alt="Mail Icon" src="../assets/icons/blue_email_icon.svg"/>
+          </div>
+          <div>
+           <p class="header-link-text">
+            Email
+           </p>
+           <a class="header-link-text hover-yellow" href="mailto:contact@transitflow.com">
+            contact@transitflow.com
+           </a>
+          </div>
+         </div>
+         <div class="header-link-card">
+          <div class="header-icon-wrap">
+           <img alt="Phone Icon" src="../assets/icons/blue_call_icon.svg"/>
+          </div>
+          <div>
+           <p class="header-link-text">
+            Call Us
+           </p>
+           <a class="header-link-text hover-yellow" href="tel:(00)123456789">
+            (00) 123 456 789
+           </a>
+          </div>
+         </div>
+         <div class="header-link-card">
+          <div class="header-icon-wrap">
+           <img alt="Clock Icon" src="../assets/icons/blue_time_icon.svg"/>
+          </div>
+          <div>
+           <p class="header-link-text">
+            Mon - Sat 9.00 - 18.00 Sunday Closed
+           </p>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div>
+        <div class="form">
+         <form class="contact-form" method="get" style="opacity: 1;">
+          <div class="contact-text-field-divider">
+           <input class="contact-input-type input" maxlength="256" name="name" placeholder="Your Name*" type="text"/>
+           <input class="contact-input-type input" maxlength="256" name="email" placeholder="Your Email*" required="" type="email"/>
+          </div>
+          <div class="contact-text-field-divider">
+           <input class="contact-input-type input" maxlength="256" name="field" placeholder="Phone Number*" required="" type="text"/>
+           <input class="contact-input-type input" maxlength="256" name="field-2" placeholder="City*" required="" type="text"/>
+          </div>
+          <textarea class="contact-text-area input" maxlength="5000" name="field-3" placeholder="Your Message"></textarea>
+          <input class="primary-button button" type="submit" value="Submit Message"/>
+         </form>
+         <div class="success-message form-done" tabindex="-1">
+          <div>
+           Thank you! Your submission has been received!
+          </div>
+         </div>
+         <div class="error-message form-fail" tabindex="-1">
+          <div>
+           Oops! Something went wrong while submitting the form.
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="layout-grid partners-grid">
+       <div class="partners-card" style="opacity: 1;">
+        <img alt="Partners Logo" class="partners-logo" src="../assets/images/studio_green_logo.svg"/>
+        <img alt="Partner Background Image" class="partner-background-image" src="../assets/images/studio_green_background.svg" style="opacity: 0;"/>
+        <div class="partners-overlay" style="opacity: 0;">
+        </div>
+       </div>
+       <div class="partners-card" style="opacity: 1;">
+        <img alt="Partners Logo" class="partners-logo" src="../assets/images/norto_logo.svg">
+        <img alt="Partner Background Image" class="partner-background-image" src="../assets/images/norto_background.svg" style="opacity: 0;" width="300"/>
+        <div class="partners-overlay" style="opacity: 0;">
+        </div>
+       </div>
+       <div class="partners-card" style="opacity: 1;">
+        <img alt="Partners Logo" class="partners-logo" src="../assets/images/points_one_logo.svg"/>
+        <img alt="Partner Background Image" class="partner-background-image" src="../assets/images/points_one_background.svg" style="opacity: 0;" width="300"/>
+        <div class="partners-overlay" style="opacity: 0;">
+        </div>
+       </div>
+       <div class="partners-card" style="opacity: 1;">
+        <img alt="Partners Logo" class="partners-logo" src="../assets/images/sand_box_logo.svg"/>
+        <img alt="Partner Background Image" class="partner-background-image" src="../assets/images/sand_box_background.svg" style="opacity: 0;" width="300"/>
+        <div class="partners-overlay" style="opacity: 0;">
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="blog-section">
+     <div class="container-small container">
+      <div class="align-center">
+       <div class="subtitle-wrap">
+        <p class="subtitle">
+         Our Blog
+        </p>
+        <div class="subtitle-border">
+        </div>
+       </div>
+       <h2 class="section-title">
+        Our Latest News
+       </h2>
+      </div>
+      <div class="mg-top-40">
+       <div class="blog-whole-wrap">
+        <div class="dyn-list">
+         <div class="dyn-items">
+          <div class="dyn-item">
+           <div class="blog-wrap" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+            <a class="blog-image-wrap inline-block" href="/post/inland-freight-a-worthy-solution-for-your-business">
+             <img alt="Shipyard" src="../assets/images/news_photo1.svg" width="976"/>
+             <div class="blog-image-overlay" style="display: none; opacity: 0;">
+              <p class="blog-read-more-link">
+               Read More
+              </p>
+             </div>
+            </a>
+            <div class="blog-date-wrap">
+             <img alt="Calendar Icon" src="../assets/icons/calendar_icon.svg"/>
+             <div>
+              <p class="blog-date">
+               24
+              </p>
+              <p class="mg-0">
+               January
+              </p>
+             </div>
+            </div>
+            <div class="blog-line">
+            </div>
+            <div class="blog-content-wrap">
+             <a class="blog-title" href="/post/inland-freight-a-worthy-solution-for-your-business">
+              Inland freight a worthy solution for your business
+             </a>
+             <div class="blog-summary-wrap">
+              <div class="blog-listing richtext">
+               <p>
+                We are dedicated in creating added value for our customers by implementing modern technology in our work.
+               </p>
+               <ul>
+                <li>
+                 Urgent transport solutions
+                </li>
+                <li>
+                 Sea Transport Services
+                </li>
+                <li>
+                 Reliable & experienced staffs
+                </li>
+                <li>
+                 Local Shipping Services
+                </li>
+               </ul>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="blog-border-line">
+           </div>
+          </div>
+          <div class="dyn-item">
+           <div class="blog-wrap" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+            <a class="blog-image-wrap inline-block" href="/post/how-technology-can-help-redraw-the-supply-chain-map">
+             <img alt="Shipyard" src="../assets/images/news_photo2.svg" width="976"/>
+             <div class="blog-image-overlay" style="display: none; opacity: 0;">
+              <p class="blog-read-more-link">
+               Read More
+              </p>
+             </div>
+            </a>
+            <div class="blog-date-wrap">
+             <img alt="Calendar Icon" src="../assets/icons/calendar_icon.svg"/>
+             <div>
+              <p class="blog-date">
+               24
+              </p>
+              <p class="mg-0">
+               January
+              </p>
+             </div>
+            </div>
+            <div class="blog-line">
+            </div>
+            <div class="blog-content-wrap">
+             <a class="blog-title" href="/post/how-technology-can-help-redraw-the-supply-chain-map">
+              How technology can help redraw the supply chain map
+             </a>
+             <div class="blog-summary-wrap">
+              <div class="blog-listing richtext">
+               <p>
+                Following the quality of our service thus having gained trust of our many clients.
+               </p>
+               <ul>
+                <li>
+                 Urgent transport solutions
+                </li>
+                <li>
+                 Warehousing Services
+                </li>
+                <li>
+                 Top quality services with reasonable price
+                </li>
+                <li>
+                 Reliable & experienced staffs
+                </li>
+               </ul>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="blog-border-line">
+           </div>
+          </div>
+          <div class="dyn-item">
+           <div class="blog-wrap" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+            <a class="blog-image-wrap inline-block" href="/post/five-things-you-should-have-ready-for-your-broker">
+             <img alt="Shipyard" src="../assets/images/news_photo3.svg" width="976"/>
+             <div class="blog-image-overlay" style="display: none; opacity: 0;">
+              <p class="blog-read-more-link">
+               Read More
+              </p>
+             </div>
+            </a>
+            <div class="blog-date-wrap">
+             <img alt="Calendar Icon" src="../assets/icons/calendar_icon.svg"/>
+             <div>
+              <p class="blog-date">
+               24
+              </p>
+              <p class="mg-0">
+               January
+              </p>
+             </div>
+            </div>
+            <div class="blog-line">
+            </div>
+            <div class="blog-content-wrap">
+             <a class="blog-title" href="/post/five-things-you-should-have-ready-for-your-broker">
+              Five things you should have ready for your broker
+             </a>
+             <div class="blog-summary-wrap">
+              <div class="blog-listing richtext">
+               <p>
+                Our global logistics expertise, advanced supply chain technology & customized
+               </p>
+               <p>
+                Logistics solutions will help you analyze, develop and implement successful supply chain management strategies.
+               </p>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="blog-border-line">
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="mg-top-40">
+       <div class="align-center">
+        <a class="dark-overlay-button inline-block" href="/blog">
+         <div>
+          More Blog
+         </div>
+         <div class="dark-button-hover" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+         </div>
+        </a>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="image-section">
+    </section>
+    <footer id="footer"></footer>
+    <script src="../js/Preloader.js"></script>
+    <script src="../js/LayoutLoader.js"></script>
+    <script src="../js/BurgerMenu.js"></script>
+</body>
+
