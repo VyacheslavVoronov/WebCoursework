@@ -1,0 +1,94 @@
+:root {
+    --title-color: #1c1f35;
+    --content-color: #333;
+    --secondary-color: #091242;
+    --primary-color: #ffbe34;
+    --background-color: #fff;
+    --border-color: #ccc;
+    --button-bg: #ffbe34;
+    --button-text: #23212a;
+    --link-hover: #ffbe34;
+    --banner-bg: #091242;
+    --banner-text: #fff;
+    --header-bg: #091242;
+    --nav-bg: #ddd;
+    --nav-text: #fff;
+    --form-bg: #fff;
+    --form-border: #ccc;
+    --error-bg: #ffdede;
+    --success-bg: #ddd;
+    --slider-bg: #ddd;
+    --dot-bg: rgba(255, 255, 255, 0.4);
+    --dot-active: #fff;
+    --arrow-color: #fff;
+    --card-bg: #f4f4f4;
+    --gradient-start: #ffb629;
+    --gradient-mid: #ffda56;
+    --gradient-end: #ffd7a6;
+    --dark-button-hover: #1f2a69;
+    --service-line: #d8d8d8;
+    --counter-wrap: #d4d4d4;
+    --contact-text-area-border: #4e5683;
+    --blog-whole-wrap: #d6d6d6;
+    --header-icon-wrap-bg: #111c55;
+    --header-icon-wrap: #273270;
+    --footer-text-color: #e8e8e8;
+    --page-link-color: #ffffff;
+    --team-content-wrap: #1c1f35;
+    --dropdown-list:#091242;
+  }
+  
+  body.dark-theme {
+    --title-color: #e8e8f0;
+    --content-color: #b0b3c4;
+    --secondary-color: #091242;
+    --primary-color: #ffbe34;
+    --background-color: #121212;
+    --border-color: #444;
+    --button-bg: #ffbe34;
+    --button-text: #23212a;
+    --link-hover: #ffbe34;
+    --banner-bg: #3a4d7b;
+    --banner-text: #fff;
+    --header-bg: #3a4d7b;
+    --nav-bg: #2a344f;
+    --nav-text: #e0e0e0;
+    --form-bg: #fff;
+    --form-border: #555;
+    --error-bg: #4a2c2c;
+    --success-bg: #2a3d2a;
+    --slider-bg: #2a2a2a;
+    --dot-bg: rgba(255, 255, 255, 0.2);
+    --dot-active: #ffbe34;
+    --arrow-color: #e0e0e0;
+    --card-bg: #1f1f1f;
+    --gradient-start: #ffb629;
+    --gradient-mid: #ffda56;
+    --gradient-end: #ffd7a6;
+    --dark-button-hover: #1f2a69;
+    --service-line: #666;
+    --counter-wrap: #333;
+    --contact-text-area-border: #6b7280;
+    --blog-whole-wrap: #2d2d2d;
+    --header-icon-wrap-bg: #1a2540;
+    --header-icon-wrap: #3a4d7b;
+    --footer-text-color: #b0b3c4;
+    --page-link-color: #a0a4b8;
+    --team-content-wrap:#1f1f1f;
+    --dropdown-list:#091242;
+}
+
+body.dark-theme .home-service-icon-wrap {
+    filter: brightness(0.8) contrast(1);
+    transition: filter 0.3s ease;
+}
+
+body.dark-theme .svg-icon {
+    filter: invert(100%);
+  }
+
+body.dark-theme img.social-icon,
+body.dark-theme img.testimonial-left-arrow,
+body.dark-theme img.testimonial-right-arrow{
+    filter: none;
+}   
