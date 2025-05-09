@@ -36,6 +36,8 @@
     --page-link-color: #ffffff;
     --team-content-wrap: #1c1f35;
     --dropdown-list:#091242;
+    --swiper-pagination:#1f2a69;
+    --swiper-slide-bg: rgb(0, 0, 0);
   }
   
   body.dark-theme {
@@ -76,6 +78,8 @@
     --page-link-color: #a0a4b8;
     --team-content-wrap:#1f1f1f;
     --dropdown-list:#091242;
+    --swiper-pagination: #ffffff;
+    --swiper-slide-bg: #fff;
 }
 
 body.dark-theme .home-service-icon-wrap {
