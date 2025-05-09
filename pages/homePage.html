@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="../css/HomePage.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="../css/swiper.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <script src="../js/LayoutLoader.js" defer></script>
     <script src="../js/Preloader.js" defer></script>
     <script src="../js/BurgerMenu.js" defer></script>
     <script src="../js/ThemeToggle.js" defer></script>
-    <script src="../js/Swiper.js" defer></script>
+    <script src="../js/Swiper.js" type="module" ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <title>
      TransitFlow
@@ -316,41 +317,127 @@
       </div>
      </div>
     </section>
-    <section>
-        <div class="swiper testimonial-swiper">
-            <div class="swiper-wrapper">
-                <!-- Слайд 1 -->
-                <div class="swiper-slide">
-                    <div class="slide-content">
-                        <h3>Slide 1 Title</h3>
-                        <p>This is the content of the first slide. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <img src="../assets/images/author_image.svg" alt="Slide 1 Image" />
-                    </div>
-                </div>
-                <!-- Слайд 2 -->
-                <div class="swiper-slide">
-                    <div class="slide-content">
-                        <h3>Slide 2 Title</h3>
-                        <p>This is the content of the second slide. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <img src="../assets/images/author_image.svg" alt="Slide 2 Image" />
-                    </div>
-                </div>
-                <!-- Слайд 3 -->
-                <div class="swiper-slide">
-                    <div class="slide-content">
-                        <h3>Slide 3 Title</h3>
-                        <p>This is the content of the third slide. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                        <img src="../assets/images/author_image.svg" alt="Slide 3 Image" />
-                    </div>
-                </div>
-            </div>
-            <!-- Навигационные стрелки -->
-            <div class="swiper-button-prev testimonial-left-arrow-wrap"></div>
-            <div class="swiper-button-next testimonial-right-arrow-wrap"></div>
-            <!-- Пагинация -->
-            <div class="swiper-pagination"></div>
-        </div>
-    </section>
+    <section class="comments-section">
+      <h3>Customer Reviews</h3>
+      <h2>What Our Customers Say</h2>
+      <div class="comments-slider swiper">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <div class="comments-slide-elements">
+                      <div class="comments-slide-elements-person">
+                          <img src="../assets/images/Kathleen_Smith_photo.svg" alt="commentator">
+                          <div class="comments-slide-text">
+                              <span class="comments-slide-text-name">Lio Jessica</span>
+                              <span class="comments-slide-text-country">United Kingdom</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="comments-slide-comment">
+                      <p class="comment-text">“The warehousing solutions provided by TransitFlow are efficient and secure. Highly recommend!”</p>
+                      <div class="stars-container">
+                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="comments-slide-elements">
+                      <div class="comments-slide-elements-person">
+                          <img src="../assets/images/Kathleen_Smith_photo.svg" alt="commentator">
+                          <div class="comments-slide-text">
+                              <span class="comments-slide-text-name">Michael Chen</span>
+                              <span class="comments-slide-text-country">Singapore</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="comments-slide-comment">
+                      <p class="comment-text">“TransitFlow transformed our supply chain management! Their real-time tracking system allowed us to optimize delivery routes and reduce costs significantly. The team was incredibly supportive during the integration process, ensuring everything went smoothly.”</p>
+                      <div class="stars-container">
+                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="comments-slide-elements">
+                      <div class="comments-slide-elements-person">
+                          <img src="../assets/images/Kathleen_Smith_photo.svg" alt="commentator">
+                          <div class="comments-slide-text">
+                              <span class="comments-slide-text-name">Sofia Rodriguez</span>
+                              <span class="comments-slide-text-country">Spain</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="comments-slide-comment">
+                      <p class="comment-text">“I was impressed by how quickly TransitFlow handled our last-minute shipment needs. Their warehousing facilities are top-notch, and the staff is always ready to assist. They’ve become our go-to logistics partner!”</p>
+                      <div class="stars-container">
+                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="comments-slide-elements">
+                      <div class="comments-slide-elements-person">
+                          <img src="../assets/images/Kathleen_Smith_photo.svg" alt="commentator">
+                          <div class="comments-slide-text">
+                              <span class="comments-slide-text-name">Ahmed Khalid</span>
+                              <span class="comments-slide-text-country">UAE</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="comments-slide-comment">
+                      <p class="comment-text">“We’ve been working with TransitFlow for over a year, and their consistency is unmatched. From inventory management to timely deliveries, they’ve helped us streamline our operations across multiple regions. The only issue was a slight delay during peak season, but their team resolved it quickly.”</p>
+                      <div class="stars-container">
+                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="comments-slide-elements">
+                      <div class="comments-slide-elements-person">
+                          <img src="../assets/images/Kathleen_Smith_photo.svg" alt="commentator">
+                          <div class="comments-slide-text">
+                              <span class="comments-slide-text-name">Emily Johnson</span>
+                              <span class="comments-slide-text-country">USA</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="comments-slide-comment">
+                      <p class="comment-text">“TransitFlow’s logistics solutions have been a game-changer for our e-commerce business. Their ability to handle large volumes of orders during the holiday season was impressive. The warehousing system is so organized that we never faced any stock issues. I also appreciated their detailed reports, which helped us make better decisions for our supply chain strategy. Highly recommend their services to anyone looking to improve their logistics operations!”</p>
+                      <div class="stars-container">
+                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Перемещённый блок навигации -->
+          <div class="swiper-navigation">
+              <div class="swiper-buttons">
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-button-next"></div>
+              </div>
+          </div>
+      </div>
+  </section>
     <section class="features-section">
      <div class="features-bg">
       <div class="features-dark-bg">
@@ -825,3 +912,4 @@
     </section>
     <footer id="footer"></footer>
 </body>
+
