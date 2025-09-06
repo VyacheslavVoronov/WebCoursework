@@ -3,43 +3,33 @@
         <div class="container">
             <div class="header-link-wrap">
                 <a class="logo-wrap inline-block current" href="/">
-                    <img alt="Logistics Logo" src="../assets/icons/logo.svg"/>
+                    <img alt="Логотип TransitFlow" src="../assets/icons/logo.svg"/>
                 </a>
                 <div class="header-link-block">
                     <div class="header-link-card">
                         <div class="header-icon-wrap">
-                            <img alt="Clock Icon" src="../assets/icons/blue_time_icon.svg"/>
+                            <img alt="Иконка часов" src="../assets/icons/blue_time_icon.svg"/>
                         </div>
                         <div>
-                            <p class="header-link-text">
-                                Mon - Sat 9.00 - 18.00 Sunday Closed
-                            </p>
+                            <p class="header-link-text" data-translate-key="mon_sat">Пн - Сб 9:00 - 18:00, Вс - выходной</p>
                         </div>
                     </div>
                     <div class="header-link-card">
                         <div class="header-icon-wrap">
-                            <img alt="Mail Icon" src="../assets/icons/blue_email_icon.svg"/>
+                            <img alt="Иконка почты" src="../assets/icons/blue_email_icon.svg"/>
                         </div>
                         <div>
-                            <p class="header-link-text">
-                                Email
-                            </p>
-                            <a class="header-link-text hover-yellow" href="mailto:contact@transitflow.com">
-                                contact@transitflow.com
-                            </a>
+                            <p class="header-link-text" data-translate-key="email">Email</p>
+                            <a class="header-link-text" href="mailto:contact@transitflow.com">contact@transitflow.com</a>
                         </div>
                     </div>
                     <div class="header-link-card">
                         <div class="header-icon-wrap">
-                            <img alt="Phone Icon" src="../assets/icons/blue_call_icon.svg"/>
+                            <img alt="Иконка телефона" src="../assets/icons/blue_call_icon.svg"/>
                         </div>
                         <div>
-                            <p class="header-link-text">
-                                Call Us
-                            </p>
-                            <a class="header-link-text hover-yellow" href="tel:(00)122456789">
-                                (00) 122 456 789
-                            </a>
+                            <p class="header-link-text" data-translate-key="call_us">Позвоните нам</p>
+                            <a class="header-link-text" href="tel:(00)122456789" data-translate-key="phone_number">(00) 122 456 789</a>
                         </div>
                     </div>
                 </div>
@@ -49,56 +39,36 @@
     <div class="navigation-bar nav" data-collapse="medium">
         <div class="nav-bar-container">
             <nav class="navigation-menu nav-menu">
-                <a class="navigation-link nav-link current" href="../pages/HomePage.html">
-                    Home
-                </a>
-                <div class="nav-menu-line">
+                <a class="navigation-link nav-link current" href="../pages/HomePage.html" data-translate-key="home">Главная</a>
+                <div class="nav-menu-line"></div>
+                <div class="auth-dependent-block">
+                    <a id="login-link" class="navigation-link nav-link" href="../pages/LogIn.html" data-translate-key="login">Войти</a>
+                    <a id="cart-link" class="navigation-link nav-link" href="../pages/Basket.html" style="display: none" data-translate-key="cart">Корзина</a>
                 </div>
-                <a class="navigation-link nav-link" href="/about-us">
-                    About Us
-                </a>
-                <div class="nav-menu-line">
-                </div>
+                <div class="nav-menu-line"></div>
                 <div class="nav-dropdown dropdown">
                     <div class="navigation-link dropdown dropdown-toggle" tabindex="0">
-                        <div>Pages</div>
+                        <div data-translate-key="pages">Страницы</div>
                         <div class="navigation-icon icon-dropdown-toggle"></div>
                     </div>
                     <nav class="nav-dropdown-list dropdown-list">
-                        <a class="nav-dropdown-link dropdown-link" href="/service" tabindex="0">
-                            Services
-                        </a>
-                        <a class="nav-dropdown-link dropdown-link" href="/service-single" tabindex="0">
-                            Service Single
-                        </a>
-                        <a class="nav-dropdown-link dropdown-link" href="/our-team" tabindex="0">
-                            Our Team
-                        </a>
-                        <a class="nav-dropdown-link dropdown-link" href="/pricing" tabindex="0">
-                            Pricing
-                        </a>
-                        <a class="nav-dropdown-link dropdown-link" href="/blog" tabindex="0">
-                            Blog
-                        </a>
+                        <a class="nav-dropdown-link dropdown-link" href="../pages/Catalog.html" tabindex="0" data-translate-key="catalog">Каталог</a>
+                        <a class="nav-dropdown-link dropdown-link" href="../pages/Favorites.html" tabindex="0" data-translate-key="favorites">Избранное</a>
                     </nav>
                 </div>
-                <div class="nav-menu-line">
-                </div>
-                <a class="navigation-link nav-link" href="/contact-us">
-                    Contact
-                </a>
-                <div class="nav-menu-line">
-                </div>
+                <div class="nav-menu-line"></div>
+                <a class="navigation-link nav-link" href="../pages/AboutUs.html" data-translate-key="about_us">О нас</a>
+                <div class="nav-menu-line"></div>
                 <div class="nav-dropdown dropdown">
                     <div class="navigation-link dropdown dropdown-toggle" tabindex="0">
-                        <div>Settings</div>
+                        <div data-translate-key="settings">Настройки</div>
                         <div class="navigation-icon icon-dropdown-toggle"></div>
                     </div>
                     <nav class="nav-dropdown-list dropdown-list">
                         <div class="settings-option">
-                            <img alt="Language Icon" class="settings-icon" src="../assets/icons/language.png" style="filter: invert(100%);"/>
+                            <img alt="Иконка языка" class="settings-icon" src="../assets/icons/language.png" style="filter: invert(100%);"/>
                             <label class="settings-label">
-                                Language
+                                <span data-translate-key="language">Язык</span>
                                 <div class="language-toggle">
                                     <input type="radio" name="language" id="lang-ru" value="ru" checked>
                                     <label for="lang-ru">RU</label>
@@ -108,57 +78,71 @@
                             </label>
                         </div>
                         <div class="settings-option">
-                            <img alt="Theme Icon" class="settings-icon" src="../assets/icons/theme.png" style="filter: invert(100%);"/>
+                            <img alt="Иконка темы" class="settings-icon" src="../assets/icons/theme.png" style="filter: invert(100%);"/>
                             <label class="settings-label">
-                                Theme
+                                <span data-translate-key="theme">Тема</span>
                                 <input type="checkbox" class="toggle-switch" id="theme-mode">
                                 <span class="toggle-slider"></span>
                             </label>
                         </div>
                     </nav>
                 </div>
-                <div class="nav-menu-line">
-                </div>
-                <div class="accessibility-toggle">
-                    <img alt="Accessibility Icon" class="accessibility-icon" src="../assets/icons/eyes.png" style="filter: invert(100%); scale: 1.5;" />
-                    <label class="accessibility-label">
-                        <input type="checkbox" class="toggle-switch" id="accessibility-mode">
-                        <span class="toggle-slider"></span>
-                    </label>
-                </div>
+                <div class="nav-menu-line"></div>
             </nav>
             <div class="navigation-button-wrap">
                 <div class="nav-social-media-wrap">
+                    <a class="accessibility-icon-toggle social-media-link inline-block" title="Режим для слабовидящих">
+                        <img src="../assets/icons/eyes.png" alt="Accessibility Mode" style="filter: invert(100%);">
+                    </а>
+                    <a id="profile-link" class="social-media-link inline-block" href="../pages/Profile.html" style="display: none;">
+                        <img alt="Иконка профиля" class="social-icon" src="../assets/icons/white_profile_icon.svg"/>
+                    </a>
                     <a class="social-media-link inline-block" href="http://www.instagram.com">
-                        <img alt="Instagram Icon" class="social-icon" src="../assets/icons/white_instagram_icon.svg"/>
+                        <img alt="Иконка Instagram" class="social-icon" src="../assets/icons/white_instagram_icon.svg"/>
                     </a>
                     <a class="social-media-link inline-block" href="http://www.facebook.com">
-                        <img alt="Facebook Icon" class="social-icon" src="../assets/icons/white_facebook_icon.svg"/>
+                        <img alt="Иконка Facebook" class="social-icon" src="../assets/icons/white_facebook_icon.svg"/>
                     </a>
                     <a class="social-media-link inline-block" href="http://www.twitter.com">
                         <img alt="Twitter Icon" class="social-icon" src="../assets/icons/white_twitter_icon.svg"/>
                     </a>
                     <a class="social-media-link inline-block" href="http://www.linkedin.com">
-                        <img alt="LinkedIn Icon" class="social-icon" src="../assets/icons/white_linkedin_icon.svg"/>
+                        <img alt="Иконка LinkedIn" class="social-icon" src="../assets/icons/white_linkedin_icon.svg"/>
                     </a>
                 </div>
-                <a class="navigation-button button" href="/contact-us">
-                    Request Quote
-                </a>
             </div>
-            <div aria-label="menu" class="nav-menu-button nav-button" tabindex="0">
-                <div class="icon-nav-menu">
-                </div>
+            <div aria-label="Меню" class="nav-menu-button nav-button" tabindex="0">
+                <div class="icon-nav-menu"></div>
             </div>
         </div>
         <div class="nav-overlay"></div>
     </div>
-</div>  
+</div>
+
+<div id="accessibility-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000; justify-content: center; align-items: center;">
+    <div style="background: #fff; padding: 20px; border-radius: 8px; max-width: 500px; width: 90%;">
+        <h2 data-translate-key="accessibility_settings">Настройки для слабовидящих</h2>
+        <div class="font-size-buttons">
+            <button data-font-size="small" data-translate-key="small_font">Маленький шрифт</button>
+            <button data-font-size="medium" class="active" data-translate-key="medium_font">Средний шрифт</button>
+            <button data-font-size="large" data-translate-key="large_font">Большой шрифт</button>
+        </div>
+        <div class="color-scheme-buttons">
+            <button data-scheme="white-black" class="active" data-translate-key="white_black_scheme">Белый фон, черный текст</button>
+            <button data-scheme="dark-white" data-translate-key="dark_white_scheme">Темный фон, белый текст</button>
+            <button data-scheme="dark-green" data-translate-key="dark_green_scheme">Темный фон, зеленый текст</button>
+            <button data-scheme="beige-brown" data-translate-key="beige_brown_scheme">Бежевый фон, коричневый текст</button>
+            <button data-scheme="blue-darkblue" data-translate-key="blue_darkblue_scheme">Синий фон, темно-синий текст</button>
+        </div>
+        <button id="toggle-images" data-translate-key="toggle_images">Переключить изображения</button>
+        <button id="reset-accessibility" data-translate-key="reset_settings">Сбросить настройки</button>
+        <button id="close-accessibility-modal" data-translate-key="close">Закрыть</button>
+    </div>
+</div>
 
 <div id="footer-content">
     <footer class="footer-section">
-        <div class="footer-shade-bg">
-        </div>
+        <div class="footer-shade-bg"></div>
         <div class="container">
             <div class="layout-grid footer-grid">
                 <div class="footer-content-wrap">
@@ -166,7 +150,7 @@
                         <img alt="Logistics Logo" src="../assets/icons/logo.svg"/>
                     </a>
                     <div class="footer-content-block">
-                        <p class="footer-text">
+                        <p class="footer-text" data-translate-key="footer_mission">
                             To be the industry leader, globally recognized for effective & efficient solutions. To provide innovative solutions delivering quality, excellence and speed.
                         </p>
                         <div class="footer-contact-link-wrap">
@@ -175,12 +159,8 @@
                                     <img alt="Mail Icon" src="../assets/icons/blue_email_icon.svg"/>
                                 </div>
                                 <div>
-                                    <p class="header-link-text">
-                                        Email
-                                    </p>
-                                    <a class="header-link-text hover-yellow" href="mailto:contact@transitflow.com">
-                                        contact@transitflow.com
-                                    </a>
+                                    <p class="header-link-text" data-translate-key="email">Email</p>
+                                    <a class="header-link-text hover-yellow" href="mailto:contact@transitflow.com">contact@transitflow.com</a>
                                 </div>
                             </div>
                             <div class="header-link-card">
@@ -188,12 +168,8 @@
                                     <img alt="Phone Icon" src="../assets/icons/blue_call_icon.svg"/>
                                 </div>
                                 <div>
-                                    <p class="header-link-text">
-                                        Call Us
-                                    </p>
-                                    <a class="header-link-text hover-yellow" href="tel:(00)123456789">
-                                        (00) 123 456 789
-                                    </a>
+                                    <p class="header-link-text" data-translate-key="call_us">Call Us</p>
+                                    <a class="header-link-text hover-yellow" href="tel:(00)123456789" data-translate-key="phone_number">(00) 123 456 789</a>
                                 </div>
                             </div>
                         </div>
@@ -201,63 +177,25 @@
                 </div>
                 <div class="footer-link-wrap">
                     <div class="footer-title-wrap">
-                        <h3 class="footer-title">
-                            Pages
-                        </h3>
+                        <h3 class="footer-title" data-translate-key="pages">Pages</h3>
                     </div>
                     <div class="footer-link-block">
-                        <a class="footer-link" href="/about-us">
-                            About Us
-                        </a>
-                        <a class="footer-link" href="/our-team">
-                            Our Team
-                        </a>
-                        <a class="footer-link" href="/our-project">
-                            Our Project
-                        </a>
-                        <a class="footer-link" href="/pricing">
-                            Pricing
-                        </a>
-                        <a class="footer-link" href="/contact-us">
-                            Contact
-                        </a>
-                    </div>
-                </div>
-                <div class="footer-link-wrap">
-                    <div class="footer-title-wrap">
-                        <h3 class="footer-title">
-                            Utility
-                        </h3>
-                    </div>
-                    <div class="footer-link-block">
-                        <a class="footer-link" href="/style-guide">
-                            Style Guide
-                        </a>
-                        <a class="footer-link" href="/changelog">
-                            Changelog
-                        </a>
-                        <a class="footer-link" href="/licenses">
-                            Licenses
-                        </a>
-                        <a class="footer-link" href="https://transitflow-template.webflow.io/401">
-                            Protected
-                        </a>
-                        <a class="footer-link" href="https://transitflow-template.webflow.io/404">
-                            Not Found
-                        </a>
+                        <a class="footer-link" href="../pages/AboutUs.html" data-translate-key="about_us">About Us</a>
+                        <a class="footer-link" href="../pages/HomePage.html" data-translate-key="home">Our Team</a>
+                        <a class="footer-link" href="../pages/LogIn.html" data-translate-key="login">LogIn</a>
+                        <a class="footer-link" href="../pages/404.html">404</a>
                     </div>
                 </div>
                 <div class="footer-form-wrapper">
                     <div class="footer-title-wrap subscribe-title">
-                        <h3 class="footer-title">
-                            Subscribe
-                        </h3>
+                        <h3 class="footer-title" data-translate-key="our_contacts">Связаться с нами</h3>
+                        <div class="footer-map-wrapper">
+                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af3739d3b04bcb35d66e13a8eb6441e47d93a35b08aafe310d2acb8e76365e660&source=constructor" width="500" height="400" frameborder="0"></iframe>
+                        </div>
                     </div>
                     <div class="footer-form-block form">
                         <form class="footer-form-wrap" method="get">
-                            <input class="footer-text-field input" maxlength="256" name="Footer-Email" placeholder="Email here*" required="" type="email"/>
                             <div class="footer-social-wrap">
-                                <input class="primary-button button" type="submit" value="Send Now"/>
                                 <div class="footer-social-media-wrap">
                                     <a class="social-media-link inline-block" href="http://www.linkedin.com">
                                         <img alt="LinkedIn Icon" class="social-icon" src="../assets/icons/white_linkedin_icon.svg"/>
@@ -271,16 +209,6 @@
                                 </div>
                             </div>
                         </form>
-                        <div class="success-message form-done" tabindex="-1">
-                            <div>
-                                Thank you! Your submission has been received!
-                            </div>
-                        </div>
-                        <div class="error-message form-fail" tabindex="-1">
-                            <div>
-                                Oops! Something went wrong while submitting the form.
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -288,31 +216,12 @@
         <div class="copyright-block">
             <div class="container">
                 <div class="copyright-wrap">
-                    <p class="copyright-text">
+                    <p class="copyright-text" data-translate-key="copyright">
                         Copyright © TransitFlow | Designed by
-                        <a class="copyright-link" href="https://www.victorflow.com/">
-                            VictorFlow
-                        </a>
+                        <a class="copyright-link" href="https://www.victorflow.com/">VictorFlow</a>
                         - Powered by
-                        <a class="copyright-link" href="https://webflow.com/">
-                            Webflow
-                        </a>
-                        .
+                        <a class="copyright-link" href="https://webflow.com/">Webflow</a>
                     </p>
-                    <div class="page-link-wrap">
-                        <a class="page-link" href="/style-guide">
-                            Style Guide
-                        </a>
-                        <a class="page-link" href="/licenses">
-                            Licenses
-                        </a>
-                        <a class="page-link" href="/changelog">
-                            Changelog
-                        </a>
-                        <a class="page-link" href="https://transitflow-template.webflow.io/401">
-                            Password
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
