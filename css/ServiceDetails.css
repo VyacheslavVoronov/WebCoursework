@@ -1,0 +1,272 @@
+
+.service-details-section {
+    padding: 40px 0;
+    background-color: var(--background-color);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.service-details-wrapper {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--card-bg);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+}
+
+p {
+    color: white; 
+}
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #f59e0b;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #d97706;
+}
+
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    max-width: 100%;
+}
+
+
+.service-image-container {
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #f3f4f6;
+}
+
+.service-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.service-image:hover {
+    transform: scale(1.02);
+}
+
+
+.service-details {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.service-header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.service-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--title-color);
+    margin: 0;
+}
+
+.service-price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #f59e0b;
+    margin: 0;
+}
+
+.service-rating {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.rating-stars {
+    display: flex;
+    gap: 2px;
+}
+
+.star {
+    color: #facc15;
+    font-size: 16px;
+}
+
+.star.empty {
+    color: #d1d5db;
+}
+
+.rating-value {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--content-color);
+}
+
+.service-description {
+    color: var(--content-color);
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 12px 0 0;
+}
+
+.service-attributes {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.attribute {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.attribute-title {
+    color: #6b7280;
+}
+
+.attribute-value {
+    font-weight: 500;
+    color: var(--content-color);
+}
+
+.expanded-description {
+    margin-top: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #1f2937;
+    color: #e5e7eb;
+}
+
+.expanded-description h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #f9fafb;
+    margin: 0 0 12px;
+}
+
+.expanded-description p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+.service-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.service-actions button {
+    flex: 1;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.add-to-cart-btn {
+    background-color: #f59e0b;
+    color: white;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #d97706;
+}
+
+.favorite-btn {
+    background-color: #374151;
+    color: #e5e7eb;
+}
+
+.favorite-btn:hover {
+    background-color: #4b5563;
+}
+
+.favorite-btn.is-favorite {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+.favorite-icon {
+    width: 18px;
+    height: 18px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .service-image-container {
+        height: 250px;
+    }
+
+    .service-title {
+        font-size: 20px;
+    }
+
+    .service-price {
+        font-size: 18px;
+    }
+
+    .service-actions {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .service-details-wrapper {
+        padding: 16px;
+    }
+
+    .service-image-container {
+        height: 200px;
+    }
+
+    .service-title {
+        font-size: 18px;
+    }
+
+    .service-price {
+        font-size: 16px;
+    }
+
+    .service-description,
+    .expanded-description p {
+        font-size: 13px;
+    }
+
+    .service-actions button {
+        padding: 10px;
+        font-size: 13px;
+    }
+}
