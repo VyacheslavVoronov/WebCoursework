@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en" data-translate-key="what_we_do">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link rel="stylesheet" href="../css/preloader.css">
+    <link rel="stylesheet" href="../css/themesColors.css">
+    <link rel="stylesheet" href="../css/accessibility.css">
+    <link rel="stylesheet" href="../css/HomePage.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/swiper.css">
+    <link rel="stylesheet" href="../css/AboutUs.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script src="../js/LayoutLoader.js" defer></script>
+    <script src="../js/Preloader.js" defer></script>
+    <script src="../js/BurgerMenu.js" defer></script>
+    <script src="../js/ThemeToggle.js" defer></script>
+    <script src="../js/Swiper.js" defer></script>
+    <script src="../js/CompanyOverviewButtons.js" defer></script>
+    <script src="../js/FAQAccodeon.js" defer></script>
+    <script src="../js/CheckRoute.js" defer></script>
+    <script src="../json/Auth/authGuard.js" defer></script>
+    <script src="../js/language.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script type="module" src="../js/ModalManager.js"></script>
+    <script type="module" src="../js/ResetSettings.js"></script>
+    <title data-translate-key="title">TransitFlow - Webflow HTML website template</title>
+</head>
+<body>
+    <div class="preloader" id="preloader" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #fff; display: flex; justify-content: center; align-items: center; z-index: 9999;">
+        <div style="border: 5px solid #f3f3f3; border-top: 5px solid #ffbe34; border-radius: 50%; width: 50px; height: 50px; animation: spin 1s linear infinite;"></div>
+    </div>
+    <header id="header"></header>
+    <section class="about-us-banner">
+        <div class="container">
+          <div>
+            <div class="subtitle-wrap-dark">
+              <div class="subtitle-border"></div>
+              <p class="subtitle-dark" data-translate-key="about_us">About Us</p>
+            </div>
+            <h1 class="page-title" data-translate-key="about_us_banner_title">About Our Logistics</h1>
+          </div>
+        </div>
+      </section>
+      <section class="about-us-section">
+  <div class="container-medium container">
+    <div class="layout-grid about-us-grid">
+      <div class="about-image-wrap">
+        <img src="../assets/images/our_company_overview_image.svg" alt="Truck">
+      </div>
+      <div>
+        <div class="subtitle-wrap">
+          <div class="subtitle-border"></div>
+          <p class="subtitle" data-translate-key="about_us">About Us</p>
+        </div>
+        <h2 class="section-title" data-translate-key="company_overview_title">Our Company Overview</h2>
+        <p data-translate-key="company_overview_text">
+          Our global reach, deep industry knowledge, innovative technology, and extensive transportation 
+          network have allowed us to bring the latest learning to bear on our customers' unique challenges 
+          and desires.
+        </p>
+        <div class="tabs">
+          <div class="about-us-button-wrap tab-menu" role="tablist">
+            <button 
+              class="about-us-button inline-block tab-link current" 
+              role="tab" 
+              aria-selected="true" 
+              aria-controls="tab-our-approach" 
+              data-tab="tab-our-approach"
+            >
+              <span data-translate-key="our_approach">Our Approach</span>
+            </button>
+            <button 
+              class="about-us-button inline-block tab-link" 
+              role="tab" 
+              aria-selected="false" 
+              aria-controls="tab-our-goal" 
+              data-tab="tab-our-goal" 
+              tabindex="-1"
+            >
+              <span data-translate-key="our_goal">Our Goal</span>
+            </button>
+            <button 
+              class="about-us-button inline-block tab-link" 
+              role="tab" 
+              aria-selected="false" 
+              aria-controls="tab-our-mission" 
+              data-tab="tab-our-mission" 
+              tabindex="-1"
+            >
+              <span data-translate-key="our_mission">Our Mission</span>
+            </button>
+          </div>
+          <div class="tab-content">
+            <div 
+              class="tab-pane tab-active" 
+              role="tabpanel" 
+              id="tab-our-approach"
+            >
+              <p data-translate-key="our_approach_text">
+                We leverage our scale to create innovative and tailored solutions that help our customers 
+                optimize their supply chains to stay ahead of their competition in a market that changes 
+                every single day.
+              </p>
+            </div>
+            <div 
+              class="tab-pane" 
+              role="tabpanel" 
+              id="tab-our-goal"
+            >
+              <p data-translate-key="our_goal_text">
+                Whether you've been shipping for years, or this is your first time crossing a new border, 
+                there are shipments to book, customs to clear and warehouses to manage. We're with you 
+                every step of the way.
+              </p>
+            </div>
+            <div 
+              class="tab-pane" 
+              role="tabpanel" 
+              id="tab-our-mission"
+            >
+              <p data-translate-key="our_mission_text">
+                Our most advanced logistic solution yet. It incorporates all eServices into one portal, 
+                giving you maximum support at every stage of your supply chain. From tracking and scheduling 
+                to booking and reporting, eSchenker has your logistics covered.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="home-team-section">
+        <div class="container">
+          <div class="align-center">
+          <div class="subtitle-wrap">
+            <p class="subtitle" data-translate-key="transporters">
+            The Transporters
+            </p>
+            <div class="subtitle-border">
+            </div>
+          </div>
+          <h2 class="section-title" data-translate-key="team_title">
+            Meet Expert Team
+          </h2>
+          </div>
+          <div class="space-top-lg">
+          <div class="layout-grid home-team-grid">
+            <div class="team-card">
+            <img alt="Team Image" src="../assets/images/expert_team_member_1.jpg" width="662"/>
+            <div class="team-content-wrap">
+              <h3 class="author-name text-white" data-translate-key="team_member_1_name">
+              Helen Wilmore
+              </h3>
+              <p class="team-member-designation" data-translate-key="warehouse_head">
+              Warehouse Head
+              </p>
+            </div>
+            <div class="social-media-wrap" >
+              <a class="team-social-link inline-block" href="http://www.twitter.com">
+              <img alt="Twitter Icon" class="social-icon" src="../assets/icons/black_twitter_icon.svg"/>
+              </a>
+              <a class="team-social-link inline-block" href="http://www.facebook.com">
+              <img alt="Facebook Icon" class="social-icon" src="../assets/icons/black_facebook_icon.svg"/>
+              </a>
+              <a class="team-social-link inline-block" href="http://www.instagram.com">
+              <img alt="Instagram Icon" class="social-icon" src="../assets/icons/black_instagram_icon.svg"/>
+              </a>
+            </div>
+            </div>
+            <div class="team-card">
+            <img alt="Team Image" src="../assets/images/expert_team_member_2.svg" width="595"/>
+            <div class="team-content-wrap">
+              <h3 class="author-name text-white" data-translate-key="team_member_2_name">
+              Anthony Wills
+              </h3>
+              <p class="team-member-designation" data-translate-key="transport_manager">
+              Transport Manager
+              </p>
+            </div>
+            <div class="social-media-wrap">
+              <a class="team-social-link inline-block" href="http://www.linkedin.com">
+              <img alt="LinkedIn Icon" class="social-icon" src="../assets/icons/black_linkedin_icon.svg"/>
+              </a>
+              <a class="team-social-link inline-block" href="http://www.twitter.com">
+              <img alt="Twitter Icon" class="social-icon" src="../assets/icons/black_twitter_icon.svg"/>
+              </a>
+              <a class="team-social-link inline-block" href="http://www.facebook.com">
+              <img alt="Facebook Icon" class="social-icon" src="../assets/icons/black_facebook_icon.svg"/>
+              </a>
+              <a class="team-social-link inline-block" href="http://www.instagram.com">
+              <img alt="Instagram Icon" class="social-icon" src="../assets/icons/black_instagram_icon.svg"/>
+              </a>
+            </div>
+            </div>
+            <div class="team-card">
+            <img alt="Team Image" src="../assets/images/expert_team_member_3.svg" width="724"/>
+            <div class="team-content-wrap">
+              <h3 class="author-name text-white" data-translate-key="team_member_3_name">
+              Kate Winslot
+              </h3>
+              <p class="team-member-designation" data-translate-key="cargo_head">
+              Cargo head
+              </p>
+            </div>
+            <div class="social-media-wrap">
+              <a class="team-social-link inline-block" href="http://www.facebook.com">
+              <img alt="Facebook Icon" class="social-icon" src="../assets/icons/black_facebook_icon.svg"/>
+              </a>
+              <a class="team-social-link inline-block" href="http://www.instagram.com">
+              <img alt="Instagram Icon" class="social-icon" src="../assets/icons/black_instagram_icon.svg"/>
+              </a>
+            </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        </section>
+        <section class="comments-section">
+            <h3 data-translate-key="customer_reviews">Customer Reviews</h3>
+            <h2 data-translate-key="what_customers_say">What Our Customers Say</h2>
+            <div class="comments-slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="comments-slide-elements">
+                            <div class="comments-slide-elements-person">
+                                <img src="../assets/images/Kathleen_Smith_photo.svg" alt="commentator">
+                                <div class="comments-slide-text">
+                                    <span class="comments-slide-text-name" data-translate-key="commentator_1_name">Lio Jessica</span>
+                                    <span class="comments-slide-text-country" data-translate-key="commentator_1_country">United Kingdom</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comments-slide-comment">
+                            <p class="comment-text" data-translate-key="comment_1">“The warehousing solutions provided by TransitFlow are efficient and secure. Highly recommend!”</p>
+                            <div class="stars-container">
+                                <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                                <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                                <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                                <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                                <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="comments-slide-elements">
+                            <div class="comments-slide-elements-person">
+                                <img src="../assets/images/Kathleen_Smith_photo.svg" alt="commentator">
+                                <div class="comments-slide-text">
+                                    <span class="comments-slide-text-name" data-translate-key="commentator_2_name">Michael Chen</span>
+                                    <span class="comments-slide-text-country" data-translate-key="commentator_2_country">Singapore</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comments-slide-comment">
+                            <p class="comment-text" data-translate-key="comment_2">“TransitFlow transformed our supply chain management! Their real-time tracking system allowed us to optimize delivery routes and reduce costs significantly. The team was incredibly supportive during the integration process, ensuring everything went smoothly.”</p>
+                            <div class="stars-container">
+                                <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                                <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                                <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                                <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                                <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="comments-slide-elements">
+                            <div class="comments-slide-elements-person">
+                                <img src="../assets/images/Kathleen_Smith_photo.svg" alt="commentator">
+                                <div class="comments-slide-text">
+                                    <span class="comments-slide-text-name" data-translate-key="commentator_3_name">Sofia Rodriguez</span>
+                                    <span class="comments-slide-text-country" data-translate-key="commentator_3_country">Spain</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comments-slide-comment">
+                            <p class="comment-text" data-translate-key="comment_3">“I was impressed by how quickly TransitFlow handled our last-minute shipment needs. Their warehousing facilities are top-notch, and the staff is always ready to assist. They’ve become our go-to logistics partner!”</p>
+                            <div class="stars-container">
+                                <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                                <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                                <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                                <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                                <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="comments-slide-elements">
+                            <div class="comments-slide-elements-person">
+                                <img src="../assets/images/Kathleen_Smith_photo.svg" alt="commentator">
+                                <div class="comments-slide-text">
+                                    <span class="comments-slide-text-name" data-translate-key="commentator_4_name">Ahmed Khalid</span>
+                                    <span class="comments-slide-text-country" data-translate-key="commentator_4_country">UAE</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comments-slide-comment">
+                            <p class="comment-text" data-translate-key="comment_4">“We’ve been working with TransitFlow for over a year, and their consistency is unmatched. From inventory management to timely deliveries, they’ve helped us streamline our operations across multiple regions. The only issue was a slight delay during peak season, but their team resolved it quickly.”</p>
+                            <div class="stars-container">
+                                <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                                <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                                <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                                <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                                <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="comments-slide-elements">
+                            <div class="comments-slide-elements-person">
+                                <img src="../assets/images/Kathleen_Smith_photo.svg" alt="commentator">
+                                <div class="comments-slide-text">
+                                    <span class="comments-slide-text-name" data-translate-key="commentator_5_name">Emily Johnson</span>
+                                    <span class="comments-slide-text-country" data-translate-key="commentator_5_country">USA</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comments-slide-comment">
+                            <p class="comment-text" data-translate-key="comment_5">“TransitFlow’s logistics solutions have been a game-changer for our e-commerce business. Their ability to handle large volumes of orders during the holiday season was impressive. The warehousing system is so organized that we never faced any stock issues. I also appreciated their detailed reports, which helped us make better decisions for our supply chain strategy. Highly recommend their services to anyone looking to improve their logistics operations!”</p>
+                            <div class="stars-container">
+                                <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                                <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                                <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                                <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                                <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-navigation">
+                    <div class="swiper-buttons">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+          <section class="about-faq-section">
+            <div class="container">
+              <div class="layout-grid about-faq-grid">
+                <div>
+                  <div class="about-faq-title-wrap">
+                    <div class="subtitle-wrap">
+                      <p class="subtitle" data-translate-key="faq">FAQ</p>
+                      <div class="subtitle-border"></div>
+                    </div>
+                    <h2 class="section-title" data-translate-key="faq_title">Frequently Asked Questions</h2>
+                  </div>
+                  <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+                      <span data-translate-key="faq_question_1">What warranties do I have for my shipments?</span>
+                      <span class="faq-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-1" aria-hidden="true">
+                      <p data-translate-key="faq_answer_1">
+                        Logistics operates under country-specific freight forward industry terms. 
+                        We are members of Logistics and Freight Association. Logistics can also 
+                        offer specific insurance cover on request.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+                      <span data-translate-key="faq_question_2">What is mandatory communication fee?</span>
+                      <span class="faq-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-2" aria-hidden="true">
+                      <p data-translate-key="faq_answer_2">
+                        The obligatory communication fee includes the basic entries in the online 
+                        exhibitor directory and in the visit planner (see basic entries) as well as 
+                        entry options in the online sections press and exhibitor event calendars.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+                      <span data-translate-key="faq_question_3">What options for logistics plans are available?</span>
+                      <span class="faq-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-3" aria-hidden="true">
+                      <p data-translate-key="faq_answer_3">
+                        Possibly the most important part of your logistics partnership is having 
+                        confidence that your provider has a firm grasp on your business requirements.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+                      <span data-translate-key="faq_question_4">Can I specify a delivery date when ordering?</span>
+                      <span class="faq-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-4" aria-hidden="true">
+                      <p data-translate-key="faq_answer_4">
+                        Beyond all the service details and industry experience, you also want a 
+                        supplier who does business in a way that aligns with your own company's culture.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-contact-block">
+                  <div class="subtitle-wrap-transparent">
+                    <div class="subtitle-border"></div>
+                    <p class="subtitle-dark" data-translate-key="lets_talk">Let's Talk</p>
+                  </div>
+                  <h3 class="faq-contact-title" data-translate-key="faq_contact_title">You Need Any Help? Get Free Consultation</h3>
+                  <div class="space-top-sm">
+                    <div class="header-link-card">
+                      <div class="header-icon-wrap">
+                        <img src="../assets/icons/blue_call_icon.svg" loading="lazy" alt="Phone Icon">
+                      </div>
+                      <div>
+                        <p class="header-link-text" data-translate-key="have_questions">Have Any Questions</p>
+                        <a href="tel:(00)123456789" class="header-link-text hover-yellow" data-translate-key="phone_number">(00) 123 456 789</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="about-faq-bg-color"></div>
+          </section>
+    <footer id="footer"></footer>
+</body>
+</html>
