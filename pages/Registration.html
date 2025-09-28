@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" data-translate-key="what_we_do">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link rel="preload" href="../components/layout.html" as="fetch" crossorigin="anonymous">
+    <link rel="preload" href="../assets/icons/logo.svg" as="image">
+    <link rel="stylesheet" href="../css/themesColors.css">
+    <link rel="stylesheet" href="../css/preloader.css">
+    <link rel="stylesheet" href="../css/accessibility.css">
+    <link rel="stylesheet" href="../css/HomePage.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/Registration.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <script src="../js/LayoutLoader.js" defer></script>
+    <script src="../js/Preloader.js" defer></script>
+    <script src="../js/BurgerMenu.js" defer></script>
+    <script src="../js/ThemeToggle.js" defer></script>
+    <script type="module" src="../js/ModalManager.js"></script>
+    <script type="module" src="../js/UserAgreementModal.js"></script>
+    <script src="../json/Utils/utils.js" type="module"></script>
+    <script src="../json/Api/api.js" type="module"></script>
+    <script src="../json/Registration/registration.js" type="module"></script>
+    <script src="../json/Auth/authGuard.js" defer></script>
+    <script src="../js/language.js" defer></script>
+    <script type="module" src="../js/ResetSettings.js"></script>
+    <title data-translate-key="title">TransitFlow - Registration</title>
+</head>
+<body>
+    <div class="preloader" id="preloader">
+        <div style="border: 5px solid #f3f3f3; border-top: 5px solid #273270; border-radius: 50%; width: 50px; height: 50px; animation: spin 1s linear infinite;"></div>
+    </div>
+    <header id="header"></header>
+    <section class="registration-section">
+        <div class="container">
+            <div class="registration-wrapper">
+                <div class="registration-header">
+                    <div class="subtitle-wrap-dark">
+                        <div class="subtitle-border"></div>
+                        <p class="subtitle-dark" data-translate-key="secure_access">Secure Access</p>
+                    </div>
+                    <h2 class="section-title" data-translate-key="create_account">Create Account</h2>
+                    <p class="text-white" data-translate-key="fill_required_fields">Please fill in all required fields</p>
+                </div>
+                <form class="registration-form" id="registrationForm" novalidate>
+                    <div class="form-group">
+                        <label for="firstName" data-translate-key="first_name">First Name *</label>
+                        <input type="text" id="firstName" name="firstName" required placeholder="First Name *" data-translate-key="first_name_placeholder">
+                        <div class="error-message" style="color: red; display: none;"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName" data-translate-key="last_name">Last Name *</label>
+                        <input type="text" id="lastName" name="lastName" required placeholder="Last Name *" data-translate-key="last_name_placeholder">
+                        <div class="error-message" style="color: red; display: none;"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="middleName" data-translate-key="middle_name">Middle Name</label>
+                        <input type="text" id="middleName" name="middleName" placeholder="Middle Name (optional)" data-translate-key="middle_name_placeholder">
+                        <div class="error-message" style="color: red; display: none;"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" data-translate-key="phone_number_by">Phone Number (BY) *</label>
+                        <input type="tel" id="phone" name="phone" pattern="\+375\d{9}" required placeholder="+375291234567" data-translate-key="phone_placeholder">
+                        <div class="error-message" style="color: red; display: none;"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-translate-key="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="Email *" data-translate-key="email_placeholder">
+                        <div class="error-message" style="color: red; display: none;"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="birthdate" data-translate-key="birthdate">Date of Birth *</label>
+                        <input type="date" id="birthdate" name="birthdate" required placeholder="Date of Birth *" data-translate-key="birthdate_placeholder">
+                        <div class="error-message" style="color: red; display: none;"></div>
+                    </div>
+                    <div class="form-group">
+                        <label data-translate-key="password_selection_method">Password Selection Method *</label>
+                        <div class="password-options">
+                            <label><input type="radio" name="passwordType" value="manual" checked> <span data-translate-key="enter_manually">Enter Manually</span></label>
+                            <label><input type="radio" name="passwordType" value="auto"> <span data-translate-key="generate_automatically">Generate Automatically</span></label>
+                        </div>
+                        <div id="manualPassword" class="password-field-box">
+                            <input type="password" class="password-field" name="password" placeholder="Password *" data-translate-key="password_placeholder">
+                            <div class="error-message" style="color: red; display: none;"></div>
+                            <input type="password" class="password-field" name="confirmPassword" placeholder="Confirm Password *" data-translate-key="confirm_password_placeholder">
+                            <div class="error-message" style="color: red; display: none;"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="nicknameInput" data-translate-key="nickname">Nickname</label>
+                        <div class="nickname-generator">
+                            <input type="text" name="nickname" id="nicknameInput" readonly placeholder="Auto-generated" data-translate-key="nickname_placeholder">
+                            <button type="button" id="generateNickname" data-translate-key="generate">Generate</button>
+                        </div>
+                        <div class="error-message" style="color: red; display: none;"></div>
+                    </div>
+                    <div class="agreement-checkbox">
+                        <input type="checkbox" id="agreement" required>
+                        <label for="agreement"><span data-translate-key="accept_terms">I accept the terms of the</span> <a href="#" class="text-link" data-translate-key="user_agreement">User Agreement</a></label>
+                        <div class="error-message" style="color: red; display: none;"></div>
+                    </div>
+                    <button type="submit" class="yellow-overlay-button full-width" disabled data-translate-key="register">Register</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer id="footer"></footer>
+    <div class="modal" id="customModal" style="display: none;">
+        <div class="modal-content" id="modalContent">
+            <span class="modal-close">×</span>
+            <p id="modalMessage"></p>
+            <button id="modalCloseBtn" class="yellow-overlay-button" data-translate-key="close">Close</button>
+        </div>
+    </div>
+    
+    <div class="modal" id="userAgreementModal" style="display: none;">
+        <div class="modal-content user-agreement-modal">
+            <span class="modal-close" onclick="window.modalManager.closeModal('userAgreementModal')">×</span>
+            <h3 id="userAgreementTitle" data-translate-key="user_agreement_title">Пользовательское соглашение</h3>
+            <div id="userAgreementContent" class="agreement-content">
+            </div>
+            <button id="userAgreementCloseBtn" class="yellow-overlay-button" data-translate-key="modal_close" onclick="window.modalManager.closeModal('userAgreementModal')">Закрыть</button>
+        </div>
+    </div>
+</body>
+</html>
