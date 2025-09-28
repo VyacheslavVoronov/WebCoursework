@@ -34,10 +34,14 @@
     --header-icon-wrap: #273270;
     --footer-text-color: #e8e8e8;
     --page-link-color: #ffffff;
+    --page-header-link-color: #a0a4b8;
     --team-content-wrap: #1c1f35;
     --dropdown-list:#091242;
     --swiper-pagination:#1f2a69;
     --swiper-slide-bg: rgb(0, 0, 0);
+    --about-us-bg-color: #f4f4f4;
+    --faq-contact-block: #1f2a69;
+    --header-settings: #ffffff;
   }
   
   body.dark-theme {
@@ -76,10 +80,14 @@
     --header-icon-wrap: #3a4d7b;
     --footer-text-color: #b0b3c4;
     --page-link-color: #a0a4b8;
+    --page-header-link-color: white;
     --team-content-wrap:#1f1f1f;
     --dropdown-list:#091242;
     --swiper-pagination: #ffffff;
     --swiper-slide-bg: #fff;
+    --about-us-bg-color: rgb(0, 0, 0);
+    --faq-contact-block: #12183a;
+    --header-settings: #ffffff;
 }
 
 body.dark-theme .home-service-icon-wrap {
@@ -89,7 +97,7 @@ body.dark-theme .home-service-icon-wrap {
 
 body.dark-theme .svg-icon {
     filter: invert(100%);
-  }
+}
 
 body.dark-theme img.social-icon,
 body.dark-theme img.testimonial-left-arrow,
