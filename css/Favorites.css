@@ -1,0 +1,245 @@
+
+
+.favorites-section {
+  padding: 80px 0;
+  background-color: var(--bg-color);
+}
+
+.favorites-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+.section-title {
+  font-size: 2.5rem;
+  color: var(--title-color);
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+
+#favorites-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 20px 0;
+}
+
+
+.favorite-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.favorite-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.favorite-item-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+
+.favorite-item-details {
+  flex: 1;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.favorite-item-details h3 {
+  font-size: 1.2rem;
+  color: var(--title-color);
+  margin-bottom: 8px;
+}
+
+.favorite-item-details p {
+  color: var(--text-color);
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.favorite-item-details .price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+
+.remove-favorite-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  z-index: 1;
+}
+
+.favorite-icon {
+  width: 24px;
+  height: 24px;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+
+.favorite-btn:not(.active) img[src*="filled"] {
+  opacity: 0;
+}
+.favorite-btn:not(.active) img[src*="unfilled"] {
+  opacity: 1;
+}
+.favorite-btn:not(.active):hover img[src*="filled"] {
+  opacity: 1;
+}
+.favorite-btn:not(.active):hover img[src*="unfilled"] {
+  opacity: 0;
+}
+
+
+.favorite-btn.active img[src*="filled"] {
+  opacity: 1;
+}
+.favorite-btn.active img[src*="unfilled"] {
+  opacity: 0;
+}
+.favorite-btn.active:hover img[src*="filled"] {
+  opacity: 0;
+}
+.favorite-btn.active:hover img[src*="unfilled"] {
+  opacity: 1;
+}
+
+
+.card-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.view-details-btn,
+.add-to-cart-btn {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  text-align: center;
+  transition: all 0.2s;
+  min-width: 120px;
+}
+
+.view-details-btn {
+  background: var(--secondary-bg);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  text-decoration: none;
+}
+
+.view-details-btn:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+.add-to-cart-btn {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+}
+
+.add-to-cart-btn:hover {
+  background: var(--primary-dark);
+}
+
+
+.empty-favorites-message {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.empty-favorites-message img {
+  margin-bottom: 25px;
+  opacity: 0.8;
+}
+
+.empty-favorites-message h3 {
+  color: var(--title-color);
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.empty-favorites-message a.btn {
+  padding: 10px 20px;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.empty-favorites-message a.btn:hover {
+  background: var(--primary-dark);
+}
+
+
+@media (max-width: 992px) {
+  #favorites-items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  #favorites-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .favorites-section {
+    padding: 60px 0;
+  }
+
+  .favorite-item-image {
+    height: 180px;
+  }
+
+  .card-actions {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  #favorites-items {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .favorite-item-image {
+    height: 160px;
+  }
+}
