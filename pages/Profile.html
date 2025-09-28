@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru" data-translate-key="what_we_do">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link rel="preload" href="../components/layout.html" as="fetch" crossorigin="anonymous">
+    <link rel="preload" href="../assets/icons/logo.svg" as="image">
+    <link rel="stylesheet" href="../css/themesColors.css">
+    <link rel="stylesheet" href="../css/preloader.css">
+    <link rel="stylesheet" href="../css/accessibility.css">
+    <link rel="stylesheet" href="../css/HomePage.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/profile.css">
+    <script src="../js/LayoutLoader.js" defer></script>
+    <script src="../js/Preloader.js" defer></script>
+    <script src="../js/BurgerMenu.js" defer></script>
+    <script src="../js/ThemeToggle.js" defer></script>
+    <script src="../json/Auth/authGuard.js" defer></script>
+    <script src="../json/Profile/profileManager.js" type="module"></script>
+    <script src="../js/language.js" defer></script>
+    <script type="module" src="../js/ModalManager.js"></script>
+    <script type="module" src="../js/ResetSettings.js"></script>
+    <title data-translate-key="title">TransitFlow - Профиль</title>
+</head>
+<body>
+    <div class="preloader" id="preloader" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #fff; display: flex; justify-content: center; align-items: center; z-index: 9999;">
+        <div style="border: 5px solid #f3f3f3; border-top: 5px solid #273270; border-radius: 50%; width: 50px; height: 50px; animation: spin 1s linear infinite;"></div>
+    </div>
+    <header id="header"></header>
+    <section class="profile-section">
+        <div class="container">
+            <div class="align-center">
+                <div class="subtitle-wrap">
+                    <p class="subtitle" data-translate-key="your_profile">Ваш профиль</p>
+                    <div class="subtitle-border"></div>
+                </div>
+                <h2 class="section-title" data-translate-key="manage_account">Управление аккаунтом</h2>
+            </div>
+            <div class="space-top-lg">
+                <div class="profile-card">
+                    <div class="profile-photo-wrap">
+                        <img src="../assets/images/Kathleen_Smith_photo.svg" alt="Profile Photo" class="profile-photo"/>
+                    </div>
+                    <div class="profile-info">
+                        <p><strong data-translate-key="email">Email:</strong> <span id="user-email">Загрузка...</span></p>
+                        <p><strong data-translate-key="nickname">Никнейм:</strong> <span id="user-nickname">Загрузка...</span></p>
+                    </div>
+                    <form id="profile-form" class="profile-form">
+                        <input type="email" class="profile-input" id="email-input" placeholder="Email" disabled data-translate-key="email_placeholder"/>
+                        <input type="text" class="profile-input" id="nickname-input" placeholder="Никнейм" required data-translate-key="nickname_placeholder"/>
+                        <button type="submit" class="yellow-overlay-button">
+                            <div data-translate-key="save_changes">Сохранить изменения</div>
+                            <div class="yellow-button-hover"></div>
+                        </button>
+                    </form>
+                    <div class="space-top-md">
+                        <button id="logout-button" class="logout-button" data-translate-key="logout">Выйти из аккаунта</button>
+                    </div>
+                    <div id="success-message" class="success-message" data-translate-key="changes_saved">Изменения успешно сохранены!</div>
+                    <div id="error-message" class="error-message" style="display: none; color: red;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer"></footer>
+</body>
+</html>
