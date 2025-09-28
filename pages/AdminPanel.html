@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" data-translate-key="what_we_do">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title data-translate-key="title">TransitFlow - Admin Panel</title>
+    <link rel="preload" href="../components/layout.html" as="fetch" crossorigin="anonymous">
+    <link rel="preload" href="../assets/icons/logo.svg" as="image">
+    <link rel="stylesheet" href="../css/themesColors.css">
+    <link rel="stylesheet" href="../css/preloader.css">
+    <link rel="stylesheet" href="../css/accessibility.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/HomePage.css">
+    <link rel="stylesheet" href="../css/AdminPanel.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script src="../js/LayoutLoader.js" defer></script>
+    <script src="../js/Preloader.js" defer></script>
+    <script src="../js/BurgerMenu.js" defer></script>
+    <script src="../js/ThemeToggle.js" defer></script>
+    <script type="module" src="../js/ModalManager.js"></script>
+    <script src="../json/Utils/utils.js" type="module"></script>
+    <script src="../json/Api/api.js" type="module"></script>
+    <script src="../json/Admin/admin.js" type="module"></script>
+    <script src="../json/Auth/authGuard.js" type="module"></script>
+    <script src="../js/language.js" defer></script>
+    <script type="module" src="../js/ResetSettings.js"></script>
+</head>
+<body>
+    <header id="header"></header>
+    <div class="admin-container">
+    <nav class="admin-sidebar">
+        <div class="admin-logo">
+            <h2 data-translate-key="admin_title">TransitFlow Admin</h2>
+        </div>
+        <div class="admin-nav">
+            <a href="#" class="admin-nav-item active" data-tab="users" data-translate-key="users_tab">👤 Users</a>
+            <a href="#" class="admin-nav-item" data-tab="services" data-translate-key="services_tab">📦 Services</a>
+        </div>
+    </nav>
+        <main class="admin-main">
+            <header class="admin-header">
+                <h2 data-translate-key="admin_panel">Admin Panel</h2>
+                <div class="user-menu">
+                    <div class="user-avatar">AD</div>
+                    <span data-translate-key="admin_user">Admin User</span>
+                </div>
+            </header>
+            <section id="users-tab" class="tab-content">
+                <h3 data-translate-key="manage_users">Manage Users</h3>
+                <div class="table-controls">
+                    <input type="text" id="user-search" placeholder="Search users..." data-translate-key="search_users_placeholder">
+                    <select id="user-sort">
+                        <option value="id" data-translate-key="sort_by_id">Sort by ID</option>
+                        <option value="email" data-translate-key="sort_by_email">Sort by Email</option>
+                        <option value="firstName" data-translate-key="sort_by_first_name">Sort by First Name</option>
+                    </select>
+                </div>
+                <table id="users-table">
+                    <caption data-translate-key="users_list">Users List</caption>
+                    <thead>
+                        <tr>
+                            <th data-translate-key="table_id">ID</th>
+                            <th data-translate-key="table_email">Email</th>
+                            <th data-translate-key="table_first_name">First Name</th>
+                            <th data-translate-key="table_last_name">Last Name</th>
+                            <th data-translate-key="table_middle_name">Middle Name</th>
+                            <th data-translate-key="table_phone">Phone</th>
+                            <th data-translate-key="table_birthdate">Birthdate</th>
+                            <th data-translate-key="table_nickname">Nickname</th>
+                            <th data-translate-key="table_role">Role</th>
+                            <th data-translate-key="table_actions">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <button id="add-user-btn" class="yellow-overlay-button" data-translate-key="add_user">Add User</button>
+            </section>
+            <section id="services-tab" class="tab-content" style="display: none;">
+                <h3 data-translate-key="manage_services">Manage Services</h3>
+                <div class="table-controls">
+                    <input type="text" id="service-search" placeholder="Search services..." data-translate-key="search_services_placeholder">
+                    <select id="service-sort">
+                        <option value="id" data-translate-key="sort_by_id">Sort by ID</option>
+                        <option value="name" data-translate-key="sort_by_name">Sort by Name</option>
+                        <option value="price" data-translate-key="sort_by_price">Sort by Price</option>
+                    </select>
+                </div>
+                <table id="services-table">
+                    <caption data-translate-key="services_list">Services List</caption>
+                    <thead>
+                        <tr>
+                            <th data-translate-key="table_id">ID</th>
+                            <th data-translate-key="table_name">Name</th>
+                            <th data-translate-key="table_price">Price</th>
+                            <th data-translate-key="table_description">Description</th>
+                            <th data-translate-key="table_actions">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <button id="add-service-btn" class="yellow-overlay-button" data-translate-key="add_service">Add Service</button>
+            </section>
+        </main>
+    </div>
+    <footer id="footer"></footer>
+    
+    <div class="modal" id="customModal" style="display: none;">
+        <div class="modal-content" id="modalContent">
+            <span class="modal-close">×</span>
+            <p id="modalMessage"></p>
+            <button id="modalCloseBtn" class="yellow-overlay-button" data-translate-key="close">Close</button>
+        </div>
+    </div>
+</body>
+</html>
