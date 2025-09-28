@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" data-translate-key="what_we_do">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link rel="preload" href="../components/layout.html" as="fetch" crossorigin="anonymous">
+    <link rel="preload" href="../assets/icons/logo.svg" as="image">
+    <link rel="stylesheet" href="../css/themesColors.css">
+    <link rel="stylesheet" href="../css/preloader.css">
+    <link rel="stylesheet" href="../css/accessibility.css">
+    <link rel="stylesheet" href="../css/HomePage.css">
+    <link rel="stylesheet" href="../css/ServiceDetails.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script src="../js/LayoutLoader.js" defer></script>
+    <script src="../js/Preloader.js" defer></script>
+    <script src="../js/BurgerMenu.js" defer></script>
+    <script src="../js/ThemeToggle.js" defer></script>
+    <script src="../json/ServiceDetails/serviceDetails.js" type="module"></script>
+    <script src="../json/ServiceDetails/serviceDetailsLoader.js" type="module"></script>
+    <script src="../json/Auth/authGuard.js" defer></script>
+    <script src="../js/language.js" defer></script>
+    <script type="module" src="../js/ModalManager.js"></script>
+    <script type="module" src="../js/ResetSettings.js"></script>
+    <title data-translate-key="title">TransitFlow - Service Details</title>
+</head>
+<body>
+    <div class="preloader" id="preloader">
+        <div class="spinner"></div>
+    </div>
+    <header id="header"></header>
+    
+    <main class="service-details-section">
+        <div class="container">
+            <div class="service-details-wrapper">
+                <button id="back-to-catalog" class="back-button" data-translate-key="back_to_catalog">← Back to Catalog</button>
+                <div class="service-details-content" id="service-details-content">
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer id="footer"></footer>
+</body>
+</html>
