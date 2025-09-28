@@ -85,6 +85,12 @@
                                 <span class="toggle-slider"></span>
                             </label>
                         </div>
+                        <div class="settings-option">
+                            <button id="reset-settings-btn" class="reset-settings-button" data-translate-key="reset_settings">
+                                <img alt="Иконка сброса" class="settings-icon" src="../assets/icons/white_vector.svg" style="filter: invert(100%);"/>
+                                <span data-translate-key="reset_settings">Сбросить настройки</span>
+                            </button>
+                        </div>
                     </nav>
                 </div>
                 <div class="nav-menu-line"></div>
@@ -97,17 +103,17 @@
                     <a id="profile-link" class="social-media-link inline-block" href="../pages/Profile.html" style="display: none;">
                         <img alt="Иконка профиля" class="social-icon" src="../assets/icons/white_profile_icon.svg"/>
                     </a>
-                    <a class="social-media-link inline-block" href="http://www.instagram.com">
+                    <a id="instagram-link" class="social-media-link inline-block" href="http://www.instagram.com">
                         <img alt="Иконка Instagram" class="social-icon" src="../assets/icons/white_instagram_icon.svg"/>
+                    </a>
+                    <a id="admin-link" class="social-media-link inline-block" href="../pages/AdminPanel.html" style="display: none;">
+                        <img alt="Админ-панель" class="social-icon" src="../assets/icons/white_admin_icon.svg"/>
                     </a>
                     <a class="social-media-link inline-block" href="http://www.facebook.com">
                         <img alt="Иконка Facebook" class="social-icon" src="../assets/icons/white_facebook_icon.svg"/>
                     </a>
                     <a class="social-media-link inline-block" href="http://www.twitter.com">
                         <img alt="Twitter Icon" class="social-icon" src="../assets/icons/white_twitter_icon.svg"/>
-                    </a>
-                    <a class="social-media-link inline-block" href="http://www.linkedin.com">
-                        <img alt="Иконка LinkedIn" class="social-icon" src="../assets/icons/white_linkedin_icon.svg"/>
                     </a>
                 </div>
             </div>
@@ -119,24 +125,28 @@
     </div>
 </div>
 
-<div id="accessibility-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000; justify-content: center; align-items: center;">
-    <div style="background: #fff; padding: 20px; border-radius: 8px; max-width: 500px; width: 90%;">
-        <h2 data-translate-key="accessibility_settings">Настройки для слабовидящих</h2>
+<div id="accessibility-modal">
+    <div>
+        <h2 data-translate-key="accessibility_settings">Версия для слабовидящих</h2>
         <div class="font-size-buttons">
-            <button data-font-size="small" data-translate-key="small_font">Маленький шрифт</button>
-            <button data-font-size="medium" class="active" data-translate-key="medium_font">Средний шрифт</button>
-            <button data-font-size="large" data-translate-key="large_font">Большой шрифт</button>
+            <button data-font-size="small" data-translate-key="small_font">Маленький</button>
+            <button data-font-size="medium" class="active" data-translate-key="medium_font">Средний</button>
+            <button data-font-size="large" data-translate-key="large_font">Большой</button>
         </div>
         <div class="color-scheme-buttons">
-            <button data-scheme="white-black" class="active" data-translate-key="white_black_scheme">Белый фон, черный текст</button>
-            <button data-scheme="dark-white" data-translate-key="dark_white_scheme">Темный фон, белый текст</button>
-            <button data-scheme="dark-green" data-translate-key="dark_green_scheme">Темный фон, зеленый текст</button>
-            <button data-scheme="beige-brown" data-translate-key="beige_brown_scheme">Бежевый фон, коричневый текст</button>
-            <button data-scheme="blue-darkblue" data-translate-key="blue_darkblue_scheme">Синий фон, темно-синий текст</button>
+            <button data-scheme="white-black" class="active" data-translate-key="white_black_scheme">Светлый (белый фон, черный текст)</button>
+            <button data-scheme="dark-white" data-translate-key="dark_white_scheme">Темный (черный фон, белый текст)</button>
+            <button data-scheme="dark-green" data-translate-key="dark_green_scheme">Темный (черный фон, зеленый текст)</button>
+            <button data-scheme="beige-brown" data-translate-key="beige_brown_scheme">Бежевый (бежевый фон, коричневый текст)</button>
+            <button data-scheme="blue-darkblue" data-translate-key="blue_darkblue_scheme">Голубой (голубой фон, синий текст)</button>
         </div>
-        <button id="toggle-images" data-translate-key="toggle_images">Переключить изображения</button>
-        <button id="reset-accessibility" data-translate-key="reset_settings">Сбросить настройки</button>
-        <button id="close-accessibility-modal" data-translate-key="close">Закрыть</button>
+        <div style="text-align: center; margin: 1rem 0;">
+            <button id="toggle-images" data-translate-key="toggle_images">Отключить изображения</button>
+            <button id="reset-accessibility" data-translate-key="reset_settings">Сбросить настройки</button>
+        </div>
+        <div style="text-align: center;">
+            <button id="close-accessibility-modal" data-translate-key="close">Закрыть</button>
+        </div>
     </div>
 </div>
 
@@ -183,7 +193,6 @@
                         <a class="footer-link" href="../pages/AboutUs.html" data-translate-key="about_us">About Us</a>
                         <a class="footer-link" href="../pages/HomePage.html" data-translate-key="home">Our Team</a>
                         <a class="footer-link" href="../pages/LogIn.html" data-translate-key="login">LogIn</a>
-                        <a class="footer-link" href="../pages/404.html">404</a>
                     </div>
                 </div>
                 <div class="footer-form-wrapper">
