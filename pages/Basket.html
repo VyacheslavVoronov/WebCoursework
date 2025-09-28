@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" data-translate-key="what_we_do">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link rel="preload" href="../components/layout.html" as="fetch" crossorigin="anonymous">
+    <link rel="preload" href="../assets/icons/logo.svg" as="image">
+    <link rel="stylesheet" href="../css/themesColors.css">
+    <link rel="stylesheet" href="../css/preloader.css">
+    <link rel="stylesheet" href="../css/accessibility.css">
+    <link rel="stylesheet" href="../css/HomePage.css">
+    <link rel="stylesheet" href="../css/Basket.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <script src="../js/LayoutLoader.js" defer></script>
+    <script src="../js/Preloader.js" defer></script>
+    <script src="../js/BurgerMenu.js" defer></script>
+    <script src="../js/ThemeToggle.js" defer></script>
+    <script type="module" src="../json/ServiceDetails/cartInit.js"></script>
+    <script src="../json/Auth/authGuard.js" defer></script>
+    <script src="../js/language.js" defer></script>
+    <script type="module" src="../js/ModalManager.js"></script>
+    <script type="module" src="../js/ResetSettings.js"></script>
+    <title data-translate-key="title">TransitFlow - Your Cart</title>
+</head>
+<body>
+    <div class="preloader" id="preloader" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #fff; display: flex; justify-content: center; align-items: center; z-index: 9999;">
+        <div style="border: 5px solid #f3f3f3; border-top: 5px solid #273270; border-radius: 50%; width: 50px; height: 50px; animation: spin 1s linear infinite;"></div>
+    </div>
+    <header id="header"></header>
+
+    <section class="cart-section">
+        <div class="container">
+            <div class="cart-grid">
+                <div class="cart-items-container">
+                    <div class="cart-header">
+                        <h2 class="section-title" data-translate-key="selected_services">Selected Services</h2>
+                        <div class="cart-summary-mobile">
+                            <span class="cart-total"><span data-translate-key="total">Total</span>: <span id="mobile-total">0.00</span></span>
+                            <button class="primary-button checkout-btn-mobile" data-translate-key="proceed_checkout">Proceed to Checkout</button>
+                        </div>
+                    </div>
+                    
+                    <div class="cart-items-list" id="cart-items">
+                        <div class="empty-cart-message">
+                            <img src="../assets/icons/yellow_box_icon.svg" alt="Empty cart" width="80">
+                            <h3 data-translate-key="empty_cart">Your cart is empty</h3>
+                            <p data-translate-key="empty_cart_text">Browse our services and add items to get started</p>
+                            <a href="../pages/Catalog.html" class="yellow-overlay-button inline-block">
+                                <div data-translate-key="explore_services">Explore Services</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cart-summary">
+                    <h2 class="section-title" data-translate-key="order_summary">Order Summary</h2>
+                    <div class="summary-details">
+                        <div class="summary-row">
+                            <span data-translate-key="subtotal">Subtotal</span>
+                            <span><span id="subtotal">0.00</span></span>
+                        </div>
+                        <div class="summary-row">
+                            <span data-translate-key="estimated_shipping">Estimated Shipping</span>
+                            <span><span id="shipping">0.00</span></span>
+                        </div>
+                        <div class="summary-row">
+                            <span data-translate-key="insurance">Insurance</span>
+                            <span><span id="insurance">0.00</span></span>
+                        </div>
+                        <div class="summary-row total">
+                            <span data-translate-key="total">Total</span>
+                            <span><span id="total">0.00</span></span>
+                        </div>
+                    </div>
+                    
+                    <button class="primary-button checkout-btn" data-translate-key="proceed_checkout">Proceed to Checkout</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="payment-success-modal" class="modal" style="display: none;">
+        <div class="modal-content success">
+            <span class="modal-close" onclick="window.modalManager.closeModal('payment-success-modal')">×</span>
+            <h3 id="modalTitle">Успешно!</h3>
+            <div id="modalMessage">Оплата прошла успешно. Спасибо за покупку!</div>
+        </div>
+    </div>
+
+    <footer id="footer"></footer>
+</body>
+</html>
