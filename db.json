@@ -1,0 +1,987 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "user1@example.com",
+      "password": "password",
+      "firstName": "John",
+      "lastName": "Doe",
+      "phone": "+375291234562",
+      "birthdate": "2001-10-10",
+      "nickname": "john_does",
+      "role": "user",
+      "middleName": "Яков"
+    },
+    {
+      "id": 2,
+      "email": "use2@example.com",
+      "password": "secure1234",
+      "firstName": "Natalia",
+      "lastName": "Fedorova",
+      "phone": "+375299234575",
+      "birthdate": "1988-02-14",
+      "nickname": "natalia_f",
+      "role": "user",
+      "middleName": "Андреевна"
+    },
+    {
+      "id": 3,
+      "email": "admin@example.com",
+      "password": "admin123",
+      "firstName": "Admin",
+      "lastName": "User",
+      "phone": "+375291234568",
+      "birthdate": "1985-05-10",
+      "nickname": "SlavaAdmin",
+      "role": "admin",
+      "middleName": ""
+    },
+    {
+      "id": 4,
+      "email": "testuser@mail.ru",
+      "password": "12345678",
+      "firstName": "Testuser",
+      "lastName": "Testuser",
+      "phone": "+375291234563",
+      "birthdate": "2001-02-10",
+      "nickname": "fsawegs",
+      "role": "user",
+      "middleName": "Александрович"
+    },
+    {
+      "id": 5,
+      "email": "user5@example.com",
+      "password": "pass1234",
+      "firstName": "Anna",
+      "lastName": "Smith",
+      "phone": "+375291234564",
+      "birthdate": "1998-07-15",
+      "nickname": "anna_smith",
+      "role": "user",
+      "middleName": "Ивановна"
+    },
+    {
+      "id": 6,
+      "email": "user6@example.com",
+      "password": "secure789",
+      "firstName": "Mark",
+      "lastName": "Johnson",
+      "phone": "+375291234565",
+      "birthdate": "1995-03-22",
+      "nickname": "mark_j",
+      "role": "user",
+      "middleName": ""
+    },
+    {
+      "id": 7,
+      "email": "user7@example.com",
+      "password": "test4567",
+      "firstName": "Olga",
+      "lastName": "Petrova",
+      "phone": "+375291234566",
+      "birthdate": "2000-11-30",
+      "nickname": "olga_p",
+      "role": "user",
+      "middleName": "Сергеевна"
+    },
+    {
+      "id": 8,
+      "email": "user8@example.com",
+      "password": "pass8901",
+      "firstName": "Ivan",
+      "lastName": "Ivanov",
+      "phone": "+375291234567",
+      "birthdate": "1997-09-05",
+      "nickname": "ivan_i",
+      "role": "user",
+      "middleName": "Алексеевич"
+    },
+    {
+      "id": 9,
+      "email": "user9@example.com",
+      "password": "qwerty123",
+      "firstName": "Maria",
+      "lastName": "Kozlova",
+      "phone": "+375291234569",
+      "birthdate": "1999-04-12",
+      "nickname": "maria_k",
+      "role": "user",
+      "middleName": ""
+    },
+    {
+      "id": 10,
+      "email": "user10@example.com",
+      "password": "safe4321",
+      "firstName": "Alex",
+      "lastName": "Brown",
+      "phone": "+375291234570",
+      "birthdate": "1996-06-18",
+      "nickname": "alex_b",
+      "role": "user",
+      "middleName": ""
+    },
+    {
+      "id": 11,
+      "email": "user11@example.com",
+      "password": "pass9876",
+      "firstName": "Elena",
+      "lastName": "Sidorova",
+      "phone": "+375291234571",
+      "birthdate": "2002-01-25",
+      "nickname": "elena_s",
+      "role": "user",
+      "middleName": "Викторовна"
+    },
+    {
+      "id": 12,
+      "email": "user12@example.com",
+      "password": "secure6543",
+      "firstName": "Dmitry",
+      "lastName": "Morozov",
+      "phone": "+375291234572",
+      "birthdate": "1994-08-10",
+      "nickname": "dmitry_m",
+      "role": "user",
+      "middleName": ""
+    },
+    {
+      "id": 13,
+      "email": "user13@example.com",
+      "password": "test3210",
+      "firstName": "Svetlana",
+      "lastName": "Volkova",
+      "phone": "+375291234573",
+      "birthdate": "1993-12-03",
+      "nickname": "svetlana_v",
+      "role": "user",
+      "middleName": "Павловна"
+    },
+    {
+      "id": 14,
+      "email": "user14@example.com",
+      "password": "pass7654",
+      "firstName": "Victor",
+      "lastName": "Kuznetsov",
+      "phone": "+375291234574",
+      "birthdate": "1990-05-20",
+      "nickname": "victor_k",
+      "role": "user",
+      "middleName": ""
+    },
+    {
+      "id": 15,
+      "email": "user15@example.com",
+      "password": "secure1234",
+      "firstName": "Natalia",
+      "lastName": "Fedorova",
+      "phone": "+375291234575",
+      "birthdate": "1988-02-14",
+      "nickname": "natalia_f",
+      "role": "user",
+      "middleName": "Андреевна"
+    },
+    {
+      "firstName": "Анна",
+      "lastName": "Смирнова",
+      "middleName": "",
+      "phone": "+375441234567",
+      "email": "anna@test.by",
+      "birthdate": "2008-01-01",
+      "nickname": "WiseFox17ыварвырврпыв",
+      "password": "Test123!",
+      "role": "user",
+      "cart": [],
+      "favorites": [],
+      "id": 16
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "category": "transport",
+      "name": "Авиаэкспресс доставка",
+      "name_en": "Air Express Delivery",
+      "description": "Быстрая и надежная доставка авиатранспортом по всему миру.",
+      "description_en": "Fast and reliable air transport delivery worldwide.",
+      "price": 5000,
+      "rating": 4.5,
+      "image": "../assets/images/airplane_mainpage_photo.svg",
+      "attributes": {
+        "deliveryTime": "1-3 дня",
+        "maxWeight": "1000 кг",
+        "coverage": "Глобально"
+      },
+      "attributes_en": {
+        "deliveryTime": "1-3 days",
+        "maxWeight": "1000 kg",
+        "coverage": "Global"
+      },
+      "extendedDescription": "Air Express Delivery — флагманская услуга срочной доставки грузов по воздуху. Мы обеспечиваем скорость, надёжность и высокий уровень безопасности при доставке по всему миру.",
+      "extendedDescription_en": "Air Express Delivery is a flagship service for urgent air cargo delivery worldwide. We provide speed, reliability and high safety standards."
+    },
+    {
+      "id": 2,
+      "category": "transport",
+      "name": "Морские грузоперевозки",
+      "name_en": "Sea Freight Service",
+      "description": "Экономичная доставка грузов морским путем с широким охватом портов.",
+      "description_en": "Cost-effective sea freight delivery with extensive port coverage.",
+      "price": 3000,
+      "rating": 4.2,
+      "image": "../assets/images/2_service.jpeg",
+      "attributes": {
+        "deliveryTime": "10-20 дней",
+        "maxWeight": "5000 кг",
+        "portCoverage": "100+ портов"
+      },
+      "attributes_en": {
+        "deliveryTime": "10-20 days",
+        "maxWeight": "5000 kg",
+        "portCoverage": "100+ ports"
+      },
+      "extendedDescription": "Sea Freight Service предлагает оптимальное соотношение цены и объема при перевозке крупногабаритных или тяжёлых грузов.",
+      "extendedDescription_en": "Sea Freight Service offers optimal price-volume ratio for oversized or heavy cargo transportation."
+    },
+    {
+      "id": 3,
+      "category": "logistics",
+      "name": "Система управления складом",
+      "name_en": "Warehouse Management Solution",
+      "description": "Современное управление складскими запасами для оптимизации логистики.",
+      "description_en": "Modern warehouse inventory management for logistics optimization.",
+      "price": 2000,
+      "rating": 4.7,
+      "image": "../assets/images/3_service.png",
+      "attributes": {
+        "storageCapacity": "5000 м²",
+        "automationLevel": "80%",
+        "tracking": "В реальном времени"
+      },
+      "attributes_en": {
+        "storageCapacity": "5000 m²",
+        "automationLevel": "80%",
+        "tracking": "Real-time"
+      },
+      "extendedDescription": "Warehouse Management Solution — современная система автоматизации складских операций для повышения эффективности.",
+      "extendedDescription_en": "Warehouse Management Solution is a modern system for automating warehouse operations to enhance efficiency."
+    },
+    {
+      "id": 4,
+      "category": "equipment",
+      "name": "Аренда мощных вилочных погрузчиков",
+      "name_en": "Heavy Duty Forklift Rental",
+      "description": "Аренда мощных вилочных погрузчиков для складских и строительных работ.",
+      "description_en": "Rental of heavy-duty forklifts for warehouse and construction work.",
+      "price": 1500,
+      "rating": 4.4,
+      "image": "../assets/images/4_service.jpg",
+      "attributes": {
+        "liftingCapacity": "3000 кг",
+        "rentalPeriod": "1-12 месяцев",
+        "fuelType": "Дизель/Электричество"
+      },
+      "attributes_en": {
+        "liftingCapacity": "3000 kg",
+        "rentalPeriod": "1-12 months",
+        "fuelType": "Diesel/Electric"
+      },
+      "extendedDescription": "Heavy Duty Forklift Rental — аренда мощных вилочных погрузчиков, готовых к работе на стройках, складах и логистических центрах.",
+      "extendedDescription_en": "Heavy Duty Forklift Rental provides powerful forklifts ready for construction sites, warehouses, and logistics centers."
+    },
+    {
+      "id": 5,
+      "category": "technology",
+      "name": "Программное обеспечение отслеживания логистики",
+      "name_en": "Logistics Tracking Software",
+      "description": "Инновационное программное обеспечение для отслеживания грузов в реальном времени.",
+      "description_en": "Innovative software for real-time cargo tracking.",
+      "price": 1200,
+      "rating": 4.6,
+      "image": "../assets/images/5_service.png",
+      "attributes": {
+        "compatibility": "iOS, Android, Windows",
+        "updateFrequency": "Ежедневно",
+        "support": "24/7"
+      },
+      "attributes_en": {
+        "compatibility": "iOS, Android, Windows",
+        "updateFrequency": "Daily",
+        "support": "24/7"
+      },
+      "extendedDescription": "Logistics Tracking Software — программный продукт нового поколения для отслеживания перемещения грузов в реальном времени.",
+      "extendedDescription_en": "Logistics Tracking Software is a next-generation product for real-time cargo movement tracking."
+    },
+    {
+      "id": 6,
+      "category": "security",
+      "name": "Аудит соответствия безопасности",
+      "name_en": "Safety Compliance Audit",
+      "description": "Профессиональный аудит безопасности для соответствия международным стандартам.",
+      "description_en": "Professional safety audit to comply with international standards.",
+      "price": 800,
+      "rating": 4.8,
+      "image": "../assets/images/6_service.png",
+      "attributes": {
+        "auditDuration": "2 дня",
+        "certification": "ISO 9001",
+        "coverage": "Глобально"
+      },
+      "attributes_en": {
+        "auditDuration": "2 days",
+        "certification": "ISO 9001",
+        "coverage": "Global"
+      },
+      "extendedDescription": "Safety Compliance Audit — услуга профессионального аудита складов и логистических систем на соответствие международным стандартам.",
+      "extendedDescription_en": "Safety Compliance Audit provides professional audits of warehouses and logistics systems for compliance with international standards."
+    },
+    {
+      "id": 7,
+      "category": "specialized",
+      "name": "Транспортировка негабаритных грузов",
+      "name_en": "Oversized Cargo Transport",
+      "description": "Специализированная транспортировка крупногабаритных грузов с гарантией сохранности.",
+      "description_en": "Specialized transportation of oversized cargo with guaranteed safety.",
+      "price": 7000,
+      "rating": 4.3,
+      "image": "../assets/images/oversized_cargo_photo.svg",
+      "attributes": {
+        "maxDimensions": "10м x 3м x 3м",
+        "deliveryTime": "5-10 дней",
+        "insurance": "Включено"
+      },
+      "attributes_en": {
+        "maxDimensions": "10m x 3m x 3m",
+        "deliveryTime": "5-10 days",
+        "insurance": "Included"
+      },
+      "extendedDescription": "Oversized Cargo Transport — транспортировка негабаритных грузов с полным сопровождением и соблюдением всех норм.",
+      "extendedDescription_en": "Oversized Cargo Transport provides full-service transportation of oversized cargo with compliance to all regulations."
+    },
+    {
+      "id": 8,
+      "category": "additional",
+      "name": "Услуга индивидуальной упаковки",
+      "name_en": "Custom Packaging Service",
+      "description": "Индивидуальная упаковка грузов для защиты во время транспортировки.",
+      "description_en": "Custom packaging for cargo protection during transportation.",
+      "price": 400,
+      "rating": 4.5,
+      "image": "../assets/images/packaging_photo.svg",
+      "attributes": {
+        "materialOptions": "Дерево, пластик, картон",
+        "processingTime": "1-2 дня",
+        "weightLimit": "2000 кг"
+      },
+      "attributes_en": {
+        "materialOptions": "Wood, plastic, cardboard",
+        "processingTime": "1-2 days",
+        "weightLimit": "2000 kg"
+      },
+      "extendedDescription": "Custom Packaging Service — услуга индивидуальной упаковки под каждый конкретный тип груза для максимальной защиты.",
+      "extendedDescription_en": "Custom Packaging Service provides tailored packaging solutions for each cargo type to ensure maximum protection."
+    },
+    {
+      "id": 9,
+      "category": "transport",
+      "name": "Железнодорожные грузоперевозки",
+      "name_en": "Rail Freight Service",
+      "description": "Надежная доставка грузов по железной дороге с высокой грузоподъемностью.",
+      "description_en": "Reliable rail freight delivery with high load capacity.",
+      "price": 2500,
+      "rating": 4.1,
+      "image": "../assets/images/rail_freight_photo.svg",
+      "attributes": {
+        "deliveryTime": "7-15 дней",
+        "maxWeight": "10000 кг",
+        "coverage": "Евразия"
+      },
+      "attributes_en": {
+        "deliveryTime": "7-15 days",
+        "maxWeight": "10000 kg",
+        "coverage": "Eurasia"
+      },
+      "extendedDescription": "Rail Freight Service — доставка грузов по железной дороге на длинные расстояния с оптимальными сроками и высокой надежностью.",
+      "extendedDescription_en": "Rail Freight Service provides long-distance rail freight delivery with optimal timing and high reliability."
+    },
+    {
+      "id": 10,
+      "category": "transport",
+      "name": "Экспресс автоперевозки",
+      "name_en": "Road Freight Express",
+      "description": "Экспресс-доставка грузов автотранспортом по регионам.",
+      "description_en": "Express road freight delivery across regions.",
+      "price": 3500,
+      "rating": 4.3,
+      "image": "../assets/images/truck_express_photo.svg",
+      "attributes": {
+        "deliveryTime": "2-5 дней",
+        "maxWeight": "2000 кг",
+        "coverage": "Регионально"
+      },
+      "attributes_en": {
+        "deliveryTime": "2-5 days",
+        "maxWeight": "2000 kg",
+        "coverage": "Regional"
+      },
+      "extendedDescription": "Road Freight Express — услуга экспресс-доставки по наземным маршрутам для быстрой логистики по городам.",
+      "extendedDescription_en": "Road Freight Express provides express delivery via ground routes for fast regional logistics."
+    },
+    {
+      "id": 11,
+      "category": "logistics",
+      "name": "Оптимизация логистики",
+      "name_en": "Supply Chain Optimization",
+      "description": "Оптимизация цепочки поставок для повышения эффективности бизнеса.",
+      "description_en": "Supply chain optimization to enhance business efficiency.",
+      "price": 2500,
+      "rating": 4.6,
+      "image": "../assets/images/supply_chain_photo.svg",
+      "attributes": {
+        "analysisDepth": "Полный цикл",
+        "savingsPotential": "До 20%",
+        "implementationTime": "30 дней"
+      },
+      "attributes_en": {
+        "analysisDepth": "Full cycle",
+        "savingsPotential": "Up to 20%",
+        "implementationTime": "30 days"
+      },
+      "extendedDescription": "Оптимизация логистики — внедрение стратегий для снижения затрат, ускорения поставок и повышения прозрачности.",
+      "extendedDescription_en": "Supply Chain Optimization implements strategies to reduce costs, speed up deliveries, and increase transparency."
+    },
+    {
+      "id": 12,
+      "category": "logistics",
+      "name": "Логистика холодовой цепи",
+      "name_en": "Cold Chain Logistics",
+      "description": "Логистика с поддержанием холодовой цепи для скоропортящихся товаров.",
+      "description_en": "Cold chain logistics for perishable goods.",
+      "price": 4500,
+      "rating": 4.5,
+      "image": "../assets/images/cold_chain_photo.svg",
+      "attributes": {
+        "temperatureRange": "-20°C до +5°C",
+        "capacity": "1000 м³",
+        "tracking": "В реальном времени"
+      },
+      "attributes_en": {
+        "temperatureRange": "-20°C to +5°C",
+        "capacity": "1000 m³",
+        "tracking": "Real-time"
+      },
+      "extendedDescription": "Логистика холодовой цепи — полное соблюдение температурного режима для скоропортящихся продуктов и медикаментов.",
+      "extendedDescription_en": "Cold Chain Logistics ensures strict temperature control for perishable goods and pharmaceuticals."
+    },
+    {
+      "id": 13,
+      "category": "equipment",
+      "name": "Аренда контейнерных кранов",
+      "name_en": "Container Crane Rental",
+      "description": "Аренда контейнерных кранов для портовых и складских операций.",
+      "description_en": "Rental of container cranes for port and warehouse operations.",
+      "price": 2200,
+      "rating": 4.2,
+      "image": "../assets/images/crane_rental_photo.svg",
+      "attributes": {
+        "liftingCapacity": "5000 кг",
+        "rentalPeriod": "1-6 месяцев",
+        "operationMode": "Автоматический"
+      },
+      "attributes_en": {
+        "liftingCapacity": "5000 kg",
+        "rentalPeriod": "1-6 months",
+        "operationMode": "Automatic"
+      },
+      "extendedDescription": "Аренда контейнерных кранов — аренда кранов для портовых и логистических операций с высокой автоматизацией.",
+      "extendedDescription_en": "Container Crane Rental provides cranes for port and logistics operations with high automation."
+    },
+    {
+      "id": 14,
+      "category": "equipment",
+      "name": "Аренда паллетных тележек",
+      "name_en": "Pallet Truck Rental",
+      "description": "Аренда тележек для транспортировки паллет на складах.",
+      "description_en": "Rental of pallet trucks for warehouse transport.",
+      "price": 600,
+      "rating": 4,
+      "image": "../assets/images/pallet_truck_photo.svg",
+      "attributes": {
+        "liftingCapacity": "1500 кг",
+        "rentalPeriod": "1-24 месяца",
+        "type": "Электрическая"
+      },
+      "attributes_en": {
+        "liftingCapacity": "1500 kg",
+        "rentalPeriod": "1-24 months",
+        "type": "Electric"
+      },
+      "extendedDescription": "Аренда паллетных тележек — электрические тележки с высокой манёвренностью для складов и магазинов.",
+      "extendedDescription_en": "Pallet Truck Rental offers highly maneuverable electric trucks for warehouses and stores."
+    },
+    {
+      "id": 15,
+      "category": "technology",
+      "name": "Инструмент оптимизации маршрутов",
+      "name_en": "Route Optimization Tool",
+      "description": "Инструмент для оптимизации маршрутов доставки с экономией времени.",
+      "description_en": "Tool for optimizing delivery routes to save time.",
+      "price": 1000,
+      "rating": 4.7,
+      "image": "../assets/images/route_optimization_photo.svg",
+      "attributes": {
+        "compatibility": "Все платформы",
+        "updateFrequency": "Ежедневно",
+        "savingsPotential": "До 15%"
+      },
+      "attributes_en": {
+        "compatibility": "All platforms",
+        "updateFrequency": "Daily",
+        "savingsPotential": "Up to 15%"
+      },
+      "extendedDescription": "Инструмент оптимизации маршрутов — алгоритмическая система для построения оптимальных маршрутов с учетом пробок и условий.",
+      "extendedDescription_en": "Route Optimization Tool is an algorithmic system for building optimal routes considering traffic and constraints."
+    },
+    {
+      "id": 16,
+      "category": "technology",
+      "name": "IoT мониторинг грузов",
+      "name_en": "IoT Cargo Monitoring",
+      "description": "Мониторинг грузов с использованием IoT-технологий для повышения безопасности.",
+      "description_en": "Cargo monitoring using IoT technologies for enhanced security.",
+      "price": 1500,
+      "rating": 4.5,
+      "image": "../assets/images/iot_monitoring_photo.svg",
+      "attributes": {
+        "sensorTypes": "Температура, влажность",
+        "connectivity": "4G/5G",
+        "support": "24/7"
+      },
+      "attributes_en": {
+        "sensorTypes": "Temperature, humidity",
+        "connectivity": "4G/5G",
+        "support": "24/7"
+      },
+      "extendedDescription": "IoT мониторинг грузов — сенсоры и ПО для контроля условий перевозки в реальном времени.",
+      "extendedDescription_en": "IoT Cargo Monitoring provides sensors and software for real-time cargo condition monitoring."
+    },
+    {
+      "id": 17,
+      "category": "Safety",
+      "name": "Обучение пожарной безопасности",
+      "name_en": "Fire Safety Training",
+      "description": "Обучение персонала мерам пожарной безопасности для складов.",
+      "description_en": "Training staff in fire safety measures for warehouses.",
+      "price": 500,
+      "rating": 4.6,
+      "image": "../assets/images/fire_safety_photo.svg",
+      "attributes": {
+        "duration": "1 день",
+        "certification": "Национальный стандарт",
+        "groupSize": "До 20 человек"
+      },
+      "attributes_en": {
+        "duration": "1 day",
+        "certification": "National standard",
+        "groupSize": "Up to 20 people"
+      },
+      "extendedDescription": "Обучение пожарной безопасности — тренинги для сотрудников по стандартам пожарной безопасности с практическими занятиями.",
+      "extendedDescription_en": "Fire Safety Training provides employee training on fire safety standards with practical exercises."
+    },
+    {
+      "id": 18,
+      "category": "safety",
+      "name": "Обучение работе с опасными материалами",
+      "name_en": "Hazardous Materials Handling",
+      "description": "Обучение безопасной работе с опасными материалами.",
+      "description_en": "Training for safe handling of hazardous materials.",
+      "price": 700,
+      "rating": 4.4,
+      "image": "../assets/images/hazardous_materials_photo.svg",
+      "attributes": {
+        "duration": "2 дня",
+        "certification": "Международный стандарт",
+        "groupSize": "До 15 человек"
+      },
+      "attributes_en": {
+        "duration": "2 days",
+        "certification": "International standard",
+        "groupSize": "Up to 15 people"
+      },
+      "extendedDescription": "Обучение работе с опасными материалами — специализированное обучение по безопасной работе с опасными веществами.",
+      "extendedDescription_en": "Hazardous Materials Handling provides specialized training for safe handling of hazardous substances."
+    },
+    {
+      "id": 19,
+      "category": "specialized",
+      "name": "Транспортировка рефрижераторов",
+      "name_en": "Refrigerated Cargo Transport",
+      "description": "Перевозка грузов в рефрижераторах с поддержанием температуры.",
+      "description_en": "Transport of refrigerated cargo with temperature control.",
+      "price": 6000,
+      "rating": 4.5,
+      "image": "../assets/images/refrigerated_cargo_photo.svg",
+      "attributes": {
+        "temperatureRange": "-25°C до +10°C",
+        "deliveryTime": "3-7 дней",
+        "insurance": "Включено"
+      },
+      "attributes_en": {
+        "temperatureRange": "-25°C to +10°C",
+        "deliveryTime": "3-7 days",
+        "insurance": "Included"
+      },
+      "extendedDescription": "Транспортировка рефрижераторов — перевозка продукции с сохранением заданного температурного режима для фармацевтики и продуктов питания.",
+      "extendedDescription_en": "Refrigerated Cargo Transport ensures temperature-controlled transport for pharmaceuticals and food products."
+    },
+    {
+      "id": 20,
+      "category": "specialized",
+      "name": "Транспортировка опасных грузов",
+      "name_en": "Hazardous Cargo Transport",
+      "description": "Перевозка опасных грузов с соблюдением всех норм безопасности.",
+      "description_en": "Transport of hazardous cargo with full safety compliance.",
+      "price": 8000,
+      "rating": 4.2,
+      "image": "../assets/images/hazardous_cargo_photo.svg",
+      "attributes": {
+        "safetyCompliance": "ADR",
+        "deliveryTime": "5-10 дней",
+        "insurance": "Включено"
+      },
+      "attributes_en": {
+        "safetyCompliance": "ADR",
+        "deliveryTime": "5-10 days",
+        "insurance": "Included"
+      },
+      "extendedDescription": "Транспортировка опасных грузов — доставка с полной документацией и соблюдением норм ADR, IATA.",
+      "extendedDescription_en": "Hazardous Cargo Transport provides delivery with full documentation and compliance with ADR, IATA standards."
+    },
+    {
+      "id": 21,
+      "category": "additional",
+      "name": "Страхование грузов",
+      "name_en": "Cargo Insurance Service",
+      "description": "Страхование грузов для защиты от рисков во время транспортировки.",
+      "description_en": "Cargo insurance to protect against transportation risks.",
+      "price": 300,
+      "rating": 4.7,
+      "image": "../assets/images/insurance_photo.svg",
+      "attributes": {
+        "coverageLimit": "До $100,000",
+        "processingTime": "1 день",
+        "type": "Все риски"
+      },
+      "attributes_en": {
+        "coverageLimit": "Up to $100,000",
+        "processingTime": "1 day",
+        "type": "All risks"
+      },
+      "extendedDescription": "Страхование грузов — защита от утери, повреждений и других рисков с индивидуальными лимитами покрытия.",
+      "extendedDescription_en": "Cargo Insurance Service protects against loss, damage, and other risks with customizable coverage limits."
+    },
+    {
+      "id": 22,
+      "category": "additional",
+      "name": "Экспедирование грузов",
+      "name_en": "Freight Forwarding Service",
+      "description": "Организация международных перевозок с таможенным оформлением.",
+      "description_en": "Organization of international freight with customs clearance.",
+      "price": 3500,
+      "rating": 4.4,
+      "image": "../assets/images/freight_forwarding_photo.svg",
+      "attributes": {
+        "customsClearance": "Включено",
+        "coverage": "Глобально",
+        "processingTime": "2-3 дня"
+      },
+      "attributes_en": {
+        "customsClearance": "Included",
+        "coverage": "Global",
+        "processingTime": "2-3 days"
+      },
+      "extendedDescription": "Экспедирование грузов — комплексная международная логистика с таможенным оформлением для B2B поставок.",
+      "extendedDescription_en": "Freight Forwarding Service provides comprehensive international logistics with customs clearance for B2B shipments."
+    },
+    {
+      "id": 23,
+      "category": "transport",
+      "name": "Интермодальная перевозка",
+      "name_en": "Intermodal Freight Service",
+      "description": "Комбинированная доставка грузов с использованием нескольких видов транспорта.",
+      "description_en": "Combined freight delivery using multiple transport modes.",
+      "price": 4000,
+      "rating": 4.3,
+      "image": "../assets/images/intermodal_freight_photo.svg",
+      "attributes": {
+        "deliveryTime": "5-15 дней",
+        "maxWeight": "7000 кг",
+        "coverage": "Евразия"
+      },
+      "attributes_en": {
+        "deliveryTime": "5-15 days",
+        "maxWeight": "7000 kg",
+        "coverage": "Eurasia"
+      },
+      "extendedDescription": "Интермодальная перевозка — использование различных видов транспорта для оптимизации логистики и затрат.",
+      "extendedDescription_en": "Intermodal Freight Service uses multiple transport modes to optimize logistics and costs."
+    },
+    {
+      "id": 24,
+      "category": "logistics",
+      "name": "Система управления запасами",
+      "name_en": "Inventory Management System",
+      "description": "Система управления запасами для автоматизации складских процессов.",
+      "description_en": "Inventory management system for automating warehouse processes.",
+      "price": 2500,
+      "rating": 4.6,
+      "image": "../assets/images/inventory_management_photo.svg",
+      "attributes": {
+        "capacity": "10000 SKU",
+        "integration": "ERP-системы",
+        "tracking": "В реальном времени"
+      },
+      "attributes_en": {
+        "capacity": "10000 SKU",
+        "integration": "ERP systems",
+        "tracking": "Real-time"
+      },
+      "extendedDescription": "Система управления запасами — IT-решение для автоматизации складских процессов с интеграцией ERP.",
+      "extendedDescription_en": "Inventory Management System is an IT solution for automating warehouse processes with ERP integration."
+    },
+    {
+      "id": 25,
+      "category": "equipment",
+      "name": "Аренда конвейерных систем",
+      "name_en": "Conveyor System Rental",
+      "description": "Аренда конвейерных систем для автоматизации складских операций.",
+      "description_en": "Rental of conveyor systems for warehouse automation.",
+      "price": 1800,
+      "rating": 4.1,
+      "image": "../assets/images/conveyor_system_photo.svg",
+      "attributes": {
+        "length": "10-50 м",
+        "rentalPeriod": "1-12 месяцев",
+        "speed": "Регулируемая"
+      },
+      "attributes_en": {
+        "length": "10-50 m",
+        "rentalPeriod": "1-12 months",
+        "speed": "Adjustable"
+      },
+      "extendedDescription": "Аренда конвейерных систем — ленточные конвейеры для логистики и сортировки.",
+      "extendedDescription_en": "Conveyor System Rental provides belt conveyors for logistics and sorting operations."
+    },
+    {
+      "id": 25,
+      "category": "technology",
+      "name": "Программное обеспечение для управления автопарком",
+      "name_en": "Fleet Management Software",
+      "description": "Программное обеспечение для управления автопарком и оптимизации маршрутов.",
+      "description_en": "Software for fleet management and route optimization.",
+      "price": 1300,
+      "rating": "4.5",
+      "image": "services/fleet_management_service_image.jpg",
+      "attributes": {
+        "compatibility": "Все платформы",
+        "updateFrequency": "Еженедельник",
+        "support": "24/7"
+      },
+      "attributes_en": {
+        "compatibility": "All platforms",
+        "updateFrequency": "Weekly",
+        "support": "24/7"
+      },
+      "extendedDescription": "Программное обеспечение для управления автопарком — софт для диспетчеризации и контроля автопарка.",
+      "extendedDescription_en": "Fleet Management Software provides software for fleet dispatching and monitoring."
+    },
+    {
+      "id": 26,
+      "category": "safety",
+      "name": "Обучение реагированию на ЧС",
+      "name_en": "Emergency Response Training",
+      "description": "Обучение персонала реагированию на чрезвычайные ситуации.",
+      "description_en": "Training staff for emergency response in warehouses.",
+      "price": 600,
+      "rating": "4.7",
+      "image": "services/emergency_training_service_image.jpg",
+      "attributes": {
+        "duration": "1 день",
+        "certification": "Национальный стандарт",
+        "groupSize": "До 25 человек"
+      },
+      "attributes_en": {
+        "duration": "1 day",
+        "certification": "National standard",
+        "groupSize": "Up to 25 people"
+      },
+      "extendedDescription": "Обучение реагированию на ЧС — программа обучения действиям при пожарах, затоплениях и других ЧС.",
+      "extendedDescription_en": "Emergency Response Training provides training for handling fires, floods, and other emergencies."
+    },
+    {
+      "id": 28,
+      "category": "specialized",
+      "name": "Транспортировка медицинских товаров",
+      "name_en": "Medical Supplies Transport",
+      "description": "Перевозка медицинских товаров с соблюдением строгих стандартов.",
+      "description_en": "Transport of medical supplies with strict compliance standards.",
+      "price": 6500,
+      "rating": 4.6,
+      "image": "../assets/images/medical_transport_photo.svg",
+      "attributes": {
+        "temperatureRange": "0°C до +25°C",
+        "deliveryTime": "2-5 дней",
+        "certification": "Медицинская"
+      },
+      "attributes_en": {
+        "temperatureRange": "0°C to +25°C",
+        "deliveryTime": "2-5 days",
+        "certification": "Medical"
+      },
+      "extendedDescription": "Транспортировка медицинских товаров — логистика для медицинских товаров с соблюдением стандартов.",
+      "extendedDescription_en": "Medical Supplies Transport ensures logistics for medical supplies with compliance to standards."
+    },
+    {
+      "id": 29,
+      "category": "additional",
+      "name": "Услуга маркировки",
+      "name_en": "Labeling Service",
+      "description": "Маркировка грузов для упрощения идентификации.",
+      "description_en": "Labeling service for easier cargo identification.",
+      "price": 200,
+      "rating": 4.3,
+      "image": "../assets/images/labeling_service.svg",
+      "attributes": {
+        "processingTime": "1 день",
+        "labelTypes": "Штрихкоды, QR-коды",
+        "weightLimit": "5000 кг"
+      },
+      "attributes_en": {
+        "processingTime": "1 day",
+        "labelTypes": "Barcodes, QR codes",
+        "weightLimit": "5000 kg"
+      },
+      "extendedDescription": "Услуга маркировки — маркировка товаров с использованием штрихкодов и QR-кодов для логистики.",
+      "extendedDescription_en": "Labeling Service provides cargo labeling with barcodes and QR codes for logistics."
+    },
+    {
+      "id": 30,
+      "category": "transport",
+      "name": "Доставка последней мили",
+      "name_en": "Last Mile Delivery",
+      "description": "Доставка грузов до конечного потребителя с высокой скоростью.",
+      "description_en": "Delivery to the end consumer with high speed.",
+      "price": 2000,
+      "rating": 4.4,
+      "image": "../assets/images/last_mile_delivery_photo.svg",
+      "attributes": {
+        "deliveryTime": "1-2 дня",
+        "maxWeight": "500 кг",
+        "coverage": "Городская зона"
+      },
+      "attributes_en": {
+        "deliveryTime": "1-2 days",
+        "maxWeight": "500 kg",
+        "coverage": "Urban area"
+      },
+      "extendedDescription": "Доставка последней мили — доставка от склада до клиента для розничной торговли и e-commerce.",
+      "extendedDescription_en": "Last Mile Delivery provides delivery from warehouse to client for retail and e-commerce."
+    }
+  ],
+  "cart": [
+    {
+      "id": 11,
+      "userId": 5,
+      "serviceId": 8,
+      "quantity": 1
+    },
+    {
+      "id": 12,
+      "userId": 5,
+      "serviceId": 9,
+      "quantity": 2
+    },
+    {
+      "id": 13,
+      "userId": 5,
+      "serviceId": 10,
+      "quantity": 1
+    },
+    {
+      "id": 14,
+      "userId": 5,
+      "serviceId": 11,
+      "quantity": 1
+    },
+    {
+      "id": 15,
+      "userId": 5,
+      "serviceId": 12,
+      "quantity": 2
+    },
+    {
+      "userId": "3",
+      "serviceId": 1,
+      "quantity": 5,
+      "id": 20
+    },
+    {
+      "userId": "1",
+      "serviceId": 1,
+      "quantity": 2,
+      "id": 22
+    },
+    {
+      "userId": "2",
+      "serviceId": 1,
+      "quantity": 1,
+      "id": 23
+    }
+  ],
+  "favorites": [
+    {
+      "id": 1,
+      "userId": 1,
+      "serviceId": 1
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "serviceId": 7
+    },
+    {
+      "id": 5,
+      "userId": 1,
+      "serviceId": 9
+    },
+    {
+      "id": 11,
+      "userId": 5,
+      "serviceId": 10
+    },
+    {
+      "id": 12,
+      "userId": 5,
+      "serviceId": 12
+    },
+    {
+      "id": 13,
+      "userId": 5,
+      "serviceId": 14
+    },
+    {
+      "id": 14,
+      "userId": 5,
+      "serviceId": 16
+    },
+    {
+      "id": 15,
+      "userId": 5,
+      "serviceId": 18
+    },
+    {
+      "userId": "3",
+      "serviceId": 1,
+      "id": 16
+    }
+  ]
+}
