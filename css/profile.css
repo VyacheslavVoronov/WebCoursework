@@ -1,0 +1,109 @@
+.profile-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.profile-card {
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    padding: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+.profile-photo-wrap {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.profile-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.profile-info {
+    margin-bottom: 30px;
+}
+.profile-info p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.profile-input {
+    color: var(--form-bg);
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid var(--contact-text-area-border);
+    height: 60px;
+    padding-left: 20px;
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+.profile-input::placeholder {
+    color: var(--form-bg);
+}
+.profile-input:disabled {
+    background-color: var(--nav-bg);
+    opacity: 0.7;
+}
+.logout-button {
+    background-color: var(--secondary-color);
+    color: var(--form-bg);
+    text-align: center;
+    min-width: 180px;
+    padding: 20px 35px 17px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.logout-button:hover {
+    background-color: var(--primary-color);
+}
+.success-message, .error-message {
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    display: none;
+}
+.success-message {
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    background-color: var(--background-color);
+}
+.error-message {
+    border: 1px solid var(--error-bg);
+    color: var(--secondary-color);
+}
+@media screen and (max-width: 767px) {
+    .profile-section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .profile-card {
+        padding: 20px;
+    }
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+    .profile-input {
+        height: 55px;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 479px) {
+    .profile-card {
+        padding: 15px;
+    }
+    .profile-photo {
+        width: 100px;
+        height: 100px;
+    }
+}
