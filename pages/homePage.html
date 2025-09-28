@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="ru">
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
@@ -8,908 +10,501 @@
     <link rel="stylesheet" href="../css/HomePage.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/accessibility.css">
+    <link rel="stylesheet" href="../css/modal.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="../css/swiper.css">
-
     <script src="../js/LayoutLoader.js" defer></script>
     <script src="../js/Preloader.js" defer></script>
     <script src="../js/BurgerMenu.js" defer></script>
     <script src="../js/ThemeToggle.js" defer></script>
-    <script src="../js/Swiper.js" type="module" ></script>
+    <script src="../js/Swiper.js" defer></script>
+    <script src="../json/Auth/authGuard.js" defer></script>
+    <script src="../js/language.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-    <title>
-     TransitFlow
-    </title>
+    <script type="module" src="../js/ModalManager.js"></script>
+    <script type="module" src="../js/accessability.js"></script>
+    <script type="module" src="../js/ResetSettings.js"></script>
+    <title data-translate-key="title">TransitFlow</title>
 </head>
 <body>
-    <div class="preloader" id="preloader" position: fstyle="ixed; top: 0; left: 0; width: 100%; height: 100%; background: #fff; display: flex; justify-content: center; align-items: center; z-index: 9999;">
+    <div class="preloader" id="preloader" aria-hidden="true">
         <div style="border: 5px solid #f3f3f3; border-top: 5px solid #273270; border-radius: 50%; width: 50px; height: 50px; animation: spin 1s linear infinite;"></div>
     </div>
     <header id="header"></header>
-    <section class="banner-section">
-     <div class="container">
-      <div class="banner-title-wrap">
-       <div class="subtitle-wrap-dark">
-        <div class="subtitle-border">
-        </div>
-        <p class="subtitle-dark">
-         Logistics & Supply Chain Solutions
-        </p>
-       </div>
-       <h1 class="page-title">
-        Safest Logistics Solutions Provider With Integrity
-       </h1>
-       <p class="text-white">
-        We're a leading provider of less-than-truckload freight transportation with the world-class network, technology and service our customers need at all the time.
-       </p>
-       <div class="space-top-md">
-        <a class="yellow-overlay-button inline-block" href="/about-us">
-         <div>
-          Explore More
-         </div>
-         <div class="yellow-button-hover">
-         </div>
-        </a>
-       </div>
-      </div>
-     </div>
-    </section>
-    <section class="service-section">
-     <div class="container">
-      <div class="service-whole-wrap">
-       <div class="service-title-wrap">
-        <div class="subtitle-wrap">
-         <p class="subtitle">
-          What We Do
-         </p>
-         <div class="subtitle-border">
-         </div>
-        </div>
-        <h2 class="section-title">
-         Safe & Reliable Cargo Solutions
-        </h2>
-       </div>
-       <div class="layout-grid service-grid">
-        <div class="service-card">
-         <div class="home-service-icon-wrap">
-          <img alt="Boat Icon" src="../assets/icons/ship_icon.svg" class="svg-icon"/>
-         </div>
-         <div class="service-line">
-         </div>
-         <div>
-          <a class="service-title" href="/service-single">
-           Sea Transport Services
-          </a>
-          <div class="space-top-sm">
-           <p>
-            Wherever your cargo is going, we can arrange the shipment for you and remain competitive with the business market.
-           </p>
-          </div>
-         </div>
-        </div>
-        <div class="service-card">
-         <div class="home-service-icon-wrap">
-          <img alt="Boat Icon" src="../assets/icons/warehouse_icon.svg" class="svg-icon"/>
-         </div>
-         <div class="service-line">
-         </div>
-         <div>
-          <a class="service-title" href="/service-single">
-           Warehousing Services
-          </a>
-          <div class="space-top-sm">
-           <p>
-            We have buildings that can provide you with distribution, storage, inventory management, order fulfilment services.
-           </p>
-          </div>
-         </div>
-        </div>
-        <div class="service-card">
-         <div class="home-service-icon-wrap">
-          <img alt="Boat Icon" src="../assets/icons/flight_icon.svg" width="82" class="svg-icon"/>
-         </div>
-         <div class="service-line">
-         </div>
-         <div>
-          <a class="service-title" href="/service-single">
-           Air Fright Services
-          </a>
-          <div class="space-top-sm">
-           <p>
-            We're partners with airlines and freight forwarders to offer seamless air freight solutions to the clients all over the world.
-           </p>
-          </div>
-         </div>
-        </div>
-        <div class="service-card">
-         <div class="home-service-icon-wrap">
-          <img alt="Boat Icon" src="../assets/icons/van_icon.svg" class="svg-icon"/>
-         </div>
-         <div class="service-line">
-         </div>
-         <div>
-          <a class="service-title" href="/service-single">
-           Local Shipping Services
-          </a>
-          <div class="space-top-sm">
-           <p>
-            We work close with strategic partners to ensure our domestic trucking offers clients everything they need in their place.
-           </p>
-          </div>
-         </div>
-        </div>
-       </div>
-      </div>
-     </div>
-    </section>
-    <section class="about-section">
-     <div class="service-image-wrap">
-     </div>
-     <div>
-      <div class="container">
-       <div>
-        <div class="layout-grid about-grid">
-         <div>
-          <div class="subtitle-wrap">
-           <p class="subtitle">
-            Why Us
-           </p>
-           <div class="subtitle-border">
-           </div>
-          </div>
-          <h2 class="section-title">
-           We provide full range global logistics solution
-          </h2>
-          <div class="about-content">
-           <p>
-            We strive to understand what they’re going through, what they need, what their price points are, and what’s important to them and their customers.
-           </p>
-           <p>
-            We historically build meaningful relationships with our customers. We connect with our customers. We care.
-           </p>
-          </div>
-          <div class="about-points-wrap">
-           <div class="about-list">
-            <div class="icon-wrap">
-             <img alt="Icon" src="../assets/icons/yellow_box_icon.svg"/>
+    <section class="banner-section" aria-labelledby="banner-title">
+        <div class="container">
+            <div class="banner-title-wrap">
+                <div class="subtitle-wrap-dark">
+                    <div class="subtitle-border"></div>
+                    <p class="subtitle-dark" data-translate-key="banner_subtitle">Решения для логистики и цепочек поставок</p>
+                </div>
+                <h1 class="page-title" id="banner-title" data-translate-key="banner_title">Надежный поставщик логистических решений</h1>
+                <p class="text-white" data-translate-key="banner_text">Мы ведущий провайдер грузоперевозок с мировой сетью и технологиями.</p>
+                <div class="space-top-md">
+                    <a class="yellow-overlay-button inline-block" href="../pages/AboutUs.html" aria-label="Узнать больше о наших услугах">
+                        <div data-translate-key="explore_more">Узнать больше</div>
+                        <div class="yellow-button-hover"></div>
+                    </a>
+                </div>
             </div>
-            <h3 class="about-point">
-             Delivery on Time
-            </h3>
-           </div>
-           <div class="about-list" >
-            <div class="icon-wrap">
-             <img alt="Icon" src="../assets/icons/yellow_money_icon.svg"/>
-            </div>
-            <h3 class="about-point">
-             Optimized Travel Cost
-            </h3>
-           </div>
-          </div>
-         </div>
-         <div class="about-image-wrap">
-          <img alt="Cargo Image" src="../assets/images/airplane_mainpage_photo.svg" />
-          <div class="about-image">
-           <img alt="Image" src="../assets/images/woman_mainpage_photo.svg" width="463"/>
-          </div>
-         </div>
         </div>
-        <div class="counter-wrap">
-         <div class="counter-card">
-          <p class="counter-number">
-           81294
-          </p>
-          <div class="counter-text-wrap">
-           <div class="counter-block yellow-gradient">
-           </div>
-           <p class="counter-text">
-            Delivered Packages
-           </p>
-          </div>
-         </div>
-         <div class="counter-line">
-         </div>
-         <div class="counter-card">
-          <p class="counter-number">
-           13594
-          </p>
-          <div class="counter-text-wrap">
-           <div class="counter-block yellow-gradient">
-           </div>
-           <p class="counter-text">
-            Satisfied Clients
-           </p>
-          </div>
-         </div>
-        </div>
-       </div>
-      </div>
-     </div>
     </section>
-    <section class="work-section">
-     <div class="work-bg yellow-gradient">
-     </div>
-     <div class="container-large container">
-      <div class="align-center">
-       <h2 class="section-title">
-        Transporting across the world
-       </h2>
-      </div>
-      <div class="space-top-md">
-       <div class="layout-grid work-grid">
-        <div class="work-card">
-         <div class="work-image-shade">
-          <div class="work-text-wrap">
-           <h3 class="work-card-title">
-            Liquid Transportation
-           </h3>
-           <p class="work-text">
-            Premium Tankers
-           </p>
-          </div>
-         </div>
-         <img alt="Transport Image" src="../assets/images/premium_tankers_photo.svg" width="603"/>
+    <section class="service-section" aria-labelledby="service-title">
+        <div class="container">
+            <div class="service-whole-wrap">
+                <div class="service-title-wrap">
+                    <div class="subtitle-wrap">
+                        <p class="subtitle" data-translate-key="what_we_do">What We Do</p>
+                        <div class="subtitle-border"></div>
+                    </div>
+                    <h2 class="section-title" data-translate-key="service_title">Safe & Reliable Cargo Solutions</h2>
+                </div>
+                <div class="layout-grid service-grid">
+                    <div class="service-card">
+                        <div class="home-service-icon-wrap">
+                            <img alt="Иконка морского транспорта - корабль" src="../assets/icons/ship_icon.svg" class="svg-icon"/>
+                        </div>
+                        <div class="service-line"></div>
+                        <div>
+                            <a class="service-title" href="/service-single" data-translate-key="sea_transport">Sea Transport Services</a>
+                            <div class="space-top-sm">
+                                <p data-translate-key="sea_transport_text">Wherever your cargo is going, we can arrange the shipment for you and remain competitive with the business market.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="home-service-icon-wrap">
+                            <img alt="Иконка складских услуг - склад" src="../assets/icons/warehouse_icon.svg" class="svg-icon"/>
+                        </div>
+                        <div class="service-line"></div>
+                        <div>
+                            <a class="service-title" href="/service-single" data-translate-key="warehousing">Warehousing Services</a>
+                            <div class="space-top-sm">
+                                <p data-translate-key="warehousing_text">We have buildings that can provide you with distribution, storage, inventory management, order fulfilment services.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="home-service-icon-wrap">
+                            <img alt="Иконка авиаперевозок - самолет" src="../assets/icons/flight_icon.svg" width="82" class="svg-icon"/>
+                        </div>
+                        <div class="service-line"></div>
+                        <div>
+                            <a class="service-title" href="/service-single" data-translate-key="air_freight">Air Fright Services</a>
+                            <div class="space-top-sm">
+                                <p data-translate-key="air_freight_text">We're partners with airlines and freight forwarders to offer seamless air freight solutions to the clients all over the world.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="home-service-icon-wrap">
+                            <img alt="Иконка местных перевозок - фургон" src="../assets/icons/van_icon.svg" class="svg-icon"/>
+                        </div>
+                        <div class="service-line"></div>
+                        <div>
+                            <a class="service-title" href="/service-single" data-translate-key="local_shipping">Local Shipping Services</a>
+                            <div class="space-top-sm">
+                                <p data-translate-key="local_shipping_text">We work close with strategic partners to ensure our domestic trucking offers clients everything they need in their place.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="work-card">
-         <div class="work-image-shade">
-          <div class="work-text-wrap">
-           <h3 class="work-card-title">
-            Packaging Solutions
-           </h3>
-           <p class="work-text">
-            Warehouse Management
-           </p>
-          </div>
-         </div>
-         <img alt="Transport Image" src="../assets/images/warehouse_managment_photo.svg" width="594"/>
-        </div>
-        <div class="work-card">
-         <div class="work-image-shade">
-          <div class="work-text-wrap">
-           <h3 class="work-card-title">
-            Contract Logistics
-           </h3>
-           <p class="work-text">
-            Road Transportation
-           </p>
-          </div>
-         </div>
-         <img alt="Transport Image" src="../assets/images/road_transporation_photo.svg" width="534"/>
-        </div>
-        <div class="work-card">
-         <div class="work-image-shade">
-          <div class="work-text-wrap">
-           <h3 class="work-card-title">
-            Warehouse & Distribution
-           </h3>
-           <p class="work-text">
-            Large Warehouse
-           </p>
-          </div>
-         </div>
-         <img alt="Transport Image" src="../assets/images/warehouse_and_distribution.svg" width="519"/>
-        </div>
-        <div class="work-card">
-         <div class="work-image-shade">
-          <div class="work-text-wrap">
-           <h3 class="work-card-title">
-            Specialized Transport
-           </h3>
-           <p class="work-text">
-            Ocean Transports
-           </p>
-          </div>
-         </div>
-         <img alt="Transport Image" src="../assets/images/ocean_transports_photo.svg" width="496"/>
-        </div>
-       </div>
-      </div>
-      <div class="space-top-xl">
-       <div class="align-center">
-        <a class="dark-overlay-button inline-block" href="/our-project">
-         <div>
-          More Work
-         </div>
-         <div class="dark-button-hover">
-         </div>
-        </a>
-       </div>
-      </div>
-     </div>
     </section>
     <section class="comments-section">
-      <h3>Customer Reviews</h3>
-      <h2>What Our Customers Say</h2>
-      <div class="comments-slider swiper">
-          <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                  <div class="comments-slide-elements">
-                      <div class="comments-slide-elements-person">
-                          <img src="../assets/images/Kathleen_Smith_photo.svg" alt="commentator">
-                          <div class="comments-slide-text">
-                              <span class="comments-slide-text-name">Lio Jessica</span>
-                              <span class="comments-slide-text-country">United Kingdom</span>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="comments-slide-comment">
-                      <p class="comment-text">“The warehousing solutions provided by TransitFlow are efficient and secure. Highly recommend!”</p>
-                      <div class="stars-container">
-                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
-                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
-                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
-                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
-                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
-                      </div>
-                  </div>
-              </div>
-              <div class="swiper-slide">
-                  <div class="comments-slide-elements">
-                      <div class="comments-slide-elements-person">
-                          <img src="../assets/images/Kathleen_Smith_photo.svg" alt="commentator">
-                          <div class="comments-slide-text">
-                              <span class="comments-slide-text-name">Michael Chen</span>
-                              <span class="comments-slide-text-country">Singapore</span>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="comments-slide-comment">
-                      <p class="comment-text">“TransitFlow transformed our supply chain management! Their real-time tracking system allowed us to optimize delivery routes and reduce costs significantly. The team was incredibly supportive during the integration process, ensuring everything went smoothly.”</p>
-                      <div class="stars-container">
-                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
-                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
-                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
-                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
-                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
-                      </div>
-                  </div>
-              </div>
-              <div class="swiper-slide">
-                  <div class="comments-slide-elements">
-                      <div class="comments-slide-elements-person">
-                          <img src="../assets/images/Kathleen_Smith_photo.svg" alt="commentator">
-                          <div class="comments-slide-text">
-                              <span class="comments-slide-text-name">Sofia Rodriguez</span>
-                              <span class="comments-slide-text-country">Spain</span>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="comments-slide-comment">
-                      <p class="comment-text">“I was impressed by how quickly TransitFlow handled our last-minute shipment needs. Their warehousing facilities are top-notch, and the staff is always ready to assist. They’ve become our go-to logistics partner!”</p>
-                      <div class="stars-container">
-                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
-                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
-                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
-                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
-                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
-                      </div>
-                  </div>
-              </div>
-              <div class="swiper-slide">
-                  <div class="comments-slide-elements">
-                      <div class="comments-slide-elements-person">
-                          <img src="../assets/images/Kathleen_Smith_photo.svg" alt="commentator">
-                          <div class="comments-slide-text">
-                              <span class="comments-slide-text-name">Ahmed Khalid</span>
-                              <span class="comments-slide-text-country">UAE</span>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="comments-slide-comment">
-                      <p class="comment-text">“We’ve been working with TransitFlow for over a year, and their consistency is unmatched. From inventory management to timely deliveries, they’ve helped us streamline our operations across multiple regions. The only issue was a slight delay during peak season, but their team resolved it quickly.”</p>
-                      <div class="stars-container">
-                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
-                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
-                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
-                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
-                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
-                      </div>
-                  </div>
-              </div>
-              <div class="swiper-slide">
-                  <div class="comments-slide-elements">
-                      <div class="comments-slide-elements-person">
-                          <img src="../assets/images/Kathleen_Smith_photo.svg" alt="commentator">
-                          <div class="comments-slide-text">
-                              <span class="comments-slide-text-name">Emily Johnson</span>
-                              <span class="comments-slide-text-country">USA</span>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="comments-slide-comment">
-                      <p class="comment-text">“TransitFlow’s logistics solutions have been a game-changer for our e-commerce business. Their ability to handle large volumes of orders during the holiday season was impressive. The warehousing system is so organized that we never faced any stock issues. I also appreciated their detailed reports, which helped us make better decisions for our supply chain strategy. Highly recommend their services to anyone looking to improve their logistics operations!”</p>
-                      <div class="stars-container">
-                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
-                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
-                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
-                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
-                          <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="star">
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <!-- Перемещённый блок навигации -->
-          <div class="swiper-navigation">
-              <div class="swiper-buttons">
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-pagination"></div>
-                  <div class="swiper-button-next"></div>
-              </div>
-          </div>
-      </div>
-  </section>
+        <h3 data-translate-key="customer_reviews">Customer Reviews</h3>
+        <h2 data-translate-key="what_customers_say">What Our Customers Say</h2>
+        <div class="comments-slider swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="comments-slide-elements">
+                        <div class="comments-slide-elements-person">
+                            <img src="../assets/images/Kathleen_Smith_photo.svg" alt="Фотография клиента Кэтлин Смит">
+                            <div class="comments-slide-text">
+                                <span class="comments-slide-text-name">Lio Jessica</span>
+                                <span class="comments-slide-text-country">United Kingdom</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comments-slide-comment">
+                        <p class="comment-text" data-translate-key="comment_1">“The warehousing solutions provided by TransitFlow are efficient and secure. Highly recommend!”</p>
+                        <div class="stars-container">
+                            <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="Звезда рейтинга">
+                            <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="Звезда рейтинга">
+                            <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="Звезда рейтинга">
+                            <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="Звезда рейтинга">
+                            <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="Звезда рейтинга">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="comments-slide-elements">
+                        <div class="comments-slide-elements-person">
+                            <img src="../assets/images/Kathleen_Smith_photo.svg" alt="Фотография клиента Кэтлин Смит">
+                            <div class="comments-slide-text">
+                                <span class="comments-slide-text-name">Michael Chen</span>
+                                <span class="comments-slide-text-country">Singapore</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comments-slide-comment">
+                        <p class="comment-text" data-translate-key="comment_2">“TransitFlow transformed our supply chain management! Their real-time tracking system allowed us to optimize delivery routes and reduce costs significantly. The team was incredibly supportive during the integration process, ensuring everything went smoothly.”</p>
+                        <div class="stars-container">
+                            <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="Звезда рейтинга">
+                            <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="Звезда рейтинга">
+                            <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="Звезда рейтинга">
+                            <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="Звезда рейтинга">
+                            <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="Звезда рейтинга">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="comments-slide-elements">
+                        <div class="comments-slide-elements-person">
+                            <img src="../assets/images/Kathleen_Smith_photo.svg" alt="Фотография клиента Кэтлин Смит">
+                            <div class="comments-slide-text">
+                                <span class="comments-slide-text-name">Sofia Rodriguez</span>
+                                <span class="comments-slide-text-country">Spain</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comments-slide-comment">
+                        <p class="comment-text" data-translate-key="comment_3">“I was impressed by how quickly TransitFlow handled our last-minute shipment needs. Their warehousing facilities are top-notch, and the staff is always ready to assist. They’ve become our go-to logistics partner!”</p>
+                        <div class="stars-container">
+                            <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="Звезда рейтинга">
+                            <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="Звезда рейтинга">
+                            <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="Звезда рейтинга">
+                            <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="Звезда рейтинга">
+                            <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="Звезда рейтинга">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="comments-slide-elements">
+                        <div class="comments-slide-elements-person">
+                            <img src="../assets/images/Kathleen_Smith_photo.svg" alt="Фотография клиента Кэтлин Смит">
+                            <div class="comments-slide-text">
+                                <span class="comments-slide-text-name">Ahmed Khalid</span>
+                                <span class="comments-slide-text-country">UAE</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comments-slide-comment">
+                        <p class="comment-text" data-translate-key="comment_4">“We’ve been working with TransitFlow for over a year, and their consistency is unmatched. From inventory management to timely deliveries, they’ve helped us streamline our operations across multiple regions. The only issue was a slight delay during peak season, but their team resolved it quickly.”</p>
+                        <div class="stars-container">
+                            <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="Звезда рейтинга">
+                            <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="Звезда рейтинга">
+                            <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="Звезда рейтинга">
+                            <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="Звезда рейтинга">
+                            <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="Звезда рейтинга">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="comments-slide-elements">
+                        <div class="comments-slide-elements-person">
+                            <img src="../assets/images/Kathleen_Smith_photo.svg" alt="Фотография клиента Кэтлин Смит">
+                            <div class="comments-slide-text">
+                                <span class="comments-slide-text-name">Emily Johnson</span>
+                                <span class="comments-slide-text-country">USA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comments-slide-comment">
+                        <p class="comment-text" data-translate-key="comment_5">“TransitFlow’s logistics solutions have been a game-changer for our e-commerce business. Their ability to handle large volumes of orders during the holiday season was impressive. The warehousing system is so organized that we never faced any stock issues. I also appreciated their detailed reports, which helped us make better decisions for our supply chain strategy. Highly recommend their services to anyone looking to improve their logistics operations!”</p>
+                        <div class="stars-container">
+                            <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="Звезда рейтинга">
+                            <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="Звезда рейтинга">
+                            <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="Звезда рейтинга">
+                            <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="Звезда рейтинга">
+                            <img class="star-icon" src="../assets/icons/yellow_star_icon.svg" alt="Звезда рейтинга">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-navigation">
+                <div class="swiper-buttons">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="features-section">
-     <div class="features-bg">
-      <div class="features-dark-bg">
-      </div>
-     </div>
-     <div class="container-large container">
-      <div>
-       <div class="layout-grid features-grid">
-        <div class="features-image">
-         <img alt="Plane" src="../assets/images/plane_dream_lifter_photo.svg" width="1421"/>
-         <div class="features-content-wrap">
-          <img alt="Flight Icon" src="../assets/icons/flight_mainpage_icon.svg"/>
-          <h3 class="about-point">
-           Moving your products across world
-          </h3>
-         </div>
+        <div class="features-bg">
+            <div class="features-dark-bg"></div>
         </div>
-        <div>
-         <div class="features-title-wrap">
-          <div class="subtitle-wrap">
-           <p class="subtitle">
-            Why Choose
-           </p>
-           <div class="subtitle-border">
-           </div>
-          </div>
-          <h2 class="section-title">
-           We create an opportunity to reach business potential
-          </h2>
-          <div class="space-top-md">
-           <p>
-            Logistics is a distinguished supply chain management firm which provides comprehensive solutions for warehousing, transportation and a host of logistics services.
-           </p>
-          </div>
-         </div>
-         <div class="features-icon-list">
-          <div class="features-points-wrap" >
-           <div class="icon-wrap">
-            <img alt="Icon" src="../assets/icons/yellow_box_icon.svg"/>
-           </div>
-           <h3 class="features-point">
-            Safe Package
-           </h3>
-          </div>
-          <div class="features-points-wrap">
-           <div class="icon-wrap">
-            <img alt="Icon" src="../assets/icons/yellow_ship_everywhere_icon.svg"/>
-           </div>
-           <h3 class="features-point">
-            Ship Everywere
-           </h3>
-          </div>
-          <div class="features-points-wrap" >
-           <div class="icon-wrap">
-            <img alt="Icon" src="../assets/icons/yellow_global_tracking_icon.svg"/>
-           </div>
-           <h3 class="features-point">
-            Global Tracking
-           </h3>
-          </div>
-          <div class="features-points-wrap" >
-           <div class="icon-wrap">
-            <img alt="Icon" src="../assets/icons/yellow_support_icon.svg"/>
-           </div>
-           <h3 class="features-point">
-            24/7 Support
-           </h3>
-          </div>
-          <div class="features-points-wrap" >
-           <div class="icon-wrap">
-            <img alt="Icon" src="../assets/icons/yellow_time_icon.svg"/>
-           </div>
-           <h3 class="features-point">
-            In Time Delivery
-           </h3>
-          </div>
-          <div class="features-points-wrap" >
-           <div class="icon-wrap">
-            <img alt="Icon" src="../assets/icons/yellow_pricing_icon.svg"/>
-           </div>
-           <h3 class="features-point">
-            Transparent Pricing
-           </h3>
-          </div>
-         </div>
+        <div class="container-large container">
+            <div>
+                <div class="layout-grid features-grid">
+                    <div class="features-image">
+                        <img alt="Изображение грузового самолета Dream Lifter" src="../assets/images/plane_dream_lifter_photo.svg" width="1421"/>
+                        <div class="features-content-wrap">
+                            <img alt="Иконка авиаперевозок" src="../assets/icons/flight_mainpage_icon.svg"/>
+                            <h3 class="about-point" data-translate-key="moving_products">Moving your products across world</h3>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="features-title-wrap">
+                            <div class="subtitle-wrap">
+                                <p class="subtitle" data-translate-key="why_choose">Why Choose</p>
+                                <div class="subtitle-border"></div>
+                            </div>
+                            <h2 class="section-title" data-translate-key="features_title">We create an opportunity to reach business potential</h2>
+                            <div class="space-top-md">
+                                <p data-translate-key="features_text">Logistics is a distinguished supply chain management firm which provides comprehensive solutions for warehousing, transportation and a host of logistics services.</p>
+                            </div>
+                        </div>
+                        <div class="features-icon-list">
+                            <div class="features-points-wrap">
+                                <div class="icon-wrap">
+                                    <img alt="Иконка упаковки - коробка" src="../assets/icons/yellow_box_icon.svg"/>
+                                </div>
+                                <h3 class="features-point" data-translate-key="safe_package">Safe Package</h3>
+                            </div>
+                            <div class="features-points-wrap">
+                                <div class="icon-wrap">
+                                    <img alt="Иконка доставки по всему миру - корабль" src="../assets/icons/yellow_ship_everywhere_icon.svg"/>
+                                </div>
+                                <h3 class="features-point" data-translate-key="ship_everywhere">Ship Everywere</h3>
+                            </div>
+                            <div class="features-points-wrap">
+                                <div class="icon-wrap">
+                                    <img alt="Иконка глобального отслеживания" src="../assets/icons/yellow_global_tracking_icon.svg"/>
+                                </div>
+                                <h3 class="features-point" data-translate-key="global_tracking">Global Tracking</h3>
+                            </div>
+                            <div class="features-points-wrap">
+                                <div class="icon-wrap">
+                                    <img alt="Иконка поддержки клиентов" src="../assets/icons/yellow_support_icon.svg"/>
+                                </div>
+                                <h3 class="features-point" data-translate-key="support_24_7">24/7 Support</h3>
+                            </div>
+                            <div class="features-points-wrap">
+                                <div class="icon-wrap">
+                                    <img alt="Иконка времени - часы" src="../assets/icons/yellow_time_icon.svg"/>
+                                </div>
+                                <h3 class="features-point" data-translate-key="in_time_delivery">In Time Delivery</h3>
+                            </div>
+                            <div class="features-points-wrap">
+                                <div class="icon-wrap">
+                                    <img alt="Иконка ценообразования - доллары" src="../assets/icons/yellow_pricing_icon.svg"/>
+                                </div>
+                                <h3 class="features-point" data-translate-key="transparent_pricing">Transparent Pricing</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-       </div>
-      </div>
-     </div>
     </section>
     <section class="home-team-section">
-     <div class="container">
-      <div class="align-center">
-       <div class="subtitle-wrap">
-        <p class="subtitle">
-         The Transporters
-        </p>
-        <div class="subtitle-border">
+        <div class="container">
+            <div class="align-center">
+                <div class="subtitle-wrap">
+                    <p class="subtitle" data-translate-key="transporters">The Transporters</p>
+                    <div class="subtitle-border"></div>
+                </div>
+                <h2 class="section-title" data-translate-key="team_title">Meet Expert Team</h2>
+            </div>
+            <div class="space-top-lg">
+                <div class="layout-grid home-team-grid">
+                    <div class="team-card">
+                        <img alt="Фотография члена команды экспертов" src="../assets/images/expert_team_member_1.jpg" width="662"/>
+                        <div class="team-content-wrap">
+                            <h3 class="author-name text-white">Helen Wilmore</h3>
+                            <p class="team-member-designation" data-translate-key="warehouse_head">Warehouse Head</p>
+                        </div>
+                        <div class="social-media-wrap">
+                            <a class="team-social-link inline-block" href="http://www.twitter.com">
+                                <img alt="Иконка Twitter" class="social-icon" src="../assets/icons/black_twitter_icon.svg"/>
+                            </a>
+                            <a class="team-social-link inline-block" href="http://www.facebook.com">
+                                <img alt="Иконка Facebook" class="social-icon" src="../assets/icons/black_facebook_icon.svg"/>
+                            </a>
+                            <a class="team-social-link inline-block" href="http://www.instagram.com">
+                                <img alt="Иконка Instagram" class="social-icon" src="../assets/icons/black_instagram_icon.svg"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <img alt="Фотография члена команды экспертов" src="../assets/images/expert_team_member_2.svg" width="595"/>
+                        <div class="team-content-wrap">
+                            <h3 class="author-name text-white">Anthony Wills</h3>
+                            <p class="team-member-designation" data-translate-key="transport_manager">Transport Manager</p>
+                        </div>
+                        <div class="social-media-wrap">
+                            <a class="team-social-link inline-block" href="http://www.linkedin.com">
+                                <img alt="Иконка LinkedIn" class="social-icon" src="../assets/icons/black_linkedin_icon.svg"/>
+                            </a>
+                            <a class="team-social-link inline-block" href="http://www.twitter.com">
+                                <img alt="Иконка Twitter" class="social-icon" src="../assets/icons/black_twitter_icon.svg"/>
+                            </a>
+                            <a class="team-social-link inline-block" href="http://www.facebook.com">
+                                <img alt="Иконка Facebook" class="social-icon" src="../assets/icons/black_facebook_icon.svg"/>
+                            </a>
+                            <a class="team-social-link inline-block" href="http://www.instagram.com">
+                                <img alt="Иконка Instagram" class="social-icon" src="../assets/icons/black_instagram_icon.svg"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <img alt="Фотография члена команды экспертов" src="../assets/images/expert_team_member_3.svg" width="724"/>
+                        <div class="team-content-wrap">
+                            <h3 class="author-name text-white">Kate Winslot</h3>
+                            <p class="team-member-designation" data-translate-key="cargo_head">Cargo head</p>
+                        </div>
+                        <div class="social-media-wrap">
+                            <a class="team-social-link inline-block" href="http://www.facebook.com">
+                                <img alt="Иконка Facebook" class="social-icon" src="../assets/icons/black_facebook_icon.svg"/>
+                            </a>
+                            <a class="team-social-link inline-block" href="http://www.instagram.com">
+                                <img alt="Иконка Instagram" class="social-icon" src="../assets/icons/black_instagram_icon.svg"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-       </div>
-       <h2 class="section-title">
-        Meet Expert Team
-       </h2>
-      </div>
-      <div class="space-top-lg">
-       <div class="layout-grid home-team-grid">
-        <div class="team-card">
-         <img alt="Team Image" src="../assets/images/expert_team_member_1.jpg" width="662"/>
-         <div class="team-content-wrap">
-          <h3 class="author-name text-white">
-           Helen Wilmore
-          </h3>
-          <p class="team-member-designation">
-           Warehouse Head
-          </p>
-         </div>
-         <div class="social-media-wrap" >
-          <a class="team-social-link inline-block" href="http://www.twitter.com">
-           <img alt="Twitter Icon" class="social-icon" src="../assets/icons/black_twitter_icon.svg"/>
-          </a>
-          <a class="team-social-link inline-block" href="http://www.facebook.com">
-           <img alt="Facebook Icon" class="social-icon" src="../assets/icons/black_facebook_icon.svg"/>
-          </a>
-          <a class="team-social-link inline-block" href="http://www.instagram.com">
-           <img alt="Instagram Icon" class="social-icon" src="../assets/icons/black_instagram_icon.svg"/>
-          </a>
-         </div>
-        </div>
-        <div class="team-card">
-         <img alt="Team Image" src="../assets/images/expert_team_member_2.svg" width="595"/>
-         <div class="team-content-wrap">
-          <h3 class="author-name text-white">
-           Anthony Wills
-          </h3>
-          <p class="team-member-designation">
-           Transport Manager
-          </p>
-         </div>
-         <div class="social-media-wrap">
-          <a class="team-social-link inline-block" href="http://www.linkedin.com">
-           <img alt="LinkedIn Icon" class="social-icon" src="../assets/icons/black_linkedin_icon.svg"/>
-          </a>
-          <a class="team-social-link inline-block" href="http://www.twitter.com">
-           <img alt="Twitter Icon" class="social-icon" src="../assets/icons/black_twitter_icon.svg"/>
-          </a>
-          <a class="team-social-link inline-block" href="http://www.facebook.com">
-           <img alt="Facebook Icon" class="social-icon" src="../assets/icons/black_facebook_icon.svg"/>
-          </a>
-          <a class="team-social-link inline-block" href="http://www.instagram.com">
-           <img alt="Instagram Icon" class="social-icon" src="../assets/icons/black_instagram_icon.svg"/>
-          </a>
-         </div>
-        </div>
-        <div class="team-card">
-         <img alt="Team Image" src="../assets/images/expert_team_member_3.svg" width="724"/>
-         <div class="team-content-wrap">
-          <h3 class="author-name text-white">
-           Kate Winslot
-          </h3>
-          <p class="team-member-designation">
-           Cargo head
-          </p>
-         </div>
-         <div class="social-media-wrap">
-          <a class="team-social-link inline-block" href="http://www.facebook.com">
-           <img alt="Facebook Icon" class="social-icon" src="../assets/icons/black_facebook_icon.svg"/>
-          </a>
-          <a class="team-social-link inline-block" href="http://www.instagram.com">
-           <img alt="Instagram Icon" class="social-icon" src="../assets/icons/black_instagram_icon.svg"/>
-          </a>
-         </div>
-        </div>
-       </div>
-      </div>
-     </div>
-    </section>
-    <section class="contact-section">
-     <div class="container">
-      <div class="layout-grid contact-grid">
-       <div>
-        <div class="subtitle-wrap-transparent">
-         <p class="subtitle-dark">
-          Contact
-         </p>
-         <div class="subtitle-border">
-         </div>
-        </div>
-        <h2 style="color: #fff;" class="section-title text-white">
-         Get in touch with us
-        </h2>
-        <p class="text-white">
-         We appreciate your interest please complete the form below and we will contact you immediately to discuss your warehousing and distribution, air, ocean freight or any other logistics needs.
-        </p>
-        <div class="home-contact-link-wrap">
-         <div class="header-link-card">
-          <div class="header-icon-wrap">
-           <img alt="Mail Icon" src="../assets/icons/blue_email_icon.svg"/>
-          </div>
-          <div>
-           <p class="header-link-text">
-            Email
-           </p>
-           <a class="header-link-text hover-yellow" href="mailto:contact@transitflow.com">
-            contact@transitflow.com
-           </a>
-          </div>
-         </div>
-         <div class="header-link-card">
-          <div class="header-icon-wrap">
-           <img alt="Phone Icon" src="../assets/icons/blue_call_icon.svg"/>
-          </div>
-          <div>
-           <p class="header-link-text">
-            Call Us
-           </p>
-           <a class="header-link-text hover-yellow" href="tel:(00)123456789">
-            (00) 123 456 789
-           </a>
-          </div>
-         </div>
-         <div class="header-link-card">
-          <div class="header-icon-wrap">
-           <img alt="Clock Icon" src="../assets/icons/blue_time_icon.svg"/>
-          </div>
-          <div>
-           <p class="header-link-text">
-            Mon - Sat 9.00 - 18.00 Sunday Closed
-           </p>
-          </div>
-         </div>
-        </div>
-       </div>
-       <div>
-        <div class="form">
-         <form class="contact-form" method="get">
-          <div class="contact-text-field-divider">
-           <input class="contact-input-type input" maxlength="256" name="name" placeholder="Your Name*" type="text"/>
-           <input class="contact-input-type input" maxlength="256" name="email" placeholder="Your Email*" required="" type="email"/>
-          </div>
-          <div class="contact-text-field-divider">
-           <input class="contact-input-type input" maxlength="256" name="field" placeholder="Phone Number*" required="" type="text"/>
-           <input class="contact-input-type input" maxlength="256" name="field-2" placeholder="City*" required="" type="text"/>
-          </div>
-          <textarea class="contact-text-area input" maxlength="5000" name="field-3" placeholder="Your Message"></textarea>
-          <input class="primary-button button" type="submit" value="Submit Message"/>
-         </form>
-         <div class="success-message form-done" tabindex="-1">
-          <div>
-           Thank you! Your submission has been received!
-          </div>
-         </div>
-         <div class="error-message form-fail" tabindex="-1">
-          <div>
-           Oops! Something went wrong while submitting the form.
-          </div>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="layout-grid partners-grid">
-       <div class="partners-card">
-        <img alt="Partners Logo" class="partners-logo" src="../assets/images/studio_green_logo.svg"/>
-        <img alt="Partner Background Image" class="partner-background-image" src="../assets/images/studio_green_background.svg"/>
-        <div class="partners-overlay" style="opacity: 0;">
-        </div>
-       </div>
-       <div class="partners-card">
-        <img alt="Partners Logo" class="partners-logo" src="../assets/images/norto_logo.svg">
-        <img alt="Partner Background Image" class="partner-background-image" src="../assets/images/norto_background.svg" width="300"/>
-        <div class="partners-overlay">
-        </div>
-       </div>
-       <div class="partners-card">
-        <img alt="Partners Logo" class="partners-logo" src="../assets/images/points_one_logo.svg"/>
-        <img alt="Partner Background Image" class="partner-background-image" src="../assets/images/points_one_background.svg" width="300"/>
-        <div class="partners-overlay">
-        </div>
-       </div>
-       <div class="partners-card">
-        <img alt="Partners Logo" class="partners-logo" src="../assets/images/sand_box_logo.svg"/>
-        <img alt="Partner Background Image" class="partner-background-image" src="../assets/images/sand_box_background.svg" width="300"/>
-        <div class="partners-overlay">
-        </div>
-       </div>
-      </div>
-     </div>
     </section>
     <section class="blog-section">
-     <div class="container-small container">
-      <div class="align-center">
-       <div class="subtitle-wrap">
-        <p class="subtitle">
-         Our Blog
-        </p>
-        <div class="subtitle-border">
+        <div class="container-small container">
+            <div class="align-center">
+                <div class="subtitle-wrap">
+                    <p class="subtitle" data-translate-key="our_blog">Our Blog</p>
+                    <div class="subtitle-border"></div>
+                </div>
+                <h2 class="section-title" data-translate-key="blog_title">Our Latest News</h2>
+            </div>
+            <div class="space-top-lg">
+                <div class="blog-whole-wrap">
+                    <div class="dyn-list">
+                        <div class="dyn-items">
+                            <div class="dyn-item">
+                                <div class="blog-wrap">
+                                    <a class="blog-image-wrap inline-block" href="../pages/AboutUs.html">
+                                        <img alt="Shipyard" src="../assets/images/news_photo1.svg"/>
+                                        <div class="blog-image-overlay">
+                                            <p class="blog-read-more-link" data-translate-key="read_more">Read More</p>
+                                        </div>
+                                    </a>
+                                    <div class="blog-date-wrap">
+                                        <img alt="Calendar Icon" src="../assets/icons/calendar_icon.svg" class="svg-icon"/>
+                                        <div>
+                                            <p class="blog-date">24</p>
+                                            <p class="mg-0">January</p>
+                                        </div>
+                                    </div>
+                                    <div class="blog-line"></div>
+                                    <div class="blog-content-wrap">
+                                        <a class="blog-title" href="/post/inland-freight-a-worthy-solution-for-your-business" data-translate-key="blog_1_title">Inland freight a worthy solution for your business</a>
+                                        <div class="blog-summary-wrap">
+                                            <div class="blog-listing richtext">
+                                                <p data-translate-key="blog_1_text">We are dedicated in creating added value for our customers by implementing modern technology in our work.</p>
+                                                <ul>
+                                                    <li data-translate-key="urgent_transport">Urgent transport solutions</li>
+                                                    <li data-translate-key="sea_transport">Sea Transport Services</li>
+                                                    <li data-translate-key="reliable_staff">Reliable & experienced staffs</li>
+                                                    <li data-translate-key="local_shipping">Local Shipping Services</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog-border-line"></div>
+                            </div>
+                            <div class="dyn-item">
+                                <div class="blog-wrap">
+                                    <a class="blog-image-wrap inline-block" href="../pages/AboutUs.html">
+                                        <img alt="Shipyard" src="../assets/images/news_photo2.svg"/>
+                                        <div class="blog-image-overlay">
+                                            <p class="blog-read-more-link" data-translate-key="read_more">Read More</p>
+                                        </div>
+                                    </a>
+                                    <div class="blog-date-wrap">
+                                        <img alt="Calendar Icon" src="../assets/icons/calendar_icon.svg" class="svg-icon"/>
+                                        <div>
+                                            <p class="blog-date">24</p>
+                                            <p class="mg-0">January</p>
+                                        </div>
+                                    </div>
+                                    <div class="blog-line"></div>
+                                    <div class="blog-content-wrap">
+                                        <a class="blog-title" href="/post/how-technology-can-help-redraw-the-supply-chain-map" data-translate-key="blog_2_title">How technology can help redraw the supply chain map</a>
+                                        <div class="blog-summary-wrap">
+                                            <div class="blog-listing richtext">
+                                                <p data-translate-key="blog_2_text">Following the quality of our service thus having gained trust of our many clients.</p>
+                                                <ul>
+                                                    <li data-translate-key="urgent_transport">Urgent transport solutions</li>
+                                                    <li data-translate-key="warehousing">Warehousing Services</li>
+                                                    <li data-translate-key="quality_service">Top quality services with reasonable price</li>
+                                                    <li data-translate-key="reliable_staff">Reliable & experienced staffs</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog-border-line"></div>
+                            </div>
+                            <div class="dyn-item">
+                                <div class="blog-wrap">
+                                    <a class="blog-image-wrap inline-block" href="../pages/AboutUs.html">
+                                        <img alt="Shipyard" src="../assets/images/news_photo3.svg"/>
+                                        <div class="blog-image-overlay">
+                                            <p class="blog-read-more-link" data-translate-key="read_more">Read More</p>
+                                        </div>
+                                    </a>
+                                    <div class="blog-date-wrap">
+                                        <img alt="Calendar Icon" src="../assets/icons/calendar_icon.svg" class="svg-icon"/>
+                                        <div>
+                                            <p class="blog-date">24</p>
+                                            <p class="mg-0">January</p>
+                                        </div>
+                                    </div>
+                                    <div class="blog-line"></div>
+                                    <div class="blog-content-wrap">
+                                        <a class="blog-title" href="/post/five-things-you-should-have-ready-for-your-broker" data-translate-key="blog_3_title">Five things you should have ready for your broker</a>
+                                        <div class="blog-summary-wrap">
+                                            <div class="blog-listing richtext">
+                                                <p data-translate-key="blog_3_text_1">Our global logistics expertise, advanced supply chain technology & customized</p>
+                                                <p data-translate-key="blog_3_text_2">Logistics solutions will help you analyze, develop and implement successful supply chain management strategies.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog-border-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-       </div>
-       <h2 class="section-title">
-        Our Latest News
-       </h2>
-      </div>
-      <div class="space-top-lg">
-       <div class="blog-whole-wrap">
-        <div class="dyn-list">
-         <div class="dyn-items">
-          <div class="dyn-item">
-           <div class="blog-wrap">
-            <a class="blog-image-wrap inline-block" href="/post/inland-freight-a-worthy-solution-for-your-business">
-             <img alt="Shipyard" src="../assets/images/news_photo1.svg" width="976"/>
-             <div class="blog-image-overlay">
-              <p class="blog-read-more-link">
-               Read More
-              </p>
-             </div>
-            </a>
-            <div class="blog-date-wrap">
-             <img alt="Calendar Icon" src="../assets/icons/calendar_icon.svg" class="svg-icon"/>
-             <div>
-              <p class="blog-date">
-               24
-              </p>
-              <p class="mg-0">
-               January
-              </p>
-             </div>
-            </div>
-            <div class="blog-line">
-            </div>
-            <div class="blog-content-wrap">
-             <a class="blog-title" href="/post/inland-freight-a-worthy-solution-for-your-business">
-              Inland freight a worthy solution for your business
-             </a>
-             <div class="blog-summary-wrap">
-              <div class="blog-listing richtext">
-               <p>
-                We are dedicated in creating added value for our customers by implementing modern technology in our work.
-               </p>
-               <ul>
-                <li>
-                 Urgent transport solutions
-                </li>
-                <li>
-                 Sea Transport Services
-                </li>
-                <li>
-                 Reliable & experienced staffs
-                </li>
-                <li>
-                 Local Shipping Services
-                </li>
-               </ul>
-              </div>
-             </div>
-            </div>
-           </div>
-           <div class="blog-border-line">
-           </div>
-          </div>
-          <div class="dyn-item">
-           <div class="blog-wrap">
-            <a class="blog-image-wrap inline-block" href="/post/how-technology-can-help-redraw-the-supply-chain-map">
-             <img alt="Shipyard" src="../assets/images/news_photo2.svg" width="976"/>
-             <div class="blog-image-overlay">
-              <p class="blog-read-more-link">
-               Read More
-              </p>
-             </div>
-            </a>
-            <div class="blog-date-wrap">
-             <img alt="Calendar Icon" src="../assets/icons/calendar_icon.svg" class="svg-icon"/>
-             <div>
-              <p class="blog-date">
-               24
-              </p>
-              <p class="mg-0">
-               January
-              </p>
-             </div>
-            </div>
-            <div class="blog-line">
-            </div>
-            <div class="blog-content-wrap">
-             <a class="blog-title" href="/post/how-technology-can-help-redraw-the-supply-chain-map">
-              How technology can help redraw the supply chain map
-             </a>
-             <div class="blog-summary-wrap">
-              <div class="blog-listing richtext">
-               <p>
-                Following the quality of our service thus having gained trust of our many clients.
-               </p>
-               <ul>
-                <li>
-                 Urgent transport solutions
-                </li>
-                <li>
-                 Warehousing Services
-                </li>
-                <li>
-                 Top quality services with reasonable price
-                </li>
-                <li>
-                 Reliable & experienced staffs
-                </li>
-               </ul>
-              </div>
-             </div>
-            </div>
-           </div>
-           <div class="blog-border-line">
-           </div>
-          </div>
-          <div class="dyn-item">
-           <div class="blog-wrap">
-            <a class="blog-image-wrap inline-block" href="/post/five-things-you-should-have-ready-for-your-broker">
-             <img alt="Shipyard" src="../assets/images/news_photo3.svg" width="976"/>
-             <div class="blog-image-overlay">
-              <p class="blog-read-more-link">
-               Read More
-              </p>
-             </div>
-            </a>
-            <div class="blog-date-wrap">
-             <img alt="Calendar Icon" src="../assets/icons/calendar_icon.svg" class="svg-icon"/>
-             <div>
-              <p class="blog-date">
-               24
-              </p>
-              <p class="mg-0">
-               January
-              </p>
-             </div>
-            </div>
-            <div class="blog-line">
-            </div>
-            <div class="blog-content-wrap">
-             <a class="blog-title" href="/post/five-things-you-should-have-ready-for-your-broker">
-              Five things you should have ready for your broker
-             </a>
-             <div class="blog-summary-wrap">
-              <div class="blog-listing richtext">
-               <p>
-                Our global logistics expertise, advanced supply chain technology & customized
-               </p>
-               <p>
-                Logistics solutions will help you analyze, develop and implement successful supply chain management strategies.
-               </p>
-              </div>
-             </div>
-            </div>
-           </div>
-           <div class="blog-border-line">
-           </div>
-          </div>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="space-top-lg">
-       <div class="align-center">
-        <a class="dark-overlay-button inline-block" href="/blog">
-         <div>
-          More Blog
-         </div>
-         <div class="dark-button-hover">
-         </div>
-        </a>
-       </div>
-      </div>
-     </div>
     </section>
-    <section class="image-section">
-    </section>
+    <section class="image-section"></section>
     <footer id="footer"></footer>
+       <div id="accessibility-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 9999; justify-content: center; align-items: center;">
+       <div style="background: #fff; padding: 20px; border-radius: 8px; max-width: 500px; width: 90%;">
+           <h2 data-translate-key="accessibility_settings">Настройки для слабовидящих</h2>
+           <div class="font-size-buttons">
+               <button data-font-size="small" data-translate-key="small_font">Маленький шрифт</button>
+               <button data-font-size="medium" class="active" data-translate-key="medium_font">Средний шрифт</button>
+               <button data-font-size="large" data-translate-key="large_font">Большой шрифт</button>
+           </div>
+           <div class="color-scheme-buttons">
+               <button data-scheme="white-black" class="active" data-translate-key="white_black_scheme">Белый фон, черный текст</button>
+               <button data-scheme="dark-white" data-translate-key="dark_white_scheme">Темный фон, белый текст</button>
+               <button data-scheme="dark-green" data-translate-key="dark_green_scheme">Темный фон, зеленый текст</button>
+               <button data-scheme="beige-brown" data-translate-key="beige_brown_scheme">Бежевый фон, коричневый текст</button>
+               <button data-scheme="blue-darkblue" data-translate-key="blue_darkblue_scheme">Синий фон, темно-синий текст</button>
+           </div>
+           <button id="toggle-images" data-translate-key="toggle_images">Переключить изображения</button>
+           <button id="reset-accessibility" data-translate-key="reset_settings">Сбросить настройки</button>
+           <button id="close-accessibility-modal" data-translate-key="close">Закрыть</button>
+       </div>
+   </div>
 </body>
 
+</html>
